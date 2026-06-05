@@ -1,0 +1,428 @@
+---
+import { researchAreas } from "../data/researchAreas.js";
+
+interface Props {
+  area: {
+    id: string;
+    title: string;
+    shortTitle: string;
+    question: string;
+    why: string;
+    approach: string;
+    tags: string[];
+    connectsTo: string[];
+  };
+  publications: Array<{ title: string; year: number; primaryTopic: string; secondaryTopics?: string[]; links: Array<{ url: string; label: string }> }>;
+}
+
+const { area, publications } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const accents = [
+  { color: "#0071e3", soft: "#e8f2ff" },
+  { color: "#5856d6", soft: "#eeeeff" },
+  { color: "#6e6e73", soft: "#f0f0f2" },
+  { color: "#0a84ff", soft: "#e8f2ff" },
+  { color: "#248a3d", soft: "#eaf7ed" }
+];
+const areaIndex = Math.max(
+  0,
+  researchAreas.findIndex((researchArea) => researchArea.id === area.id)
+);
+const areaNumber = String(areaIndex + 1).padStart(2, "0");
+const accent = accents[areaIndex % accents.length];
+const connectedAreas = area.connectsTo.flatMap((id) => {
+  const connectedArea = researchAreas.find((researchArea) => researchArea.id === id);
+  return connectedArea ? [connectedArea] : [];
+});
+const related = publications
+  .filter((paper) => paper.primaryTopic === area.title || paper.secondaryTopics?.includes(area.title))
+  .slice(0, 3);
+const publicationsUrl = `${baseUrl}publications/`;
+---
+
+<article
+  id={area.id}
+  class="pillar anchor-offset"
+  data-reveal
+  style={`--pillar-accent: ${accent.color}; --pillar-soft: ${accent.soft};`}
+>
+  <header class="pillar-head">
+    <div class="pillar-title">
+      <span class="eyebrow">Pillar {areaNumber}</span>
+      <h2>{area.title}</h2>
+    </div>
+    <div class="pillar-meta" aria-label={`${area.shortTitle} metadata`}>
+      <span class="pai-badge">PAI</span>
+      <div class="tag-list">
+        {area.tags.map((tag) => <span class="tag">{tag}</span>)}
+      </div>
+    </div>
+  </header>
+
+  <div class="pillar-layout">
+    <section class="pillar-main">
+      <div class="panel-label">
+        <span>Research Question</span>
+        <span>{area.shortTitle}</span>
+      </div>
+      <p class="question">{area.question}</p>
+      <div class="approach-block">
+        <h3>Approach</h3>
+        <p>{area.approach}</p>
+      </div>
+    </section>
+
+    <aside class="pillar-side">
+      <section class="why-panel">
+        <h3>Why It Matters</h3>
+        <p>{area.why}</p>
+      </section>
+      <section class="publication-panel">
+        <h3>Selected Publications</h3>
+        <ul>
+          {related.map((paper) => (
+            <li>
+              <a href={paper.links[0]?.url ?? publicationsUrl}>{paper.title}</a>
+              <span>{paper.year}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="connected-row" aria-label={`${area.shortTitle} connected research areas`}>
+    <span>Connects With</span>
+    {connectedAreas.map((connectedArea) => (
+      <a href={`${baseUrl}research/#${connectedArea.id}`}>{connectedArea.shortTitle}</a>
+    ))}
+  </footer>
+</article>
+
+<style>
+  .pillar {
+    border-top: 1px solid var(--line);
+    display: grid;
+    gap: 18px;
+    padding: clamp(34px, 5vw, 52px) 0;
+  }
+
+  .pillar-head {
+    align-items: end;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.48fr);
+  }
+
+  .pillar-title {
+    display: grid;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .pillar h2 {
+    font-size: clamp(2rem, 3.8vw, 4rem);
+    max-width: 880px;
+  }
+
+  .pillar-meta {
+    display: grid;
+    gap: 12px;
+    justify-items: end;
+    min-width: 0;
+  }
+
+  .pai-badge {
+    align-items: center;
+    background: var(--pillar-soft);
+    border: 1px solid color-mix(in srgb, var(--pillar-accent) 26%, var(--line));
+    border-radius: 999px;
+    color: var(--pillar-accent);
+    display: inline-flex;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 780;
+    min-height: 30px;
+    padding: 5px 10px;
+  }
+
+  .pillar-meta .tag-list {
+    justify-content: flex-end;
+  }
+
+  .pillar-layout {
+    align-items: start;
+    display: grid;
+    gap: 14px;
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  }
+
+  .pillar-main,
+  .publication-panel {
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    isolation: isolate;
+    overflow: hidden;
+    position: relative;
+    transition:
+      background 180ms ease,
+      border-color 180ms ease,
+      box-shadow 180ms ease,
+      transform 180ms ease;
+  }
+
+  .pillar-main {
+    display: grid;
+    gap: 22px;
+    min-height: 270px;
+    padding: clamp(20px, 2.6vw, 30px);
+  }
+
+  .pillar-main::before {
+    background: var(--pillar-accent);
+    content: "";
+    height: 2px;
+    inset: 0 0 auto;
+    opacity: 0.85;
+    position: absolute;
+    transform: scaleX(0.24);
+    transform-origin: left;
+    transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+  }
+
+  .pillar-main::after,
+  .publication-panel::after {
+    background: linear-gradient(120deg, transparent 8%, rgba(255, 255, 255, 0.82) 50%, transparent 72%);
+    content: "";
+    inset: -36% auto -36% -78%;
+    pointer-events: none;
+    position: absolute;
+    transform: translateX(0) skewX(-16deg);
+    transition: transform 520ms cubic-bezier(0.16, 1, 0.3, 1);
+    width: 62%;
+    z-index: 0;
+  }
+
+  .pillar-main > *,
+  .publication-panel > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .pillar-main:hover,
+  .pillar-main:focus-within,
+  .publication-panel:hover,
+  .publication-panel:focus-within {
+    background: #fff;
+    border-color: color-mix(in srgb, var(--pillar-accent) 28%, var(--line));
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.065);
+    transform: translateY(-2px);
+  }
+
+  .pillar-main:hover::before,
+  .pillar-main:focus-within::before {
+    transform: scaleX(1);
+  }
+
+  .pillar-main:hover::after,
+  .pillar-main:focus-within::after,
+  .publication-panel:hover::after,
+  .publication-panel:focus-within::after {
+    transform: translateX(275%) skewX(-16deg);
+  }
+
+  .panel-label {
+    align-items: center;
+    color: var(--muted);
+    display: flex;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 750;
+    gap: 12px;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+
+  .panel-label span:last-child {
+    color: var(--pillar-accent);
+    text-align: right;
+  }
+
+  .question {
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-size: clamp(1.34rem, 2.4vw, 2.2rem);
+    font-weight: 680;
+    letter-spacing: 0;
+    line-height: 1.12;
+    max-width: 820px;
+  }
+
+  .approach-block {
+    border-top: 1px solid var(--line-soft);
+    display: grid;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 18px;
+  }
+
+  .pillar-side {
+    display: grid;
+    gap: 12px;
+  }
+
+  .why-panel {
+    background: var(--pillar-soft);
+    border: 1px solid color-mix(in srgb, var(--pillar-accent) 20%, var(--line));
+    border-left: 3px solid var(--pillar-accent);
+    border-radius: 8px;
+    display: grid;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .publication-panel {
+    display: grid;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  h3 {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 750;
+    text-transform: uppercase;
+  }
+
+  .approach-block p,
+  .why-panel p,
+  .publication-panel li {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.46;
+  }
+
+  .publication-panel a {
+    color: var(--ink);
+    display: inline-block;
+    font-weight: 650;
+    text-decoration-color: rgba(0, 113, 227, 0.35);
+    transition:
+      color 180ms ease,
+      transform 180ms ease;
+  }
+
+  .publication-panel a:hover {
+    color: var(--pillar-accent);
+    transform: translateX(2px);
+  }
+
+  ul {
+    display: grid;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    border-top: 1px solid var(--line-soft);
+    padding-top: 9px;
+  }
+
+  li:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  li span {
+    color: var(--muted);
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+  }
+
+  .connected-row {
+    align-items: center;
+    border-top: 1px solid var(--line-soft);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 14px;
+  }
+
+  .connected-row span {
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 750;
+    margin-right: 2px;
+    text-transform: uppercase;
+  }
+
+  .connected-row a {
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid var(--line-soft);
+    border-radius: 999px;
+    color: var(--graphite);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 9px;
+    text-decoration: none;
+    transition:
+      background 180ms ease,
+      border-color 180ms ease,
+      color 180ms ease,
+      transform 180ms ease;
+  }
+
+  .connected-row a:hover,
+  .connected-row a:focus-visible {
+    background: #fff;
+    border-color: color-mix(in srgb, var(--pillar-accent) 28%, var(--line));
+    color: var(--pillar-accent);
+    transform: translateY(-1px);
+  }
+
+  @media (max-width: 980px) {
+    .pillar-head,
+    .pillar-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .pillar-meta {
+      justify-items: start;
+    }
+
+    .pillar-meta .tag-list {
+      justify-content: flex-start;
+    }
+
+    .pillar-main {
+      min-height: 0;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .pillar {
+      padding: 30px 0;
+    }
+
+    .pillar h2 {
+      font-size: clamp(1.75rem, 11vw, 2.75rem);
+    }
+
+    .panel-label {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .panel-label span:last-child {
+      text-align: left;
+    }
+  }
+</style>

@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import ResearchMap from "../components/ResearchMap.astro";
+import ResearchPillar from "../components/ResearchPillar.astro";
+import { researchAreas } from "../data/researchAreas.js";
+import publications from "../data/publications.json";
+---
+
+<BaseLayout title="Research" description="The PAI research map across provable foundations, actionable methods, and interpretability systems.">
+  <PageHero
+    eyebrow="Research"
+    title="Research shaped by PAI."
+    lead="We connect provable foundations, actionable methods, and interpretability systems across large models, human workflows, and scientific discovery."
+    variant="research"
+    principles={[
+      {
+        label: "Provable",
+        detail: "Assumptions, guarantees, and limits made explicit."
+      },
+      {
+        label: "Actionable",
+        detail: "Evidence that supports debugging, decisions, and intervention."
+      },
+      {
+        label: "Interpretability",
+        detail: "Tools that make model behavior visible and usable."
+      }
+    ]}
+  />
+
+  <section class="section research-overview">
+    <div class="container">
+      <ResearchMap />
+    </div>
+  </section>
+
+  <section class="section band research-pillars-section">
+    <div class="container pillars">
+      {researchAreas.map((area) => <ResearchPillar area={area} publications={publications} />)}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .research-overview {
+    padding: clamp(28px, 4vw, 44px) 0 clamp(46px, 6vw, 70px);
+  }
+
+  .research-pillars-section {
+    padding: clamp(34px, 5vw, 64px) 0 clamp(58px, 7vw, 92px);
+  }
+
+  .pillars {
+    display: grid;
+    gap: 4px;
+  }
+</style>

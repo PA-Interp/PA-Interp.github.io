@@ -1,0 +1,68 @@
+---
+import { newsItems } from "../data/news.js";
+import { withBase } from "../data/site.js";
+
+const resolveHref = (href: string) => href?.startsWith("/") ? withBase(href) : href;
+---
+
+<div class="news-list">
+  {newsItems.map((item) => (
+    <article class="news-item surface">
+      <div class="date">{item.date}</div>
+      <div>
+        <span class="type">{item.type}</span>
+        <h3>{item.title}</h3>
+        <p>{item.text}</p>
+        {item.href && <a href={resolveHref(item.href)}>View related record</a>}
+      </div>
+    </article>
+  ))}
+</div>
+
+<style>
+  .news-list {
+    display: grid;
+    gap: 14px;
+  }
+
+  .news-item {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 110px 1fr;
+    padding: 20px;
+  }
+
+  .date,
+  .type {
+    font-family: var(--font-mono);
+    font-weight: 800;
+  }
+
+  .date {
+    color: var(--theorem);
+  }
+
+  .type {
+    color: var(--muted);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+  }
+
+  .news-item p {
+    color: var(--muted);
+    margin-top: 8px;
+  }
+
+  .news-item a {
+    display: inline-flex;
+    font-weight: 650;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+
+  @media (max-width: 620px) {
+    .news-item {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

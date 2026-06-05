@@ -1,0 +1,191 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  lead: string;
+  variant?: "default" | "research";
+  principles?: Array<{
+    label: string;
+    detail: string;
+  }>;
+}
+
+const { eyebrow, title, lead, variant = "default", principles = [] } = Astro.props;
+---
+
+<section class:list={["page-head", variant !== "default" && `page-head--${variant}`]}>
+  <div class="container">
+    <div class="page-copy">
+      <span class="eyebrow">{eyebrow}</span>
+      <h1>{title}</h1>
+      <p class="lead">{lead}</p>
+    </div>
+    {
+      principles.length > 0 && (
+        <div class="principle-stack" aria-label="PAI principles">
+          {principles.map((principle, index) => (
+            <div class="principle-item">
+              <span>0{index + 1}</span>
+              <strong>{principle.label}</strong>
+              <p>{principle.detail}</p>
+            </div>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .page-head .container {
+    display: grid;
+    gap: 16px;
+  }
+
+  .page-copy {
+    display: grid;
+    gap: 16px;
+    min-width: 0;
+  }
+
+  .page-head h1 {
+    font-size: clamp(3.15rem, 7vw, 6.1rem);
+    line-height: 0.98;
+    max-width: 980px;
+  }
+
+  .page-head .lead {
+    font-size: clamp(1.08rem, 2vw, 1.35rem);
+    margin-top: 0;
+    max-width: 760px;
+  }
+
+  .page-head--research {
+    padding: clamp(42px, 6vw, 74px) 0 clamp(26px, 4vw, 42px);
+  }
+
+  .page-head--research .container {
+    align-items: end;
+    gap: clamp(24px, 5vw, 64px);
+    grid-template-columns: minmax(0, 1fr) minmax(290px, 0.46fr);
+  }
+
+  .page-head--research h1 {
+    font-size: clamp(3rem, 6.4vw, 5.7rem);
+    max-width: 860px;
+  }
+
+  .principle-stack {
+    border-left: 1px solid var(--line);
+    display: grid;
+    gap: 0;
+    margin-bottom: 2px;
+  }
+
+  .principle-item {
+    display: grid;
+    gap: 4px;
+    padding: 12px 0 12px 18px;
+  }
+
+  .principle-item:not(:last-child) {
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .principle-item span {
+    color: var(--theorem);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 750;
+  }
+
+  .principle-item strong {
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-size: clamp(1.18rem, 1.6vw, 1.5rem);
+    line-height: 1.05;
+  }
+
+  .principle-item p {
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.42;
+  }
+
+  @media (max-width: 900px) {
+    .page-head--research .container {
+      align-items: start;
+      grid-template-columns: 1fr;
+    }
+
+    .principle-stack {
+      border-left: 0;
+      border-top: 1px solid var(--line);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      width: 100%;
+    }
+
+    .principle-item {
+      padding: 14px 14px 0 0;
+    }
+
+    .principle-item:not(:last-child) {
+      border-bottom: 0;
+      border-right: 1px solid var(--line-soft);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .page-head h1 {
+      font-size: clamp(2.75rem, 14vw, 4rem);
+      line-height: 1;
+    }
+
+    .page-head--research {
+      padding: 28px 0 24px;
+    }
+
+    .page-head--research .container {
+      gap: 20px;
+    }
+
+    .page-head--research h1 {
+      font-size: clamp(2.35rem, 11.5vw, 3.35rem);
+    }
+
+    .page-head--research .lead {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .principle-stack {
+      grid-template-columns: 1fr;
+    }
+
+    .principle-item {
+      column-gap: 10px;
+      grid-template-columns: 32px minmax(0, 1fr);
+      padding: 10px 0;
+      row-gap: 2px;
+    }
+
+    .principle-item span {
+      grid-row: 1 / span 2;
+      padding-top: 2px;
+    }
+
+    .principle-item strong {
+      font-size: 1.08rem;
+    }
+
+    .principle-item p {
+      font-size: 0.82rem;
+      line-height: 1.36;
+    }
+
+    .principle-item:not(:last-child) {
+      border-bottom: 1px solid var(--line-soft);
+      border-right: 0;
+    }
+  }
+</style>

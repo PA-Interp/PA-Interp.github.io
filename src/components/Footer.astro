@@ -1,0 +1,200 @@
+---
+import { site, withBase } from "../data/site.js";
+
+const navItems = site.nav.filter((item) => item.href !== "/");
+---
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <section class="footer-brand" aria-label="PAI Lab">
+      <a class="brand-lockup" href={withBase("/")}>
+        <span class="brand-mark" aria-hidden="true">PAI</span>
+        <span>
+          <strong>{site.name}</strong>
+          <small>{site.fullName}</small>
+        </span>
+      </a>
+      <p>{site.mission}</p>
+      <span class="affiliation">{site.affiliation}</span>
+    </section>
+
+    <nav class="footer-column" aria-label="Footer navigation">
+      <h2>Navigate</h2>
+      {navItems.map((item) => <a href={withBase(item.href)}>{item.label}</a>)}
+    </nav>
+
+    <section class="footer-column">
+      <h2>Follow Us</h2>
+      <a href={site.sourceRepo}>GitHub</a>
+      <a href={site.piHomepage}>PI Homepage</a>
+      <a href={withBase("/publications/")}>Publications</a>
+    </section>
+
+    <section class="footer-column contact">
+      <h2>Contact</h2>
+      <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>
+      <span>{site.location}</span>
+    </section>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 PAI Lab. All rights reserved.</span>
+    <div>
+      <a href={withBase("/research/")}>Research</a>
+      <a href={withBase("/join-us/")}>Join Us</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: #ffffff;
+    border-top: 1px solid var(--line);
+    color: var(--ink);
+    padding: 58px 0 30px;
+  }
+
+  .footer-inner {
+    display: grid;
+    gap: 42px;
+    grid-template-columns: minmax(300px, 1.5fr) repeat(3, minmax(130px, 0.5fr));
+  }
+
+  .brand-lockup {
+    align-items: center;
+    color: var(--ink);
+    display: inline-flex;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .brand-mark {
+    align-items: center;
+    color: var(--ink);
+    display: inline-flex;
+    font-family: var(--font-display);
+    font-size: 1.38rem;
+    font-weight: 900;
+    height: 34px;
+    justify-content: center;
+    line-height: 1;
+    position: relative;
+    width: 58px;
+  }
+
+  .brand-mark::before {
+    border-bottom: 2px solid rgba(0, 113, 227, 0.72);
+    border-left: 2px solid rgba(0, 113, 227, 0.72);
+    border-top: 2px solid rgba(0, 113, 227, 0.72);
+    content: "";
+    height: 18px;
+    left: -2px;
+    position: absolute;
+    top: 8px;
+    width: 8px;
+  }
+
+  .brand-mark::after {
+    background: var(--theorem);
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    content: "";
+    height: 7px;
+    position: absolute;
+    right: 22px;
+    top: 8px;
+    width: 9px;
+  }
+
+  .brand-lockup strong,
+  .brand-lockup small {
+    display: block;
+    line-height: 1.1;
+  }
+
+  .brand-lockup small {
+    color: var(--muted);
+    font-size: 0.74rem;
+    margin-top: 2px;
+  }
+
+  .site-footer p {
+    color: var(--muted);
+    line-height: 1.55;
+    margin-top: 18px;
+    max-width: 520px;
+  }
+
+  .affiliation {
+    color: var(--muted);
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    font-weight: 700;
+    margin-top: 16px;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .footer-column h2 {
+    color: var(--ink);
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    letter-spacing: 0;
+    margin: 0 0 8px;
+    text-transform: uppercase;
+  }
+
+  .footer-column a,
+  .footer-column span,
+  .footer-bottom,
+  .footer-bottom a {
+    color: var(--graphite);
+    font-size: 0.94rem;
+    text-decoration: none;
+  }
+
+  .footer-column a:hover,
+  .footer-bottom a:hover {
+    color: var(--theorem);
+  }
+
+  .footer-bottom {
+    align-items: center;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 42px;
+    padding-top: 22px;
+  }
+
+  .footer-bottom div {
+    display: flex;
+    gap: 18px;
+  }
+
+  @media (max-width: 900px) {
+    .footer-inner {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-brand {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .footer-inner {
+      gap: 30px;
+      grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+</style>

@@ -1,0 +1,1 @@
+Hongji studies multimodal recommendation, user behavior modeling, value prediction, LLM alignment, and agent coordination.

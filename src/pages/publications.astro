@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import PublicationArchive from "../components/PublicationArchive.astro";
+import publications from "../data/publications.json";
+---
+
+<BaseLayout title="Publications" description="Searchable publication archive for PAI Lab.">
+  <PageHero
+    eyebrow="Publications"
+    title="The PAI publication archive."
+    lead="Browse work through the PAI lens: provable foundations, actionable methods, and interpretability systems, ordered by year, area, venue, artifact, and topic."
+  />
+
+  <section class="section compact">
+    <div class="container">
+      <PublicationArchive publications={publications} />
+    </div>
+  </section>
+</BaseLayout>

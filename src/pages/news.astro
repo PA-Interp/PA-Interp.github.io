@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import NewsList from "../components/NewsList.astro";
+---
+
+<BaseLayout title="News" description="News and lab notes from PAI Lab.">
+  <PageHero
+    eyebrow="News & Lab Notes"
+    title="The PAI lab record."
+    lead="Paper updates, service, demos, reading notes, open positions, and project explainers for provable, actionable interpretability."
+  />
+
+  <section class="section compact">
+    <div class="container news-layout">
+      <aside class="surface note-panel">
+        <h2>Lab Record</h2>
+        <p>News and lab notes connect announcements to the PAI agenda: provable methods, actionable evidence, and interpretability in use.</p>
+      </aside>
+      <NewsList />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .news-layout {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 320px 1fr;
+  }
+
+  .note-panel {
+    align-self: start;
+    padding: 22px;
+  }
+
+  .note-panel h2 {
+    font-size: clamp(1.8rem, 2.7vw, 2.7rem);
+    margin-bottom: 12px;
+  }
+
+  .note-panel p {
+    color: var(--muted);
+  }
+
+  @media (max-width: 860px) {
+    .news-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

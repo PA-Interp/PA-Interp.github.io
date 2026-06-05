@@ -1,0 +1,381 @@
+---
+import { site, withBase } from "../data/site.js";
+
+const basePath = import.meta.env.BASE_URL.replace(/\/?$/, "");
+const currentPath = basePath && Astro.url.pathname.startsWith(basePath)
+  ? Astro.url.pathname.slice(basePath.length) || "/"
+  : Astro.url.pathname;
+const isActive = (href: string) => href === "/" ? currentPath === "/" : currentPath.startsWith(href);
+const navItems = site.nav.filter((item) => item.href !== "/");
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href={withBase("/")}>
+      <span class="brand-mark" aria-hidden="true">PAI</span>
+      <span>
+        <strong>{site.name}</strong>
+        <small>{site.fullName}</small>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      {navItems.map((item) => (
+        <a class={isActive(item.href) ? "active" : ""} aria-current={isActive(item.href) ? "page" : undefined} href={withBase(item.href)}>
+          {item.label}
+        </a>
+      ))}
+      <a class="search-link" href={withBase("/publications/")} aria-label="Search publications">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6"></circle>
+          <path d="M16 16 L21 21"></path>
+        </svg>
+      </a>
+    </nav>
+    <details class="mobile-menu">
+      <summary aria-label="Open primary navigation">
+        <span>Menu</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M5 8 H19 M5 12 H19 M5 16 H19"></path>
+        </svg>
+      </summary>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        {navItems.map((item) => (
+          <a class={isActive(item.href) ? "active" : ""} aria-current={isActive(item.href) ? "page" : undefined} href={withBase(item.href)}>
+            {item.label}
+          </a>
+        ))}
+      </nav>
+    </details>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    backdrop-filter: saturate(180%) blur(22px);
+    background: rgba(251, 251, 253, 0.78);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  .site-header .container {
+    width: min(var(--max-width), calc(100% - 40px));
+  }
+
+  .header-inner {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    min-height: 64px;
+  }
+
+  .brand {
+    align-items: center;
+    color: var(--ink);
+    display: inline-flex;
+    gap: 10px;
+    min-width: 0;
+    text-decoration: none;
+    transition: color 180ms ease, transform 180ms ease;
+  }
+
+  .brand:hover,
+  .brand:focus-visible {
+    color: var(--theorem);
+    transform: translateX(1px);
+  }
+
+  .brand:active {
+    transform: translateX(0) translateY(1px);
+  }
+
+  .brand-mark {
+    align-items: center;
+    color: var(--ink);
+    display: inline-flex;
+    font-family: var(--font-display);
+    font-size: 1.38rem;
+    font-weight: 900;
+    height: 34px;
+    justify-content: center;
+    letter-spacing: 0;
+    line-height: 1;
+    position: relative;
+    width: 58px;
+  }
+
+  .brand-mark::before {
+    border-bottom: 2px solid rgba(0, 113, 227, 0.72);
+    border-left: 2px solid rgba(0, 113, 227, 0.72);
+    border-top: 2px solid rgba(0, 113, 227, 0.72);
+    content: "";
+    height: 18px;
+    left: -2px;
+    position: absolute;
+    top: 8px;
+    width: 8px;
+  }
+
+  .brand-mark::after {
+    background: var(--theorem);
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    content: "";
+    height: 7px;
+    position: absolute;
+    right: 22px;
+    top: 8px;
+    width: 9px;
+  }
+
+  .brand strong,
+  .brand small {
+    display: block;
+    line-height: 1.1;
+  }
+
+  .brand small {
+    color: var(--muted);
+    font-size: 0.74rem;
+    margin-top: 2px;
+  }
+
+  .desktop-nav {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2px clamp(20px, 2vw, 34px);
+    justify-content: flex-end;
+  }
+
+  .desktop-nav a,
+  .mobile-nav a {
+    color: var(--graphite);
+    font-size: 0.82rem;
+    font-weight: 650;
+    padding: 8px 4px 7px;
+    position: relative;
+    text-decoration: none;
+    transition: color 180ms ease, transform 180ms ease;
+    white-space: nowrap;
+  }
+
+  .desktop-nav a:hover,
+  .mobile-nav a:hover {
+    color: var(--ink);
+  }
+
+  .desktop-nav a:active,
+  .mobile-nav a:active {
+    transform: translateY(1px);
+  }
+
+  .desktop-nav a.active,
+  .mobile-nav a.active {
+    color: var(--ink);
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .search-link {
+    align-items: center;
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    display: inline-flex;
+    height: 34px;
+    justify-content: center;
+    margin-left: 4px;
+    padding: 0;
+    transition:
+      background 180ms ease,
+      border-color 180ms ease,
+      box-shadow 180ms ease,
+      transform 180ms ease;
+    width: 34px;
+  }
+
+  .search-link svg {
+    fill: none;
+    height: 19px;
+    stroke: var(--ink);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    transition: transform 180ms ease;
+    width: 19px;
+  }
+
+  .search-link:hover {
+    background: rgba(0, 113, 227, 0.08);
+    border-color: rgba(0, 113, 227, 0.22);
+    box-shadow: none;
+  }
+
+  .search-link:hover svg,
+  .search-link:focus-visible svg {
+    transform: scale(1.07) rotate(-6deg);
+  }
+
+  .search-link:active {
+    box-shadow: none;
+    transform: translateY(1px) scale(0.98);
+  }
+
+  @media (max-width: 900px) {
+    .site-header .container {
+      width: min(var(--max-width), calc(100% - 32px));
+    }
+
+    .header-inner {
+      align-items: center;
+      flex-direction: row;
+      gap: 16px;
+      min-height: 64px;
+    }
+
+    .brand {
+      min-width: 0;
+    }
+
+    .desktop-nav {
+      gap: 10px 16px;
+      justify-content: flex-end;
+      overflow-x: auto;
+      padding-bottom: 2px;
+      scrollbar-width: none;
+      width: auto;
+    }
+
+    .desktop-nav a {
+      font-size: 0.82rem;
+      white-space: nowrap;
+    }
+
+    .desktop-nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .search-link {
+      height: 38px;
+      flex: 0 0 38px;
+      width: 38px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .site-header .container {
+      width: min(var(--max-width), calc(100% - 32px));
+    }
+
+    .header-inner {
+      align-items: center;
+      flex-direction: row;
+      gap: 12px;
+      min-height: 62px;
+      padding: 6px 0;
+      position: relative;
+    }
+
+    .brand {
+      gap: 8px;
+    }
+
+    .brand-mark {
+      font-size: 1.24rem;
+      height: 32px;
+      width: 52px;
+    }
+
+    .brand-mark::before {
+      height: 17px;
+      top: 7px;
+    }
+
+    .brand-mark::after {
+      right: 20px;
+      top: 7px;
+    }
+
+    .brand small {
+      display: none;
+    }
+
+    .desktop-nav {
+      display: none;
+    }
+
+    .mobile-menu {
+      display: block !important;
+      margin-left: 0;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 80;
+    }
+
+    .mobile-menu summary {
+      -webkit-appearance: none;
+      align-items: center;
+      appearance: none;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--ink);
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 0.84rem;
+      font-weight: 800;
+      gap: 7px;
+      height: 38px;
+      list-style: none;
+      padding: 0 10px;
+      position: relative;
+      z-index: 81;
+    }
+
+    .mobile-menu summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .mobile-menu summary svg {
+      fill: none;
+      height: 18px;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-width: 2;
+      width: 18px;
+    }
+
+    .mobile-nav {
+      background: rgba(255, 255, 255, 0.98);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-hover);
+      display: grid;
+      gap: 2px;
+      min-width: 190px;
+      padding: 8px;
+      position: absolute;
+      right: 0;
+      top: calc(100% + 8px);
+      z-index: 82;
+    }
+
+    .mobile-nav a {
+      border-radius: 7px;
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+
+    .mobile-nav a:hover,
+    .mobile-nav a:focus-visible,
+    .mobile-nav a.active {
+      background: var(--theorem-soft);
+    }
+  }
+</style>

@@ -1,0 +1,437 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import { site } from "../data/site.js";
+
+const openProblems = [
+  "What makes an interpretability method provable rather than only plausible?",
+  "How can large-model explanations become actionable evidence for debugging and intervention?",
+  "What systems make interpretability reproducible, comparable, and deployable?",
+  "How can interactive explanations support decisions, control, and human-AI workflows?",
+  "How can PAI methods support scientific hypothesis generation?"
+];
+---
+
+<BaseLayout title="Join Us" description="Join PAI Lab in making interpretability provable, actionable, and useful in real AI workflows.">
+  <PageHero
+    eyebrow="Join Us"
+    title="Join the PAI problem."
+    lead="We are looking for researchers who want to make interpretability provable in theory, actionable in systems, and useful in real workflows."
+  />
+
+  <section class="section compact">
+    <div class="container join-shell">
+      <section class="join-console" aria-label="PAI Lab application console">
+        <div class="console-toolbar" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <strong>pai-lab/join-us</strong>
+        </div>
+        <div class="console-grid">
+          <article class="console-card">
+            <span class="console-label">profile.match()</span>
+            <h2>Who We Are Looking For</h2>
+            <p>Students and collaborators with backgrounds in machine learning, theory, NLP, vision, HCI, systems, scientific AI, or evaluation.</p>
+          </article>
+
+          <article class="console-card opportunity-card">
+            <span class="console-label">opportunities.fetch()</span>
+            <h2>Opportunities</h2>
+            <div class="opportunity-list">
+              <div>
+                <span>PhD positions</span>
+                <strong>Fall 2027</strong>
+              </div>
+              <div>
+                <span>Postdocs, RAs, visiting PhD students, collaborators</span>
+                <strong>Flexible timeline</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="problem-terminal" data-problem-terminal data-problems={JSON.stringify(openProblems)} aria-label="Open Problems terminal">
+        <div class="terminal-header">
+          <div>
+            <span class="console-label">open_problems.stream()</span>
+            <h2>Open Problems</h2>
+          </div>
+          <span class="run-state">running</span>
+        </div>
+
+        <div class="typing-window" aria-live="polite">
+          <span class="prompt" aria-hidden="true">pai&gt;</span>
+          <span class="typed-text" data-problem-output>{openProblems[0]}</span>
+          <span class="cursor" aria-hidden="true"></span>
+        </div>
+
+        <ol class="problem-log">
+          {openProblems.map((problem, index) => (
+            <li>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <p>{problem}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section class="apply-panel">
+        <div>
+          <span class="console-label">submit.application()</span>
+          <h2>How to Apply</h2>
+          <p>Email your CV, academic transcript, and a brief research plan to PAI Lab. Prior publications are not required for PhD applicants; long-term commitment to careful research matters.</p>
+        </div>
+        <div class="button-row">
+          <a class="button" href={`mailto:${site.contactEmail}?subject=PAI%20Lab%20Application`}>Email {site.contactEmail}</a>
+          <a class="button secondary" href={site.piHomepage}>PI homepage</a>
+        </div>
+      </section>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .join-shell {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: minmax(0, 0.88fr) minmax(360px, 1.12fr);
+  }
+
+  .join-console,
+  .problem-terminal,
+  .apply-panel {
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .join-console,
+  .problem-terminal {
+    min-height: 100%;
+  }
+
+  .console-toolbar {
+    align-items: center;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(245, 245, 247, 0.88)),
+      linear-gradient(90deg, rgba(0, 113, 227, 0.1), transparent);
+    border-bottom: 1px solid var(--line-soft);
+    display: flex;
+    gap: 7px;
+    min-height: 44px;
+    padding: 10px 14px;
+  }
+
+  .console-toolbar span {
+    border-radius: 999px;
+    height: 9px;
+    width: 9px;
+  }
+
+  .console-toolbar span:nth-child(1) {
+    background: #ff5f57;
+  }
+
+  .console-toolbar span:nth-child(2) {
+    background: #ffbd2e;
+  }
+
+  .console-toolbar span:nth-child(3) {
+    background: #28c840;
+  }
+
+  .console-toolbar strong {
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 750;
+    margin-left: 8px;
+  }
+
+  .console-grid {
+    display: grid;
+    gap: 0;
+  }
+
+  .console-card {
+    display: grid;
+    gap: 10px;
+    padding: clamp(20px, 2.4vw, 28px);
+  }
+
+  .console-card:not(:last-child) {
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .console-label {
+    color: var(--theorem);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 750;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: clamp(1.45rem, 2.2vw, 2rem);
+  }
+
+  p {
+    color: var(--muted);
+  }
+
+  .opportunity-list {
+    display: grid;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .opportunity-list div {
+    align-items: center;
+    background: rgba(245, 245, 247, 0.84);
+    border: 1px solid var(--line-soft);
+    border-radius: 8px;
+    display: grid;
+    gap: 4px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 12px;
+  }
+
+  .opportunity-list span {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .opportunity-list strong {
+    color: var(--ink);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    text-align: right;
+  }
+
+  .terminal-header {
+    align-items: center;
+    border-bottom: 1px solid var(--line-soft);
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    padding: clamp(20px, 2.4vw, 28px) clamp(20px, 2.4vw, 28px) 16px;
+  }
+
+  .terminal-header > div {
+    display: grid;
+    gap: 8px;
+  }
+
+  .run-state {
+    align-items: center;
+    background: var(--science-soft);
+    border: 1px solid rgba(36, 138, 61, 0.18);
+    border-radius: 999px;
+    color: var(--science);
+    display: inline-flex;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 750;
+    gap: 6px;
+    padding: 5px 10px;
+  }
+
+  .run-state::before {
+    animation: pulse 1.6s ease-in-out infinite;
+    background: currentColor;
+    border-radius: 999px;
+    content: "";
+    height: 6px;
+    width: 6px;
+  }
+
+  .typing-window {
+    align-items: start;
+    background:
+      linear-gradient(180deg, rgba(29, 29, 31, 0.96), rgba(36, 36, 39, 0.96)),
+      radial-gradient(circle at 12% 0%, rgba(0, 113, 227, 0.22), transparent 34%);
+    color: #f5f5f7;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    min-height: 126px;
+    padding: clamp(18px, 2.3vw, 26px);
+  }
+
+  .prompt,
+  .typed-text {
+    font-family: var(--font-mono);
+    font-size: clamp(0.94rem, 1.35vw, 1.08rem);
+    line-height: 1.55;
+  }
+
+  .prompt {
+    color: #7fc2ff;
+    font-weight: 760;
+  }
+
+  .typed-text {
+    overflow-wrap: anywhere;
+  }
+
+  .cursor {
+    animation: cursor-blink 1s steps(2, start) infinite;
+    background: #7fc2ff;
+    height: 1.35em;
+    margin-top: 0.22em;
+    width: 8px;
+  }
+
+  .problem-log {
+    counter-reset: problem;
+    display: grid;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .problem-log li {
+    align-items: start;
+    border-top: 1px solid var(--line-soft);
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 34px minmax(0, 1fr);
+    list-style: none;
+    padding: 14px clamp(18px, 2.3vw, 26px);
+  }
+
+  .problem-log span {
+    color: var(--theorem);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 750;
+    padding-top: 2px;
+  }
+
+  .problem-log p {
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .apply-panel {
+    align-items: center;
+    display: grid;
+    gap: 20px;
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: clamp(22px, 3vw, 32px);
+  }
+
+  .apply-panel > div:first-child {
+    display: grid;
+    gap: 10px;
+  }
+
+  @keyframes cursor-blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes pulse {
+    50% {
+      box-shadow: 0 0 0 6px rgba(36, 138, 61, 0.12);
+      opacity: 0.6;
+    }
+  }
+
+  @media (max-width: 980px) {
+    .join-shell,
+    .apply-panel {
+      grid-template-columns: 1fr;
+    }
+
+    .apply-panel {
+      align-items: start;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .terminal-header {
+      align-items: start;
+      flex-direction: column;
+    }
+
+    .typing-window {
+      grid-template-columns: 1fr;
+      min-height: 150px;
+    }
+
+    .cursor {
+      height: 8px;
+      margin-top: 0;
+      width: 42px;
+    }
+
+    .opportunity-list div {
+      align-items: start;
+      grid-template-columns: 1fr;
+    }
+
+    .opportunity-list strong {
+      text-align: left;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cursor,
+    .run-state::before {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  const terminal = document.querySelector<HTMLElement>("[data-problem-terminal]");
+
+  if (terminal) {
+    const output = terminal.querySelector<HTMLElement>("[data-problem-output]");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const problems = JSON.parse(terminal.dataset.problems ?? "[]") as string[];
+
+    if (output && problems.length > 0 && !reducedMotion.matches) {
+      let problemIndex = 0;
+      let characterIndex = 0;
+      let deleting = false;
+
+      const tick = () => {
+        const text = problems[problemIndex] ?? "";
+        output.textContent = text.slice(0, characterIndex);
+
+        if (!deleting && characterIndex < text.length) {
+          characterIndex += 1;
+          window.setTimeout(tick, 28);
+          return;
+        }
+
+        if (!deleting && characterIndex === text.length) {
+          deleting = true;
+          window.setTimeout(tick, 1900);
+          return;
+        }
+
+        if (deleting && characterIndex > 0) {
+          characterIndex -= 1;
+          window.setTimeout(tick, 14);
+          return;
+        }
+
+        deleting = false;
+        problemIndex = (problemIndex + 1) % problems.length;
+        window.setTimeout(tick, 260);
+      };
+
+      output.textContent = "";
+      tick();
+    }
+  }
+</script>

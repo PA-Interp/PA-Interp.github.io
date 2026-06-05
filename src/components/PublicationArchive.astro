@@ -1,0 +1,405 @@
+---
+import { getCollection } from "astro:content";
+import { researchAreas } from "../data/researchAreas.js";
+import { withBase } from "../data/site.js";
+
+interface Publication {
+  id: string;
+  title: string;
+  authors: string;
+  authorsHtml?: string;
+  mentoredAuthors?: string[];
+  venue: string;
+  venueShort: string;
+  year: number;
+  type: string;
+  abstract: string;
+  summary: string;
+  primaryTopic: string;
+  secondaryTopics: string[];
+  tags: string[];
+  links: Array<{ label: string; type: string; url: string }>;
+  artifacts: string[];
+  representative: boolean;
+  classificationConfidence: string;
+  needsReview: boolean;
+}
+
+interface Props {
+  publications: Publication[];
+}
+
+const { publications } = Astro.props;
+const years = [...new Set(publications.map((paper) => paper.year))].sort((a, b) => b - a);
+const topics = researchAreas.map((area) => area.title);
+const venues = [...new Set(publications.map((paper) => paper.venueShort).filter(Boolean))].sort();
+const artifacts = [...new Set(publications.flatMap((paper) => paper.artifacts ?? []))].sort();
+const teamEntries = await getCollection("team");
+const memberSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const escapeHtml = (value: string) =>
+  value.replace(/[&<>"']/g, (char) => {
+    const entities: Record<string, string> = {
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    };
+    return entities[char];
+  });
+const teamAuthorLinks = teamEntries
+  .map((entry) => ({
+    name: entry.data.name,
+    href: `${withBase("/team/")}#member-${memberSlug(entry.data.name)}`
+  }))
+  .sort((a, b) => b.name.length - a.name.length);
+const linkTeamAuthors = (paper: Publication) => {
+  const source = paper.authorsHtml || escapeHtml(paper.authors);
+
+  return teamAuthorLinks.reduce((html, member) => {
+    const pattern = new RegExp(`\\b${escapeRegExp(member.name)}\\b`, "g");
+    return html.replace(
+      pattern,
+      `<a class="team-author-link" href="${member.href}" aria-label="View ${member.name} in the team directory">${member.name}</a>`
+    );
+  }, source);
+};
+---
+
+<section class="archive" data-publication-archive>
+  <div class="publication-legend surface" aria-label="Publication author notation">
+    <span><strong>*</strong> equal contribution</span>
+    <span><strong>†</strong> corresponding author</span>
+    <span><strong>__</strong> / <span class="mentored-author">underlined names</span> students mentored by the PI</span>
+  </div>
+
+  <div class="controls surface" aria-label="Publication filters">
+    <label>
+      Search
+      <input data-filter="search" type="search" placeholder="Title, author, venue, abstract..." />
+    </label>
+    <label>
+      Year
+      <select data-filter="year">
+        <option value="">All years</option>
+        {years.map((year) => <option value={year}>{year}</option>)}
+      </select>
+    </label>
+    <label>
+      Topic
+      <select data-filter="topic">
+        <option value="">All topics</option>
+        {topics.map((topic) => <option value={topic}>{topic}</option>)}
+      </select>
+    </label>
+    <label>
+      Venue
+      <select data-filter="venue">
+        <option value="">All venues</option>
+        {venues.map((venue) => <option value={venue}>{venue}</option>)}
+      </select>
+    </label>
+    <label>
+      Artifact
+      <select data-filter="artifact">
+        <option value="">All artifacts</option>
+        {artifacts.map((artifact) => <option value={artifact}>{artifact}</option>)}
+      </select>
+    </label>
+    <div class="view-toggle" role="group" aria-label="Publication view density">
+      <button type="button" data-view="readable" class="active" aria-pressed="true">Readable</button>
+      <button type="button" data-view="compact" aria-pressed="false">Compact</button>
+    </div>
+  </div>
+
+  <p class="result-count" aria-live="polite">
+    Showing <span data-result-count>{publications.length}</span> of {publications.length} publications.
+  </p>
+
+  <div class="publication-list">
+    {publications.map((paper) => (
+      <article
+        class="publication surface"
+        data-publication
+        data-year={paper.year}
+        data-topics={[paper.primaryTopic, ...(paper.secondaryTopics ?? [])].join(" | ")}
+        data-venue={paper.venueShort}
+        data-artifacts={(paper.artifacts ?? []).join(" ")}
+        data-search={`${paper.title} ${paper.authors} ${paper.venue} ${paper.summary} ${paper.abstract} ${(paper.tags ?? []).join(" ")}`.toLowerCase()}
+      >
+        <div class="publication-meta">
+          <span>{paper.year}</span>
+          <span>{paper.venueShort || paper.type}</span>
+          {paper.representative && <span>Representative</span>}
+        </div>
+        <h3>{paper.title}</h3>
+        <p class="authors" set:html={linkTeamAuthors(paper)}></p>
+        <p class="venue">{paper.venue}</p>
+        <p class="summary">{paper.summary}</p>
+        <div class="tag-list">
+          <span class="tag">{paper.primaryTopic}</span>
+          {paper.secondaryTopics.map((topic) => <span class="tag secondary">{topic}</span>)}
+        </div>
+        {paper.links.length > 0 && (
+          <div class="paper-links">
+            {paper.links.map((link) => (
+              <a href={link.url}>{link.label}</a>
+            ))}
+          </div>
+        )}
+      </article>
+    ))}
+  </div>
+</section>
+
+<script>
+  // @ts-nocheck
+  const archive = document.querySelector("[data-publication-archive]");
+  if (archive) {
+    const controls = archive.querySelectorAll("[data-filter]");
+    const count = archive.querySelector("[data-result-count]");
+    const papers = [...archive.querySelectorAll("[data-publication]")];
+    const buttons = archive.querySelectorAll("[data-view]");
+    const params = new URLSearchParams(window.location.search);
+
+    const readFilters = () => Object.fromEntries([...controls].map((control) => [control.dataset.filter, control.value.toLowerCase()]));
+
+    const applyFilters = () => {
+      const filters = readFilters();
+      let visible = 0;
+      for (const paper of papers) {
+        const matchesSearch = !filters.search || paper.dataset.search.includes(filters.search);
+        const matchesYear = !filters.year || paper.dataset.year === filters.year;
+        const matchesTopic = !filters.topic || paper.dataset.topics.toLowerCase().includes(filters.topic);
+        const matchesVenue = !filters.venue || paper.dataset.venue.toLowerCase() === filters.venue;
+        const matchesArtifact = !filters.artifact || paper.dataset.artifacts.toLowerCase().split(" ").includes(filters.artifact);
+        const show = matchesSearch && matchesYear && matchesTopic && matchesVenue && matchesArtifact;
+        paper.hidden = !show;
+        if (show) visible += 1;
+      }
+      if (count) count.textContent = String(visible);
+    };
+
+    controls.forEach((control) => control.addEventListener("input", applyFilters));
+    controls.forEach((control) => {
+      const value = params.get(control.dataset.filter);
+      if (value) control.value = value;
+    });
+    applyFilters();
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const compact = button.dataset.view === "compact";
+        archive.classList.toggle("compact-view", compact);
+        buttons.forEach((item) => {
+          const active = item === button;
+          item.classList.toggle("active", active);
+          item.setAttribute("aria-pressed", String(active));
+        });
+      });
+    });
+  }
+</script>
+
+<style>
+  .archive {
+    display: grid;
+    gap: 18px;
+  }
+
+  .publication-legend {
+    align-items: center;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    padding: 14px 16px;
+  }
+
+  .publication-legend span {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 800;
+  }
+
+  :global(.mentored-author) {
+    color: var(--ink);
+    font-weight: 850;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgba(0, 113, 227, 0.55);
+    text-underline-offset: 0.18em;
+  }
+
+  .controls {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: minmax(220px, 1.4fr) repeat(4, minmax(130px, 0.8fr)) auto;
+    padding: 16px;
+  }
+
+  label {
+    color: var(--muted);
+    display: grid;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 750;
+    gap: 6px;
+    text-transform: uppercase;
+  }
+
+  input,
+  select {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--ink);
+    min-height: 42px;
+    padding: 8px 10px;
+    text-transform: none;
+  }
+
+  input:focus,
+  select:focus {
+    border-color: rgba(0, 113, 227, 0.38);
+    outline: 3px solid rgba(0, 113, 227, 0.12);
+  }
+
+  .view-toggle {
+    align-items: end;
+    display: flex;
+    gap: 6px;
+  }
+
+  .view-toggle button {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--ink);
+    cursor: pointer;
+    font-weight: 650;
+    min-height: 42px;
+    padding: 8px 12px;
+  }
+
+  .view-toggle button.active {
+    background: var(--ink);
+    color: #fff;
+  }
+
+  .result-count {
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+  }
+
+  .publication-list {
+    display: grid;
+    gap: 14px;
+  }
+
+  .publication {
+    display: grid;
+    gap: 10px;
+    padding: 22px;
+  }
+
+  .publication[hidden] {
+    display: none;
+  }
+
+  .publication-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .publication-meta span {
+    background: #f5f5f7;
+    border: 1px solid var(--line-soft);
+    border-radius: 999px;
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 3px 8px;
+  }
+
+  .authors,
+  .venue,
+  .summary {
+    color: var(--muted);
+  }
+
+  .authors {
+    font-weight: 700;
+  }
+
+  .authors :global(.team-author-link) {
+    border-bottom: 1px solid rgba(0, 113, 227, 0.32);
+    color: var(--theorem);
+    text-decoration: none;
+    transition:
+      border-color 160ms ease,
+      color 160ms ease;
+  }
+
+  .authors :global(.team-author-link:hover) {
+    border-bottom-color: currentColor;
+    color: var(--action-strong);
+  }
+
+  .paper-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 4px;
+  }
+
+  .paper-links a {
+    border-bottom: 1px solid rgba(0, 113, 227, 0.35);
+    color: var(--theorem);
+    font-weight: 650;
+    text-decoration: none;
+  }
+
+  .paper-links a:hover {
+    border-bottom-color: currentColor;
+    color: var(--action-strong);
+  }
+
+  .compact-view .publication {
+    gap: 6px;
+    padding: 16px;
+  }
+
+  .compact-view .summary,
+  .compact-view .venue,
+  .compact-view .tag-list {
+    display: none;
+  }
+
+  .compact-view .publication h3 {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 1080px) {
+    .controls {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 620px) {
+    .controls {
+      grid-template-columns: 1fr;
+    }
+
+    .view-toggle {
+      align-items: stretch;
+    }
+
+    .view-toggle button {
+      flex: 1;
+    }
+  }
+</style>

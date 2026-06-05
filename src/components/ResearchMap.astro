@@ -1,0 +1,399 @@
+---
+import { researchAreas } from "../data/researchAreas.js";
+
+const baseUrl = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const accents = [
+  { color: "#0071e3", soft: "#e8f2ff" },
+  { color: "#5856d6", soft: "#eeeeff" },
+  { color: "#6e6e73", soft: "#f0f0f2" },
+  { color: "#0a84ff", soft: "#e8f2ff" },
+  { color: "#248a3d", soft: "#eaf7ed" }
+];
+const indexById = new Map(researchAreas.map((area, index) => [area.id, index]));
+const connectionMap = Object.fromEntries(researchAreas.map((area) => [area.id, area.connectsTo]));
+const links = researchAreas.flatMap((area) =>
+  area.connectsTo
+    .filter((targetId) => (indexById.get(area.id) ?? 0) < (indexById.get(targetId) ?? 0))
+    .map((targetId) => ({ from: area.id, to: targetId }))
+);
+const linePath = (from: string, to: string, index: number) => {
+  const fromIndex = indexById.get(from) ?? 0;
+  const toIndex = indexById.get(to) ?? 0;
+  const x1 = 100 + fromIndex * 200;
+  const x2 = 100 + toIndex * 200;
+  const distance = Math.abs(toIndex - fromIndex);
+  const lift = distance > 2 ? 26 : 52;
+  const controlY = lift + (index % 2) * 24;
+
+  return `M ${x1} 102 C ${x1 + 78} ${controlY}, ${x2 - 78} ${controlY}, ${x2} 102`;
+};
+---
+
+<section class="research-map" aria-label="PAI research map" data-research-map data-connections={JSON.stringify(connectionMap)}>
+  <div class="map-rail" aria-hidden="true">
+    <span>Theory</span>
+    <span>Large Models</span>
+    <span>Systems</span>
+    <span>Interaction</span>
+    <span>Science</span>
+  </div>
+  <div class="map-frame">
+    <svg class="map-links" viewBox="0 0 1000 180" preserveAspectRatio="none" aria-hidden="true">
+      {links.map((link, index) => (
+        <path
+          class="map-link"
+          data-link-from={link.from}
+          data-link-to={link.to}
+          d={linePath(link.from, link.to, index)}
+          style={`--link-delay: ${index * 120}ms`}
+        />
+      ))}
+    </svg>
+    <div class="map-grid">
+      {researchAreas.map((area, index) => {
+        const accent = accents[index % accents.length];
+
+        return (
+          <a
+            class={`research-node node-${index + 1}`}
+            data-node={area.id}
+            data-reveal
+            href={`${baseUrl}research/#${area.id}`}
+            style={`--reveal-delay: ${index * 65}ms; --node-accent: ${accent.color}; --node-soft: ${accent.soft};`}
+          >
+            <div class="node-top">
+              <span class="node-index">0{index + 1}</span>
+              <span class="node-dot" aria-hidden="true"></span>
+            </div>
+            <h3>{area.title}</h3>
+            <p>{area.question}</p>
+            <div class="tag-list">
+              {area.tags.map((tag) => <span class="tag">{tag}</span>)}
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+<style>
+  .research-map {
+    display: grid;
+    gap: 16px;
+  }
+
+  .map-rail {
+    align-items: center;
+    color: var(--muted);
+    display: grid;
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    font-weight: 700;
+    gap: 14px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    letter-spacing: 0;
+  }
+
+  .map-rail span {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    min-width: 0;
+    white-space: nowrap;
+  }
+
+  .map-rail span:not(:last-child)::after {
+    background: var(--line);
+    content: "";
+    flex: 1 1 auto;
+    height: 1px;
+    min-width: 28px;
+  }
+
+  .map-grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    position: relative;
+    z-index: 1;
+  }
+
+  .map-frame {
+    isolation: isolate;
+    position: relative;
+  }
+
+  .map-links {
+    height: 100%;
+    inset: 0;
+    overflow: visible;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .map-link {
+    animation: link-drift 7s linear infinite;
+    animation-delay: var(--link-delay, 0ms);
+    fill: none;
+    opacity: 0.42;
+    stroke: rgba(0, 0, 0, 0.16);
+    stroke-dasharray: 4 10;
+    stroke-linecap: round;
+    stroke-width: 1.1;
+    transition:
+      opacity 180ms ease,
+      stroke 180ms ease,
+      stroke-width 180ms ease;
+  }
+
+  .research-node {
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--ink);
+    display: grid;
+    gap: 10px;
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    isolation: isolate;
+    min-height: 224px;
+    overflow: hidden;
+    padding: 16px;
+    position: relative;
+    text-decoration: none;
+    transition:
+      background 180ms ease,
+      border-color 180ms ease,
+      opacity 180ms ease,
+      box-shadow 180ms ease,
+      transform 180ms ease;
+  }
+
+  .research-node::before {
+    background:
+      linear-gradient(120deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)),
+      radial-gradient(circle at 22% 18%, rgba(0, 113, 227, 0.12), transparent 36%);
+    content: "";
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transform: translateX(-36%);
+    transition:
+      opacity 220ms ease,
+      transform 540ms cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 0;
+  }
+
+  .research-node::after {
+    background: var(--node-accent, var(--theorem));
+    content: "";
+    height: 2px;
+    inset: 0 0 auto;
+    opacity: 0.72;
+    position: absolute;
+    transform: scaleX(0.22);
+    transform-origin: left;
+    transition:
+      opacity 180ms ease,
+      transform 220ms cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+  }
+
+  .research-node > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  .research-node:hover,
+  .research-node:focus-visible {
+    background: #fff;
+    border-color: color-mix(in srgb, var(--node-accent, var(--theorem)) 34%, var(--line));
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-3px);
+  }
+
+  .research-node:hover::before,
+  .research-node:focus-visible::before {
+    opacity: 1;
+    transform: translateX(36%);
+  }
+
+  .research-node:hover::after,
+  .research-node:focus-visible::after,
+  .research-node.is-active::after,
+  .research-node.is-linked::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+  .research-node:active {
+    transform: translateY(0) scale(0.995);
+  }
+
+  .research-map.is-filtered .research-node {
+    opacity: 0.38;
+  }
+
+  .research-map.is-filtered .research-node.is-active,
+  .research-map.is-filtered .research-node.is-linked {
+    opacity: 1;
+  }
+
+  .research-node.is-active {
+    background: #fff;
+    border-color: color-mix(in srgb, var(--node-accent, var(--theorem)) 38%, var(--line));
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+  }
+
+  .research-node.is-linked {
+    border-color: color-mix(in srgb, var(--node-accent, var(--theorem)) 24%, var(--line));
+  }
+
+  .research-map.is-filtered .map-link {
+    opacity: 0.12;
+  }
+
+  .research-map.is-filtered .map-link.is-active {
+    opacity: 0.88;
+    stroke: var(--theorem);
+    stroke-width: 2;
+  }
+
+  .node-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .node-index {
+    color: var(--theorem);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 750;
+  }
+
+  .node-dot {
+    background: var(--node-accent, var(--theorem));
+    border-radius: 999px;
+    box-shadow: 0 0 0 5px var(--node-soft, var(--theorem-soft));
+    height: 7px;
+    width: 7px;
+  }
+
+  .research-node h3 {
+    font-size: clamp(0.98rem, 1.22vw, 1.12rem);
+    line-height: 1.15;
+  }
+
+  .research-node p {
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.43;
+  }
+
+  .research-node .tag-list {
+    align-content: start;
+    margin-top: 4px;
+  }
+
+  .research-node .tag {
+    font-size: 0.68rem;
+    padding: 3px 8px;
+  }
+
+  @media (max-width: 1120px) {
+    .map-rail {
+      display: none;
+    }
+
+    .map-links {
+      display: none;
+    }
+
+    .map-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .research-node {
+      min-height: 0;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .map-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .research-node {
+      min-height: 0;
+    }
+  }
+
+  @keyframes link-drift {
+    to {
+      stroke-dashoffset: -56;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .map-link {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  const maps = Array.from(document.querySelectorAll<HTMLElement>("[data-research-map]"));
+
+  maps.forEach((map) => {
+    const connections = JSON.parse(map.dataset.connections ?? "{}") as Record<string, string[]>;
+    const nodes = Array.from(map.querySelectorAll<HTMLElement>("[data-node]"));
+    const lines = Array.from(map.querySelectorAll<SVGPathElement>("[data-link-from]"));
+
+    const reset = () => {
+      map.classList.remove("is-filtered");
+      nodes.forEach((node) => node.classList.remove("is-active", "is-linked"));
+      lines.forEach((line) => line.classList.remove("is-active"));
+    };
+
+    const setActive = (activeId: string) => {
+      const activeLinks = connections[activeId] ?? [];
+      map.classList.add("is-filtered");
+
+      nodes.forEach((node) => {
+        const nodeId = node.dataset.node ?? "";
+        const reverseLinks = connections[nodeId] ?? [];
+        const isActive = nodeId === activeId;
+        const isLinked = !isActive && (activeLinks.includes(nodeId) || reverseLinks.includes(activeId));
+
+        node.classList.toggle("is-active", isActive);
+        node.classList.toggle("is-linked", isLinked);
+      });
+
+      lines.forEach((line) => {
+        const from = line.dataset.linkFrom;
+        const to = line.dataset.linkTo;
+        line.classList.toggle("is-active", from === activeId || to === activeId);
+      });
+    };
+
+    nodes.forEach((node) => {
+      const nodeId = node.dataset.node;
+      if (!nodeId) return;
+
+      node.addEventListener("pointerenter", () => setActive(nodeId));
+      node.addEventListener("focusin", () => setActive(nodeId));
+    });
+
+    map.addEventListener("pointerleave", reset);
+    map.addEventListener("focusout", () => {
+      window.setTimeout(() => {
+        if (!map.contains(document.activeElement)) reset();
+      }, 0);
+    });
+  });
+</script>

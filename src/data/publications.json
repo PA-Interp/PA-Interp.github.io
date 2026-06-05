@@ -1,0 +1,2793 @@
+[
+  {
+    "id": "2026-bayesian-gated-non-negative-contrastive-learning",
+    "title": "Bayesian Gated Non-Negative Contrastive Learning.",
+    "authors": "Peng Cui* , Jiahao Zhang* , Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Peng Cui*</span>, <span class=\"mentored-author\">Jiahao Zhang*</span>, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Peng Cui",
+      "Jiahao Zhang"
+    ],
+    "venue": "The Forty-Third International Conference on Machine Learning (ICML 2026).",
+    "venueShort": "ICML",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Bayesian Gated Non-Negative Contrastive Learning as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "ICML"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2605.28441"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 1,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "low",
+    "needsReview": true,
+    "notes": ""
+  },
+  {
+    "id": "2026-understanding-generalization-and-forgetting-in-in-context-continual-learning",
+    "title": "Understanding Generalization and Forgetting in In-Context Continual Learning.",
+    "authors": "Guangyu Li* , Meng Ding* , Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Guangyu Li*</span>, <span class=\"mentored-author\">Meng Ding*</span>, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Guangyu Li",
+      "Meng Ding"
+    ],
+    "venue": "The Forty-Third International Conference on Machine Learning (ICML 2026).",
+    "venueShort": "ICML",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Understanding Generalization and Forgetting in In-Context Continual Learning as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "ICML"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2605.28705"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 2,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "low",
+    "needsReview": true,
+    "notes": ""
+  },
+  {
+    "id": "2026-beyond-scalars-evaluating-and-understanding-llm-reasoning-via-geometric-progress-and-stabi",
+    "title": "Beyond Scalars: Evaluating and Understanding LLM Reasoning via Geometric Progress and Stability.",
+    "authors": "Xinyan Jiang , Ninghao Liu, Di Wang, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Xinyan Jiang</span>, Ninghao Liu, Di Wang, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Xinyan Jiang"
+    ],
+    "venue": "The Forty-Third International Conference on Machine Learning (ICML 2026).",
+    "venueShort": "ICML",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Beyond Scalars: Evaluating and Understanding LLM Reasoning via Geometric Progress and Stability as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "ICML"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2603.10384"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 3,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-multi-adapter-representation-interventions-via-energy-calibration",
+    "title": "Multi-Adapter Representation Interventions via Energy Calibration.",
+    "authors": "Manjiang Yu* , Hongji Li* , Junwei Chen, Xue Li, PRIYANKA SINGH, Yang Cao, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Manjiang Yu*</span>, <span class=\"mentored-author\">Hongji Li*</span>, Junwei Chen, Xue Li, PRIYANKA SINGH, Yang Cao, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Manjiang Yu",
+      "Hongji Li"
+    ],
+    "venue": "The Forty-Third International Conference on Machine Learning (ICML 2026).",
+    "venueShort": "ICML",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Multi-Adapter Representation Interventions via Energy Calibration as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "ICML"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2605.28722"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 4,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-algorithmic-recourse-of-in-context-learning-for-tabular-data",
+    "title": "Algorithmic Recourse of In-Context Learning for Tabular Data.",
+    "authors": "Wenshuo Dong* , Jiaming Zhang*, Shaopeng Fu, Hongbin Lin, Di Wang, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Wenshuo Dong*</span>, Jiaming Zhang*, Shaopeng Fu, Hongbin Lin, Di Wang, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Wenshuo Dong"
+    ],
+    "venue": "The Forty-Third International Conference on Machine Learning (ICML 2026).",
+    "venueShort": "ICML",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Algorithmic Recourse of In-Context Learning for Tabular Data as part of PAI's work on interactive explanations.",
+    "primaryTopic": "Interactive XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Interactive XAI",
+      "ICML"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2605.31272"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 5,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "low",
+    "needsReview": true,
+    "notes": ""
+  },
+  {
+    "id": "2026-beyond-fixed-biases-decoding-the-role-of-reasoning-uncertainty-in-mllm-modality-conflicts",
+    "title": "Beyond Fixed Biases: Decoding the Role of Reasoning Uncertainty in MLLM Modality Conflicts.",
+    "authors": "Zhuoran Zhang , Tengyue Wang , Xilin Gong, Yang Shi, Haotian Wang, Di Wang, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Zhuoran Zhang</span>, <span class=\"mentored-author\">Tengyue Wang</span>, Xilin Gong, Yang Shi, Haotian Wang, Di Wang, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Zhuoran Zhang",
+      "Tengyue Wang"
+    ],
+    "venue": "The Forty-Third International Conference on Machine Learning (ICML 2026).",
+    "venueShort": "ICML",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Beyond Fixed Biases: Decoding the Role of Reasoning Uncertainty in MLLM Modality Conflicts as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "ICML"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2511.02243"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 6,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-less-is-enough-synthesizing-diverse-data-in-feature-space-of-llms",
+    "title": "Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs.",
+    "authors": "Zhongzhi Li, Xuansheng Wu, Yijiang Li, Lijie Hu , Ninghao Liu.",
+    "authorsHtml": "Zhongzhi Li, Xuansheng Wu, Yijiang Li, <strong>Lijie Hu</strong>, Ninghao Liu.",
+    "mentoredAuthors": [],
+    "venue": "The Forty-Third International Conference on Machine Learning (ICML 2026).",
+    "venueShort": "ICML",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "The diversity of post-training data is critical for effective downstream performance in large language models (LLMs). Many existing approaches to constructing post-training data quantify diversity using text-based metrics that capture linguistic variation, but such metrics provide only weak signals for the task-relevant features that determine downstream performance. In this work, we introduce Feature Activation Coverage (FAC) which measures data diversity in an interpretable feature space. Building upon this metric, we further propose a diversity-driven data synthesis framework, named FAC Synthesis, that first uses a sparse autoencoder to identify missing features from a seed dataset, and then generates synthetic samples that explicitly reflect these features. Experiments show that our approach consistently improves both data diversity and downstream performance on various tasks, including instruction following, toxicity detection, reward modeling, and behavior steering. Interestingly, we identify a shared, interpretable feature space across model families (i.e., LLaMA, Mistral, and Qwen), enabling cross-model knowledge transfer. Our work provides a solid and practical methodology for exploring data-centric optimization of LLMs.",
+    "summary": "The diversity of post-training data is critical for effective downstream performance in large language models (LLMs).",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "ICML"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2602.10388"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 7,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": "Selected as an Oral paper (~0.7% acceptance rate)."
+  },
+  {
+    "id": "2026-beyond-external-monitors-enhancing-transparency-of-large-language-models-for-easier-monito",
+    "title": "Beyond External Monitors: Enhancing Transparency of Large Language Models for Easier Monitoring.",
+    "authors": "Guanxu Chen, Dongrui Liu, Tao Luo, Lijie Hu , Qihao Lin, Jing Shao.",
+    "authorsHtml": "Guanxu Chen, Dongrui Liu, Tao Luo, <strong>Lijie Hu</strong>, Qihao Lin, Jing Shao.",
+    "mentoredAuthors": [],
+    "venue": "The Forty-Third International Conference on Machine Learning (ICML 2026).",
+    "venueShort": "ICML",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "Large language models (LLMs) are becoming increasingly capable, but the mechanisms of their thinking and decision-making process remain unclear. Chain-of-thoughts (CoTs) have been commonly utilized to monitor LLMs, but this strategy fails to accurately reflect LLMs' thinking process. Techniques based on LLMs' hidden representations provide an inner perspective to monitor their latent thinking. However, previous methods only try to develop external monitors instead of making LLMs themselves easier to monitor. In this paper, we propose a novel method TELLME, improving the transparency of LLMs and helping monitors identify unsuitable and sensitive behaviors. Furthermore, we showcase the applications of TELLME on trustworthiness tasks (\\eg, safety risks monitoring tasks and detoxification tasks), where LLMs achieve consistent improvement in transparency and task performance. More crucially, we theoretically analyze the improvement of TELLME on LLMs' generalization ability through optimal transport theory.",
+    "summary": "Large language models (LLMs) are becoming increasingly capable, but the mechanisms of their thinking and decision-making process remain unclear.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "ICML"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2502.05242"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 8,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-controlling-repetition-in-protein-language-models",
+    "title": "Controlling Repetition in Protein Language Models.",
+    "authors": "Jiahao Zhang* , Zeqing Zhang* , Di Wang, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Jiahao Zhang*</span>, <span class=\"mentored-author\">Zeqing Zhang*</span>, Di Wang, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Jiahao Zhang",
+      "Zeqing Zhang"
+    ],
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026).",
+    "venueShort": "ICLR",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "Protein language models (PLMs) have enabled advances in structure prediction and de novo protein design, yet they frequently collapse into pathological repetition during generation. Unlike in text, where repetition merely reduces readability, in proteins it undermines structural confidence and functional viability. To unify this problem, we present the first systematic study of repetition in PLMs. We first propose quantitative metrics to characterize motif-level and homopolymer repetition and then demonstrate their negative impact on folding reliability. To address this challenge, we propose UCCS (Utility-Controlled Contrastive Steering), which steers protein generation with a constrained dataset. Instead of naively contrasting high- vs. low-repetition sequences, we construct contrastive sets that maximize differences in repetition while tightly controlling for structural utility. This disentanglement yields steering vectors that specifically target repetition without degrading foldability. Injected at inference, these vectors consistently reduce repetition without retraining or heuristic decoding. Experiments with ESM-3 and ProtGPT2 in CATH, UniRef50, and SCOP show that our method outperforms decoding penalties and other baselines, substantially lowering repetition while preserving AlphaFold confidence scores. Our results establish repetition control as a central challenge for PLMs and highlight dataset-guided steering as a principled approach for reliable protein generation.",
+    "summary": "Protein language models (PLMs) have enabled advances in structure prediction and de novo protein design, yet they frequently collapse into pathological repetition during generation.",
+    "primaryTopic": "XAI for Science",
+    "secondaryTopics": [
+      "Useful XAI in Large Models",
+      "Systems for XAI"
+    ],
+    "tags": [
+      "XAI for Science",
+      "Useful XAI in Large Models",
+      "Systems for XAI",
+      "ICLR",
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/forum?id=X0QxVexIJX"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2602.00782"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/JiahaoZhang-Public/Controlling-Repetition-in-Protein-Language-Models"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 9,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-the-price-of-amortized-inference-in-sparse-autoencoders",
+    "title": "The Price of Amortized Inference in Sparse Autoencoders.",
+    "authors": "Wenjie Sun , Di Wang, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Wenjie Sun</span>, Di Wang, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Wenjie Sun"
+    ],
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026).",
+    "venueShort": "ICLR",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies The Price of Amortized Inference in Sparse Autoencoders as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "ICLR",
+      "Paper",
+      "Code"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/forum?id=33wY6AI13k"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/wenjie1835/Local_Amotized_SAEs"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "code"
+    ],
+    "sourceOrder": 10,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-dissecting-representation-misalignment-in-contrastive-learning-via-influence-function",
+    "title": "Dissecting Representation Misalignment in Contrastive Learning via Influence Function.",
+    "authors": "Huanyi Xie* , Chenyang Ren* , Khouloud Saadi, Shu Yang, Zhen Tan, Jingfeng Zhang, Lijie Hu† , Di Wang†.",
+    "authorsHtml": "<span class=\"mentored-author\">Huanyi Xie*</span>, <span class=\"mentored-author\">Chenyang Ren*</span>, Khouloud Saadi, Shu Yang, Zhen Tan, Jingfeng Zhang, <strong>Lijie Hu†</strong>, Di Wang†.",
+    "mentoredAuthors": [
+      "Huanyi Xie",
+      "Chenyang Ren"
+    ],
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026).",
+    "venueShort": "ICLR",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Dissecting Representation Misalignment in Contrastive Learning via Influence Function as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [
+      "Interactive XAI"
+    ],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "Interactive XAI",
+      "ICLR",
+      "Paper",
+      "Preprint"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/forum?id=uDCCSXyqBE"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2411.11667"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint"
+    ],
+    "sourceOrder": 11,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-evaluating-data-influence-in-meta-learning",
+    "title": "Evaluating Data Influence in Meta Learning.",
+    "authors": "Chenyang Ren* , Huanyi Xie* , Shu Yang, Meng Ding, Dongrui Liu, Lijie Hu† , Di Wang†.",
+    "authorsHtml": "<span class=\"mentored-author\">Chenyang Ren*</span>, <span class=\"mentored-author\">Huanyi Xie*</span>, Shu Yang, Meng Ding, Dongrui Liu, <strong>Lijie Hu†</strong>, Di Wang†.",
+    "mentoredAuthors": [
+      "Chenyang Ren",
+      "Huanyi Xie"
+    ],
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026).",
+    "venueShort": "ICLR",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "As one of the most fundamental models, meta learning aims to effectively address few-shot learning challenges. However, it still faces significant issues related to the training data, such as training inefficiencies due to numerous low-contribution tasks in large datasets and substantial noise from incorrect labels. Thus, training data attribution methods are needed for meta learning. However, the dual-layer structure of mata learning complicates the modeling of training data contributions because of the interdependent influence between meta-parameters and task-specific parameters, making existing data influence evaluation tools inapplicable or inaccurate. To address these challenges, based on the influence function, we propose a general data attribution evaluation framework for meta-learning within the bilevel optimization framework. Our approach introduces task influence functions (task-IF) and instance influence functions (instance-IF) to accurately assess the impact of specific tasks and individual data points in closed forms. This framework comprehensively models data contributions across both the inner and outer training processes, capturing the direct effects of data points on meta-parameters as well as their indirect influence through task-specific parameters. We also provide several strategies to enhance computational efficiency and scalability. Experimental results demonstrate the framework's effectiveness in training data evaluation via several downstream tasks.",
+    "summary": "As one of the most fundamental models, meta learning aims to effectively address few-shot learning challenges.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "ICLR",
+      "paper",
+      "preprint"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/forum?id=0gh7haE5tc"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2501.15963"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint"
+    ],
+    "sourceOrder": 12,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-predicting-llm-output-length-via-entropy-guided-representations",
+    "title": "Predicting LLM Output Length via Entropy-Guided Representations.",
+    "authors": "Huanyi Xie, Yubin Chen, Liangyu Wang, Lijie Hu , Di Wang.",
+    "authorsHtml": "Huanyi Xie, Yubin Chen, Liangyu Wang, <strong>Lijie Hu</strong>, Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026).",
+    "venueShort": "ICLR",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "The long-tailed distribution of sequence lengths in LLM serving and reinforcement learning (RL) sampling causes significant computational waste due to excessive padding in batched inference. Existing methods rely on auxiliary models for static length prediction, but they incur high overhead, generalize poorly, and fail in stochastic\"one-to-many\"sampling scenarios. We introduce a lightweight framework that reuses the main model's internal hidden states for efficient length prediction. Our framework features two core components: 1) Entropy-Guided Token Pooling (EGTP), which uses on-the-fly activations and token entropy for highly accurate static prediction with negligible cost, and 2) Progressive Length Prediction (PLP), which dynamically estimates the remaining length at each decoding step to handle stochastic generation. To validate our approach, we build and release ForeLen, a comprehensive benchmark with long-sequence, Chain-of-Thought, and RL data. On ForeLen, EGTP achieves state-of-the-art accuracy, reducing MAE by 29.16\\% over the best baseline. Integrating our methods with a length-aware scheduler yields significant end-to-end throughput gains. Our work provides a new technical and evaluation baseline for efficient LLM inference.",
+    "summary": "The long-tailed distribution of sequence lengths in LLM serving and reinforcement learning (RL) sampling causes significant computational waste due to excessive padding in batched inference.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Systems for XAI",
+      "ICLR",
+      "paper",
+      "preprint"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/pdf?id=3loQDtveWI"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2602.11812"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint"
+    ],
+    "sourceOrder": 13,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-dual-kernel-adapter-expanding-spatial-horizons-for-data-constrained-medical-image-analysis",
+    "title": "Dual-Kernel Adapter: Expanding Spatial Horizons for Data-Constrained Medical Image Analysis.",
+    "authors": "Ziquan Zhu, Hanruo Zhu, Si-Yuan Lu, Xiang Li, Yanda Meng, Yunxiao Zhang, Gaojie Jin, Lu Yin, Lijie Hu , Di Wang, Lu Liu, Tianjin Huang.",
+    "authorsHtml": "Ziquan Zhu, Hanruo Zhu, Si-Yuan Lu, Xiang Li, Yanda Meng, Yunxiao Zhang, Gaojie Jin, Lu Yin, <strong>Lijie Hu</strong>, Di Wang, Lu Liu, Tianjin Huang.",
+    "mentoredAuthors": [],
+    "venue": "The Fourteenth International Conference on Learning Representations (ICLR 2026).",
+    "venueShort": "ICLR",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "Adapters have become a widely adopted strategy for efficient fine-tuning of large pretrained models, particularly in resource-constrained settings. However, their performance under extreme data scarcity, common in medical imaging due to high annotation costs, privacy regulations, and fragmented datasets, remains underexplored. In this work, we present the first comprehensive study of adapter-based fine-tuning for large pretrained models in low-data medical imaging scenarios. We find that, contrary to their promise, conventional adapters can degrade performance under severe data constraints, performing even worse than simple linear probing when trained on less than 1% of the corresponding training data. Through systematic analysis, we identify a sharp reduction in Effective Receptive Field (ERF) as a key factor behind this degradation. Motivated by these findings, we propose the Dual-Kernel Adapter (DKA), a lightweight module that expands spatial context via large-kernel convolutions while preserving local detail with small-kernel counterparts. Extensive experiments across diverse classification and segmentation benchmarks show that DKA significantly outperforms existing adapter methods, establishing new leading results in both data-constrained and data-rich regimes.",
+    "summary": "Adapters have become a widely adopted strategy for efficient fine-tuning of large pretrained models, particularly in resource-constrained settings.",
+    "primaryTopic": "XAI for Science",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI"
+    ],
+    "tags": [
+      "XAI for Science",
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "ICLR",
+      "paper"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/forum?id=Z6KGt1veeP"
+      }
+    ],
+    "artifacts": [
+      "paper"
+    ],
+    "sourceOrder": 14,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-towards-reasoning-preserving-unlearning-in-multimodal-large-language-models",
+    "title": "Towards Reasoning-Preserving Unlearning in Multimodal Large Language Models.",
+    "authors": "Hongji Li , Manjiang Yu , Junchi Yao , PRIYANKA SINGH, Xue Li, Di Wang, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Hongji Li</span>, <span class=\"mentored-author\">Manjiang Yu</span>, <span class=\"mentored-author\">Junchi Yao</span>, PRIYANKA SINGH, Xue Li, Di Wang, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Hongji Li",
+      "Manjiang Yu",
+      "Junchi Yao"
+    ],
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026 (CVPR 2026).",
+    "venueShort": "CVPR",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "Machine unlearning aims to erase requested data from trained models without full retraining. For Reasoning Multimodal Large Language Models (RMLLMs), this is uniquely challenging: intermediate chain-of-thought steps can still leak sensitive information even when final answers are forgotten, and overly aggressive interventions easily damage general reasoning ability. Yet no benchmark jointly evaluates how well unlearning methods suppress reasoning-level leakage while preserving reasoning competence. We address this gap with RMLLMU-Bench, the first benchmark for RMLLM unlearning that extends standard forgetting metrics with dedicated measures of reasoning leakage and reasoning retention. A systematic evaluation on RMLLMU-Bench reveals that existing unlearning methods for MLLMs and Large (Language) Reasoning Models (LRMs) either leave substantial leakage in the reasoning process or severely degrade reasoning performance. To address these gaps, we propose R-MUSE (Reasoning-preserving MLLM Unlearning via Subspace guidance and Adaptive Steering), a training-free and inference-time intervention framework that steers internal representations to forget both answers and reasoning traces while explicitly preserving general reasoning. Experiments on RMLLMU-Bench demonstrate that R-MUSE achieves a substantially better balance between effective forgetting and reasoning retention.",
+    "summary": "Machine unlearning aims to erase requested data from trained models without full retraining.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Systems for XAI",
+      "CVPR",
+      "preprint"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2512.17911"
+      }
+    ],
+    "artifacts": [
+      "preprint"
+    ],
+    "sourceOrder": 15,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-flattery-in-motion-benchmarking-and-analyzing-sycophancy-in-video-llms",
+    "title": "Flattery in Motion: Benchmarking and Analyzing Sycophancy in Video-LLMs.",
+    "authors": "Wenrui Zhou , Mohamed Hendy , Shu Yang, Qingsong Yang, Zikun Guo, Yuyu Luo, Lijie Hu† , Di Wang†.",
+    "authorsHtml": "<span class=\"mentored-author\">Wenrui Zhou</span>, <span class=\"mentored-author\">Mohamed Hendy</span>, Shu Yang, Qingsong Yang, Zikun Guo, Yuyu Luo, <strong>Lijie Hu†</strong>, Di Wang†.",
+    "mentoredAuthors": [
+      "Wenrui Zhou",
+      "Mohamed Hendy"
+    ],
+    "venue": "The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026 Main).",
+    "venueShort": "ACL",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "As video large language models (Video-LLMs) become increasingly integrated into real-world applications that demand grounded multimodal reasoning, ensuring their factual consistency and reliability is of critical importance. However, sycophancy, the tendency of these models to align with user input even when it contradicts the visual evidence, undermines their trustworthiness in such contexts. Current sycophancy research has largely overlooked its specific manifestations in the videolanguage domain, resulting in a notable absence of systematic benchmarks and targeted evaluations to understand how Video-LLMs respond under misleading user input. To fill this gap, we propose VISE(Video-LLM Sycophancy Benchmarking and Evaluation), the first benchmark designed to evaluate sycophantic behavior in state-of-the-art Video-LLMs across diverse question formats, prompt biases, and visual reasoning tasks. Specifically, VISEpioneeringly brings linguistic perspectives on sycophancy into the video domain, enabling fine-grained analysis across multiple sycophancy types and interaction patterns. Furthermore, we propose two potential training-free mitigation strategies revealing potential paths for reducing sycophantic bias: (i) enhancing visual grounding through interpretable key-frame selection and (ii) steering model behavior away from sycophancy via targeted, inference-time intervention on its internal neural representations. Our code is available at https://anonymous.4open.science/r/VideoSycophancy-567F.",
+    "summary": "As video large language models (Video-LLMs) become increasingly integrated into real-world applications that demand grounded multimodal reasoning, ensuring their factual consistency and reli",
+    "primaryTopic": "XAI for Science",
+    "secondaryTopics": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI"
+    ],
+    "tags": [
+      "XAI for Science",
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "ACL"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2506.07180"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 16,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-visual-self-fulfilling-alignment-shaping-safety-oriented-personas-via-threat-related-image",
+    "title": "Visual Self-Fulfilling Alignment: Shaping Safety-Oriented Personas via Threat-Related Images.",
+    "authors": "Qishun Yang, Shu Yang, Lijie Hu , Di Wang.",
+    "authorsHtml": "Qishun Yang, Shu Yang, <strong>Lijie Hu</strong>, Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026 Main).",
+    "venueShort": "ACL",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Visual Self-Fulfilling Alignment: Shaping Safety-Oriented Personas via Threat-Related Images as part of PAI's work on interactive explanations.",
+    "primaryTopic": "Interactive XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Interactive XAI",
+      "ACL"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2603.08486"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 17,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "low",
+    "needsReview": true,
+    "notes": ""
+  },
+  {
+    "id": "2026-deciphering-cultural-representations-in-large-language-models-via-sparse-autoencoders",
+    "title": "Deciphering Cultural Representations in Large Language Models via Sparse Autoencoders.",
+    "authors": "Chenye Zou , Difan Jiao , Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Chenye Zou</span>, <span class=\"mentored-author\">Difan Jiao</span>, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Chenye Zou",
+      "Difan Jiao"
+    ],
+    "venue": "The 64th Annual Meeting of the Association for Computational Linguistics (ACL 2026 Findings).",
+    "venueShort": "ACL",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Deciphering Cultural Representations in Large Language Models via Sparse Autoencoders as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "ACL"
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "url": "https://lijie-hu.github.io/publications/"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 18,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-pixel-adaptive-steering-via-position-wise-injection-with-exact-estimated-levels-under-a-su",
+    "title": "PIXEL: Adaptive Steering Via Position-wise Injection with eXact Estimated Levels under a Subspace Calibration.",
+    "authors": "Manjiang Yu* , Hongji Li* , Priyanka Singh, Xue Li, Di Wang, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Manjiang Yu*</span>, <span class=\"mentored-author\">Hongji Li*</span>, Priyanka Singh, Xue Li, Di Wang, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Manjiang Yu",
+      "Hongji Li"
+    ],
+    "venue": "The Web Conference (WWW 2026).",
+    "venueShort": "WWW",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "Reliable behavior control is central to deploying Large Language Models (LLMs) on the web. Activation steering offers a tuning-free route to align attributes (e.g., truthfulness) that ensure trustworthy generation. Prevailing approaches rely on coarse heuristics and lack a principled account of where to steer and how strongly to intervene. To this end, we propose Position-wise Injection with eXact Estimated Levels (PIXEL), a position-wise activation steering framework that, in contrast to prior work, learns a property-aligned subspace from dual views (tail-averaged and end-token) and selects intervention strength via a constrained geometric objective with a closed-form solution, thereby adapting to token-level sensitivity without global hyperparameter tuning. PIXEL further performs sample-level orthogonal residual calibration to refine the global attribute direction and employs a lightweight position-scanning routine to identify receptive injection sites. We additionally provide representation-level guarantees for the minimal-intervention rule, supporting reliable alignment. Across diverse models and evaluation paradigms, PIXEL consistently improves attribute alignment while preserving model general capabilities, offering a practical and principled method for LLMs' controllable generation. Our code is available at https://anonymous.4open.science/r/PIXEL-Adaptive-Steering-95DC",
+    "summary": "Reliable behavior control is central to deploying Large Language Models (LLMs) on the web.",
+    "primaryTopic": "XAI for Science",
+    "secondaryTopics": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI"
+    ],
+    "tags": [
+      "XAI for Science",
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "WWW",
+      "preprint",
+      "code"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2510.10205"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/V1centNevwake/PIXEL-Adaptive-Steering"
+      }
+    ],
+    "artifacts": [
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 19,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-intelligent-stain-free-histology-on-structural-colorimetric-nanocavities",
+    "title": "Intelligent Stain-free Histology on Structural Colorimetric Nanocavities.",
+    "authors": "Qizhe Chen*, Yifei Ren*, Lijie Hu* , Yanyan Li*, Wenyue Liang, Jin Wang, Han Gao, Xinhai Wang, Jiajun Li, Qiutao He, Yingfeng Zhu, Haifeng Hu, Qiwen Zhan, Imed Gallouzi, Jasmeen Merzaban, Di Wang, Zunguo Du, Xiaodong Gu, Qiaoqiang Gan.",
+    "authorsHtml": "Qizhe Chen*, Yifei Ren*, <strong>Lijie Hu*</strong>, Yanyan Li*, Wenyue Liang, Jin Wang, Han Gao, Xinhai Wang, Jiajun Li, Qiutao He, Yingfeng Zhu, Haifeng Hu, Qiwen Zhan, Imed Gallouzi, Jasmeen Merzaban, Di Wang, Zunguo Du, Xiaodong Gu, Qiaoqiang Gan.",
+    "mentoredAuthors": [],
+    "venue": "Advanced Science.",
+    "venueShort": "Advanced Science",
+    "year": 2026,
+    "type": "Journal Papers",
+    "abstract": "Optical microscopic imaging and analysis are indispensable in modern pathology for providing conclusive evidence in disease diagnosis. However, the current gold standard histological staining techniques, hematoxylin and eosin (H&E), can be inconsistent, costly, time‐consuming, and laborious. Although nanophotonic chips offer a promising stain‐free approach to revealing the optical features of healthy and cancerous tissue, their clinical adoption is hindered by the significant costs associated with top‐down lithography. This study introduces planar nanocavities‐on‐silicon (NOS) for nonstained histological imaging, eliminating the need for traditional staining and lateral nanopatterns. By depositing an approximately 270‐nm‐thick silicon nitride layer onto a standard silicon wafer, NOS slides produce vibrant structural colors via optical interference that is sensitive to local refractive index and thickness of tissue sections. This method simplifies the visualization of morphological features using conventional microscopes and reduces raw material and processing costs per test. Comparative imaging analyses between NOS and H&E‐stained slides show good agreement in key histological structures. Moreover, a deep‐learning model trained on over 2700 NOS images achieves >95% accuracy in distinguishing cancerous from healthy colorectal tissues. These results suggest NOS as a faster, inexpensive, chemical‐free, stain‐free platform that enables future AI‐assisted screening of colorectal cancer for improved pathological diagnostics.",
+    "summary": "Optical microscopic imaging and analysis are indispensable in modern pathology for providing conclusive evidence in disease diagnosis.",
+    "primaryTopic": "XAI for Science",
+    "secondaryTopics": [],
+    "tags": [
+      "XAI for Science",
+      "Advanced Science",
+      "paper"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202514340?af=R"
+      }
+    ],
+    "artifacts": [
+      "paper"
+    ],
+    "sourceOrder": 20,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-efficient-text-attributed-graph-learning-through-selective-annotation-and-graph-alignment",
+    "title": "Efficient Text-Attributed Graph Learning through Selective Annotation and Graph Alignment.",
+    "authors": "Huanyi Xie , Lijie Hu , Lu Yu, Tianhao Huang, Longfei Li, Meng Li, Jun Zhou, Di Wang.",
+    "authorsHtml": "<span class=\"mentored-author\">Huanyi Xie</span>, <strong>Lijie Hu</strong>, Lu Yu, Tianhao Huang, Longfei Li, Meng Li, Jun Zhou, Di Wang.",
+    "mentoredAuthors": [
+      "Huanyi Xie"
+    ],
+    "venue": "Transactions on Machine Learning Research (TMLR).",
+    "venueShort": "TMLR",
+    "year": 2026,
+    "type": "Journal Papers",
+    "abstract": "In the realm of Text-attributed Graphs (TAGs), traditional graph neural networks (GNNs) often fall short due to the complex textual information associated with each node. Recent methods have improved node representations by leveraging large language models (LLMs) to enhance node text features, but these approaches typically require extensive annotations or fine-tuning across all nodes, which is both time-consuming and costly. To overcome these challenges, we introduce GAGA, an efficient framework for TAG representation learning. GAGA reduces annotation time and cost by focusing on annotating only representative nodes and edges. It constructs an annotation graph that captures the topological relationships among these annotations. Furthermore, GAGA employs a two-level alignment module to effectively integrate the annotation graph with the TAG, aligning their underlying structures. Experiments show that GAGA achieves classification accuracies on par with or surpassing state-of-the-art methods while requiring only 1% of the data to be annotated, demonstrating its high efficiency.",
+    "summary": "In the realm of Text-attributed Graphs (TAGs), traditional graph neural networks (GNNs) often fall short due to the complex textual information associated with each node.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Interactive XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Interactive XAI",
+      "TMLR"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2506.07168"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 21,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-multimodal-deception-in-explainable-ai-concept-level-backdoor-attacks-on-concept-bottlenec",
+    "title": "Multimodal Deception in Explainable AI: Concept-Level Backdoor Attacks on Concept Bottleneck Models.",
+    "authors": "Songning Lai, Jiayu Yang, Yu Huang, Lijie Hu , TianlangXue, Zhangyi Hu, Jiaxu Li, Haicheng Liao, Zongyang Liu, Yutao Yue.",
+    "authorsHtml": "Songning Lai, Jiayu Yang, Yu Huang, <strong>Lijie Hu</strong>, TianlangXue, Zhangyi Hu, Jiaxu Li, Haicheng Liao, Zongyang Liu, Yutao Yue.",
+    "mentoredAuthors": [],
+    "venue": "Transactions on Machine Learning Research (TMLR).",
+    "venueShort": "TMLR",
+    "year": 2026,
+    "type": "Journal Papers",
+    "abstract": "",
+    "summary": "Studies Multimodal Deception in Explainable AI: Concept-Level Backdoor Attacks on Concept Bottleneck Models as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "TMLR"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/forum?id=bntZBG9fBY"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2410.04823"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 22,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-towards-representation-backdoor-on-clip-via-concept-confusion",
+    "title": "Towards Representation Backdoor on CLIP via Concept Confusion.",
+    "authors": "Junchi Liao* , Weimin Lyu*, Lijie Hu , Shaopeng Fu, Tianhao Huang, Shu Yang, Jie Li, Di Wang.",
+    "authorsHtml": "<span class=\"mentored-author\">Junchi Liao*</span>, Weimin Lyu*, <strong>Lijie Hu</strong>, Shaopeng Fu, Tianhao Huang, Shu Yang, Jie Li, Di Wang.",
+    "mentoredAuthors": [
+      "Junchi Liao"
+    ],
+    "venue": "Transactions on Machine Learning Research (TMLR), Minor Revision.",
+    "venueShort": "TMLR",
+    "year": 2026,
+    "type": "Journal Papers",
+    "abstract": "",
+    "summary": "Studies Towards Representation Backdoor on CLIP via Concept Confusion as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "TMLR"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2503.09095v2"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 23,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-usable-xai-10-strategies-towards-exploiting-explainability-in-the-llm-era",
+    "title": "Usable XAI: 10 Strategies Towards Exploiting Explainability in the LLM Era.",
+    "authors": "Xuansheng Wu, Haiyan Zhao, Yaochen Zhu, Yucheng Shi, Fan Yang, Lijie Hu , Tianming Liu, Xiaoming Zhai, Wenlin Yao, Jundong Li, Mengnan Du, Ninghao Liu.",
+    "authorsHtml": "Xuansheng Wu, Haiyan Zhao, Yaochen Zhu, Yucheng Shi, Fan Yang, <strong>Lijie Hu</strong>, Tianming Liu, Xiaoming Zhai, Wenlin Yao, Jundong Li, Mengnan Du, Ninghao Liu.",
+    "mentoredAuthors": [],
+    "venue": "The ACM Transactions on Knowledge Discovery from Data (TKDD).",
+    "venueShort": "TKDD",
+    "year": 2026,
+    "type": "Journal Papers",
+    "abstract": "",
+    "summary": "Studies Usable XAI: 10 Strategies Towards Exploiting Explainability in the LLM Era as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "TKDD"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://dl.acm.org/doi/abs/10.1145/3816150"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2403.08946"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 24,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-eap-gp-mitigating-saturation-effect-in-gradient-based-automated-circuit-identification",
+    "title": "EAP-GP: Mitigating Saturation Effect in Gradient-based Automated Circuit Identification.",
+    "authors": "Lin Zhang, Wenshuo Dong, Zhuoran Zhang, Shu Yang, Lijie Hu , Ninghao Liu, Pan Zhou, Di Wang.",
+    "authorsHtml": "Lin Zhang, Wenshuo Dong, Zhuoran Zhang, Shu Yang, <strong>Lijie Hu</strong>, Ninghao Liu, Pan Zhou, Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "Conference on Neural Information Processing Systems (NeurIPS 2025).",
+    "venueShort": "NeurIPS",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "Understanding the internal mechanisms of transformer-based language models remains challenging. Mechanistic interpretability based on circuit discovery aims to reverse engineer neural networks by analyzing their internal processes at the level of computational subgraphs. In this paper, we revisit existing gradient-based circuit identification methods and find that their performance is either affected by the zero-gradient problem or saturation effects, where edge attribution scores become insensitive to input changes, resulting in noisy and unreliable attribution evaluations for circuit components. To address the saturation effect, we propose Edge Attribution Patching with GradPath (EAP-GP), EAP-GP introduces an integration path, starting from the input and adaptively following the direction of the difference between the gradients of corrupted and clean inputs to avoid the saturated region. This approach enhances attribution reliability and improves the faithfulness of circuit identification. We evaluate EAP-GP on 6 datasets using GPT-2 Small, GPT-2 Medium, and GPT-2 XL. Experimental results demonstrate that EAP-GP outperforms existing methods in circuit faithfulness, achieving improvements up to 17.7%. Comparisons with manually annotated ground-truth circuits demonstrate that EAP-GP achieves precision and recall comparable to or better than previous approaches, highlighting its effectiveness in identifying accurate circuits.",
+    "summary": "Understanding the internal mechanisms of transformer-based language models remains challenging.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "NeurIPS",
+      "preprint"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2502.06852"
+      }
+    ],
+    "artifacts": [
+      "preprint"
+    ],
+    "sourceOrder": 25,
+    "representative": true,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-understanding-how-value-neurons-shape-the-generation-of-specified-values-in-llms",
+    "title": "Understanding How Value Neurons Shape the Generation of Specified Values in LLMs.",
+    "authors": "Yi Su , Jiayi Zhang, Shu Yang, Xinhai Wang, Lijie Hu , Di Wang.",
+    "authorsHtml": "<span class=\"mentored-author\">Yi Su</span>, Jiayi Zhang, Shu Yang, Xinhai Wang, <strong>Lijie Hu</strong>, Di Wang.",
+    "mentoredAuthors": [
+      "Yi Su"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP 2025 Findings).",
+    "venueShort": "EMNLP",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Understanding How Value Neurons Shape the Generation of Specified Values in LLMs as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "EMNLP",
+      "Preprint"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2505.17712"
+      }
+    ],
+    "artifacts": [
+      "preprint"
+    ],
+    "sourceOrder": 26,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-can-large-language-models-identify-implicit-suicidal-ideation-an-empirical-evaluation",
+    "title": "Can Large Language Models Identify Implicit Suicidal Ideation? An Empirical Evaluation.",
+    "authors": "Tong Li, Shu Yang, Junchao Wu, Jiyao Wei, Lijie Hu , Mengdi Li, Derek F. Wong, Joshua R. Oltmanns, Di Wang.",
+    "authorsHtml": "Tong Li, Shu Yang, Junchao Wu, Jiyao Wei, <strong>Lijie Hu</strong>, Mengdi Li, Derek F. Wong, Joshua R. Oltmanns, Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "Conference on Empirical Methods in Natural Language Processing (EMNLP 2025 Findings).",
+    "venueShort": "EMNLP",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "We present a comprehensive evaluation framework for assessing Large Language Models'(LLMs) capabilities in suicide prevention, focusing on two critical aspects: the Identification of Implicit Suicidal ideation (IIS) and the Provision of Appropriate Supportive responses (PAS). We introduce \\ourdata, a novel dataset of 1,308 test cases built upon psychological frameworks including D/S-IAT and Negative Automatic Thinking, alongside real-world scenarios. Through extensive experiments with 8 widely used LLMs under different contextual settings, we find that current models struggle significantly with detecting implicit suicidal ideation and providing appropriate support, highlighting crucial limitations in applying LLMs to mental health contexts. Our findings underscore the need for more sophisticated approaches in developing and evaluating LLMs for sensitive psychological applications.",
+    "summary": "We present a comprehensive evaluation framework for assessing Large Language Models'(LLMs) capabilities in suicide prevention, focusing on two critical aspects: the Identification of Implici",
+    "primaryTopic": "XAI for Science",
+    "secondaryTopics": [
+      "Useful XAI in Large Models",
+      "Systems for XAI"
+    ],
+    "tags": [
+      "XAI for Science",
+      "Useful XAI in Large Models",
+      "Systems for XAI",
+      "EMNLP",
+      "preprint"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2502.17899"
+      }
+    ],
+    "artifacts": [
+      "preprint"
+    ],
+    "sourceOrder": 27,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-pgm-partitioner-guided-modal-learning-framework",
+    "title": "PgM: Partitioner Guided Modal Learning Framework.",
+    "authors": "Guimin Hu, Yi Xin, Lijie Hu , Zhihong Zhu, Hasti Seifi.",
+    "authorsHtml": "Guimin Hu, Yi Xin, <strong>Lijie Hu</strong>, Zhihong Zhu, Hasti Seifi.",
+    "mentoredAuthors": [],
+    "venue": "The 33rd ACM International Conference on Multimedia (ACM MM 2025).",
+    "venueShort": "ACM MM",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies PgM: Partitioner Guided Modal Learning Framework as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "ACM MM",
+      "Preprint"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2507.11661"
+      }
+    ],
+    "artifacts": [
+      "preprint"
+    ],
+    "sourceOrder": 28,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "low",
+    "needsReview": true,
+    "notes": ""
+  },
+  {
+    "id": "2025-from-guesswork-to-guarantee-towards-faithful-multimedia-web-forecasting-with-timesieve",
+    "title": "From Guesswork to Guarantee: Towards Faithful Multimedia Web Forecasting with TimeSieve.",
+    "authors": "Songning Lai, Ninghui Feng, Jiechao Gao, Hao Wang, Haochen Sui, Xin Zou, Jiayu Yang, Wenshuo Chen, Lijie Hu , Hang Zhao, Xuming Hu, Yutao Yue.",
+    "authorsHtml": "Songning Lai, Ninghui Feng, Jiechao Gao, Hao Wang, Haochen Sui, Xin Zou, Jiayu Yang, Wenshuo Chen, <strong>Lijie Hu</strong>, Hang Zhao, Xuming Hu, Yutao Yue.",
+    "mentoredAuthors": [],
+    "venue": "The 33rd ACM International Conference on Multimedia (ACM MM 2025).",
+    "venueShort": "ACM MM",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies From Guesswork to Guarantee: Towards Faithful Multimedia Web Forecasting with TimeSieve as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "ACM MM"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://doi.org/10.1145/3746027.3754963"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 29,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-semi-supervised-concept-bottleneck-models",
+    "title": "Semi-supervised Concept Bottleneck Models.",
+    "authors": "Lijie Hu* , Tianhao Huang* , Huanyi Xie , Xilin Gong, Chenyang Ren, Zhengyu Hu, Lu Yu, Ping Ma, Di Wang.",
+    "authorsHtml": "<strong>Lijie Hu*</strong>, <span class=\"mentored-author\">Tianhao Huang*</span>, <span class=\"mentored-author\">Huanyi Xie</span>, Xilin Gong, Chenyang Ren, Zhengyu Hu, Lu Yu, Ping Ma, Di Wang.",
+    "mentoredAuthors": [
+      "Tianhao Huang",
+      "Huanyi Xie"
+    ],
+    "venue": "IEEE/CVF International Conference on Computer Vision (ICCV 2025).",
+    "venueShort": "ICCV",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "Concept Bottleneck Models (CBMs) have garnered increasing attention due to their ability to provide concept-based explanations for black-box deep learning models while achieving high final prediction accuracy using human-like concepts. However, the training of current CBMs is heavily dependent on the precision and richness of the annotated concepts in the dataset. These concept labels are typically provided by experts, which can be costly and require significant resources and effort. Additionally, concept saliency maps frequently misalign with input saliency maps, causing concept predictions to correspond to irrelevant input features - an issue related to annotation alignment. To address these limitations, we propose a new framework called SSCBM (Semi-supervised Concept Bottleneck Model). Our SSCBM is suitable for practical situations where annotated data is scarce. By leveraging joint training on both labeled and unlabeled data and aligning the unlabeled data at the concept level, we effectively solve these issues. We propose a strategy to generate pseudo labels and an alignment loss. Experiments demonstrate that our SSCBM is both effective and efficient. With only 10% labeled data, our model's concept and task accuracy on average across four datasets is only 2.44% and 3.93% lower, respectively, compared to the best baseline in the fully supervised learning setting.",
+    "summary": "Concept Bottleneck Models (CBMs) have garnered increasing attention due to their ability to provide concept-based explanations for black-box deep learning models while achieving high final p",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [
+      "Systems for XAI",
+      "Interactive XAI"
+    ],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "Interactive XAI",
+      "ICCV",
+      "preprint",
+      "code"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2406.18992"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/kaustpradalab/SSCBM"
+      }
+    ],
+    "artifacts": [
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 30,
+    "representative": true,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-stable-vision-concept-transformers-for-medical-diagnosis",
+    "title": "Stable Vision Concept Transformers for Medical Diagnosis.",
+    "authors": "Lijie Hu* , Songning Lai* , Yuan Hua* , Shu Yang, Jingfeng Zhang, Di Wang.",
+    "authorsHtml": "<strong>Lijie Hu*</strong>, <span class=\"mentored-author\">Songning Lai*</span>, <span class=\"mentored-author\">Yuan Hua*</span>, Shu Yang, Jingfeng Zhang, Di Wang.",
+    "mentoredAuthors": [
+      "Songning Lai",
+      "Yuan Hua"
+    ],
+    "venue": "The 2025 European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2025).",
+    "venueShort": "ECML",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Stable Vision Concept Transformers for Medical Diagnosis as part of PAI's work on scientific discovery.",
+    "primaryTopic": "XAI for Science",
+    "secondaryTopics": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI"
+    ],
+    "tags": [
+      "XAI for Science",
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "ECML",
+      "Preprint"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2506.05286"
+      }
+    ],
+    "artifacts": [
+      "preprint"
+    ],
+    "sourceOrder": 31,
+    "representative": true,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-compke-complex-question-answering-under-knowledge-editing",
+    "title": "COMPKE: Complex Question Answering under Knowledge Editing.",
+    "authors": "Keyuan Cheng , Zijian Kan, Zhixian He, Zhuoran Zhang, Muhammad Asif Ali, Ke Xu, Lijie Hu† , Di Wang.",
+    "authorsHtml": "<span class=\"mentored-author\">Keyuan Cheng</span>, Zijian Kan, Zhixian He, Zhuoran Zhang, Muhammad Asif Ali, Ke Xu, <strong>Lijie Hu†</strong>, Di Wang.",
+    "mentoredAuthors": [
+      "Keyuan Cheng"
+    ],
+    "venue": "Annual Meeting of the Association for Computational Linguistics (ACL 2025 Findings).",
+    "venueShort": "ACL",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies COMPKE: Complex Question Answering under Knowledge Editing as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "ACL",
+      "Paper",
+      "Preprint",
+      "Code"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/pdf?id=iNnlVqvjCT"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2506.00829"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/kzjkzj666/CompKE"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 32,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-codemenv-benchmarking-large-language-models-on-code-migration",
+    "title": "CODEMENV: Benchmarking Large Language Models on Code Migration.",
+    "authors": "Keyuan Cheng , Xudong Shen, Yihao Yang, Tengyue Wang, Yang Cao, Muhammad Asif Ali, Hanbin Wang, Lijie Hu† , Di Wang.",
+    "authorsHtml": "<span class=\"mentored-author\">Keyuan Cheng</span>, Xudong Shen, Yihao Yang, Tengyue Wang, Yang Cao, Muhammad Asif Ali, Hanbin Wang, <strong>Lijie Hu†</strong>, Di Wang.",
+    "mentoredAuthors": [
+      "Keyuan Cheng"
+    ],
+    "venue": "Annual Meeting of the Association for Computational Linguistics (ACL 2025 Findings).",
+    "venueShort": "ACL",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies CODEMENV: Benchmarking Large Language Models on Code Migration as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Systems for XAI",
+      "ACL",
+      "Paper",
+      "Preprint",
+      "Code"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/pdf?id=VdrDTsGaaZ"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2506.00894"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/xdshen-ai/Benchmark-of-Code-Migration"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 33,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-understanding-the-repeat-curse-in-large-language-models-from-a-feature-perspective",
+    "title": "Understanding the Repeat Curse in Large Language Models from a Feature Perspective.",
+    "authors": "Junchi Yao, Shu Yang, Jianhua Xu, Lijie Hu , Mengdi Li, Di Wang.",
+    "authorsHtml": "Junchi Yao, Shu Yang, Jianhua Xu, <strong>Lijie Hu</strong>, Mengdi Li, Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "Annual Meeting of the Association for Computational Linguistics (ACL 2025 Findings).",
+    "venueShort": "ACL",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Understanding the Repeat Curse in Large Language Models from a Feature Perspective as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "ACL",
+      "Paper",
+      "Preprint"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/pdf?id=hswPyZ7LNA"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2504.14218"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint"
+    ],
+    "sourceOrder": 34,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-fraud-r1-a-multi-round-benchmark-for-assessing-the-robustness-of-llm-against-augmented-fra",
+    "title": "Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements.",
+    "authors": "Shu Yang, Shenzhe Zhu, Zeyu Wu, Keyu Wang, Junchi Yao, Junchao Wu, Lijie Hu , Mengdi Li, Derek F. Wong, Di Wang.",
+    "authorsHtml": "Shu Yang, Shenzhe Zhu, Zeyu Wu, Keyu Wang, Junchi Yao, Junchao Wu, <strong>Lijie Hu</strong>, Mengdi Li, Derek F. Wong, Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "Annual Meeting of the Association for Computational Linguistics (ACL 2025 Findings).",
+    "venueShort": "ACL",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Fraud-R1: A Multi-Round Benchmark for Assessing the Robustness of LLM Against Augmented Fraud and Phishing Inducements as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Systems for XAI",
+      "ACL",
+      "Paper",
+      "Preprint",
+      "Code"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/pdf?id=AcZxMOwPm0"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2502.12904"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/kaustpradalab/Fraud-R1"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 35,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-locate-then-edit-for-multi-hop-factual-recall-under-knowledge-editing",
+    "title": "Locate-then-edit for Multi-hop Factual Recall under Knowledge Editing.",
+    "authors": "Zhuoran Zhang , Yongxiang Li, Zijian Kan, Keyuan Cheng, Lijie Hu† , Di Wang.",
+    "authorsHtml": "<span class=\"mentored-author\">Zhuoran Zhang</span>, Yongxiang Li, Zijian Kan, Keyuan Cheng, <strong>Lijie Hu†</strong>, Di Wang.",
+    "mentoredAuthors": [
+      "Zhuoran Zhang"
+    ],
+    "venue": "The 42nd International Conference on Machine Learning (ICML 2025).",
+    "venueShort": "ICML",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Locate-then-edit for Multi-hop Factual Recall under Knowledge Editing as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "ICML",
+      "Paper",
+      "Preprint"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/pdf?id=kAWtGZIHzm"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2410.06331"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint"
+    ],
+    "sourceOrder": 36,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-editable-concept-bottleneck-models",
+    "title": "Editable Concept Bottleneck Models.",
+    "authors": "Lijie Hu* , Chenyang Ren* , Zhengyu Hu* , Hongbin Lin, Cheng-Long Wang, Zhen Tan, Weimin Lyu, Jingfeng Zhang, Hui Xiong, Di Wang.",
+    "authorsHtml": "<strong>Lijie Hu*</strong>, <span class=\"mentored-author\">Chenyang Ren*</span>, <span class=\"mentored-author\">Zhengyu Hu*</span>, Hongbin Lin, Cheng-Long Wang, Zhen Tan, Weimin Lyu, Jingfeng Zhang, Hui Xiong, Di Wang.",
+    "mentoredAuthors": [
+      "Chenyang Ren",
+      "Zhengyu Hu"
+    ],
+    "venue": "The 42nd International Conference on Machine Learning (ICML 2025).",
+    "venueShort": "ICML",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Editable Concept Bottleneck Models as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "ICML",
+      "Paper",
+      "Preprint",
+      "Code"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/pdf?id=R0R3MRD8vh"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2405.15476"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/kaustpradalab/ECBM"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 37,
+    "representative": true,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-smoa-improving-multi-agent-large-language-models-with-sparse-mixture-of-agents",
+    "title": "SMoA: Improving Multi-agent Large Language Models with Sparse Mixture-of-Agents.",
+    "authors": "Dawei Li, Zhen Tan, Peijia Qian, Yifan Li, Kumar Satvik Chaudhary, Lijie Hu , Jiayi Shen.",
+    "authorsHtml": "Dawei Li, Zhen Tan, Peijia Qian, Yifan Li, Kumar Satvik Chaudhary, <strong>Lijie Hu</strong>, Jiayi Shen.",
+    "mentoredAuthors": [],
+    "venue": "The 29th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD 2025).",
+    "venueShort": "PAKDD",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "While multi-agent systems have been shown to significantly enhance the performance of Large Language Models (LLMs) across various tasks and applications, the dense interaction between scaling agents potentially hampers their efficiency and diversity. To address these challenges, we draw inspiration from the sparse mixture-of-agents (SMoE) and propose a sparse mixture-of-agents (SMoA) framework to improve the efficiency and diversity of multi-agent LLMs. Unlike completely connected structures, SMoA introduces novel Response Selection and Early Stopping mechanisms to sparsify information flows among individual LLM agents, striking a balance between performance and efficiency. Additionally, inspired by the expert diversity principle in SMoE frameworks for workload balance between experts, we assign distinct role descriptions to each LLM agent, fostering diverse and divergent thinking. Extensive experiments on reasoning, alignment, and fairness benchmarks demonstrate that SMoA achieves performance comparable to traditional mixture-of-agents approaches but with significantly lower computational costs. Further analysis reveals that SMoA is more stable, has a greater capacity to scale, and offers considerable potential through hyper-parameter optimization. Code and data will be available at: https://github.com/David-Li0406/SMoA.",
+    "summary": "While multi-agent systems have been shown to significantly enhance the performance of Large Language Models (LLMs) across various tasks and applications, the dense interaction between scalin",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "PAKDD",
+      "preprint",
+      "code"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2411.03284"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/David-Li0406/SMoA"
+      }
+    ],
+    "artifacts": [
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 38,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-drive-dependable-robust-interpretable-visionary-ensemble-framework-in-autonomous-driving",
+    "title": "DRIVE: Dependable Robust Interpretable Visionary Ensemble Framework in Autonomous Driving.",
+    "authors": "Songning Lai, Tianlang Xue, Hongru Xiao, Lijie Hu , Jiemin Wu, Ninghui Feng, Runwei Guan, Haicheng Liao, Zhenning Li, and Yutao Yue.",
+    "authorsHtml": "Songning Lai, Tianlang Xue, Hongru Xiao, <strong>Lijie Hu</strong>, Jiemin Wu, Ninghui Feng, Runwei Guan, Haicheng Liao, Zhenning Li, and Yutao Yue.",
+    "mentoredAuthors": [],
+    "venue": "IEEE International Conference on Robotics and Automation (ICRA 2025).",
+    "venueShort": "ICRA",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "Recent advancements in autonomous driving have seen a paradigm shift towards end-to-end learning paradigms, which map sensory inputs directly to driving actions, thereby enhancing the robustness and adaptability of autonomous vehicles. However, these models often sacrifice interpretability, posing significant challenges to trust, safety, and regulatory compliance. To address these issues, we introduce DRIVE – Dependable Robust Interpretable Visionary Ensemble Framework in Autonomous Driving, a comprehensive framework designed to improve the dependability and stability of explanations in end-to-end unsupervised autonomous driving models. Our work specifically targets the inherent instability problems observed in the Driving through the Concept Gridlock (DCG) model, which undermine the trustworthiness of its explanations and decisionmaking processes. We define four key attributes of DRIVE: consistent interpretability, stable interpretability, consistent output, and stable output. These attributes collectively ensure that explanations remain reliable and robust across different scenarios and perturbations. Through extensive empirical evaluations, we demonstrate the effectiveness of our framework in enhancing the stability and dependability of explanations, thereby addressing the limitations of current models. Our contributions include an in-depth analysis of the dependability issues within the DCG model, a rigorous definition of DRIVE with its fundamental properties, a framework to implement DRIVE, and novel metrics for evaluating the dependability of concept-based explainable autonomous driving models. These advancements lay the groundwork for the development of more reliable and trusted autonomous driving systems, paving the way for their broader acceptance and deployment in real-world applications. “We can only see a short distance ahead, but we can see plenty there that needs to be done.” – Alan Turing",
+    "summary": "Recent advancements in autonomous driving have seen a paradigm shift towards end-to-end learning paradigms, which map sensory inputs directly to driving actions, thereby enhancing the robust",
+    "primaryTopic": "XAI for Science",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI"
+    ],
+    "tags": [
+      "XAI for Science",
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "ICRA",
+      "preprint"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2409.10330"
+      }
+    ],
+    "artifacts": [
+      "preprint"
+    ],
+    "sourceOrder": 39,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-backdooring-vision-language-models-with-out-of-distribution-data",
+    "title": "Backdooring Vision-Language Models with Out-Of-Distribution Data.",
+    "authors": "Weimin Lyu, Jiachen Yao, Saumya Gupta, Lu Pang, Tao Sun, Lingjie Yi, Lijie Hu , Haibin Ling, and Chao Chen.",
+    "authorsHtml": "Weimin Lyu, Jiachen Yao, Saumya Gupta, Lu Pang, Tao Sun, Lingjie Yi, <strong>Lijie Hu</strong>, Haibin Ling, and Chao Chen.",
+    "mentoredAuthors": [],
+    "venue": "The 13th International Conference on Learning Representations (ICLR 2025).",
+    "venueShort": "ICLR",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Backdooring Vision-Language Models with Out-Of-Distribution Data as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "ICLR",
+      "Paper",
+      "Preprint"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/pdf?id=tZozeR3VV7"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2410.01264"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint"
+    ],
+    "sourceOrder": 40,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-mechanistic-unveiling-of-transformer-circuits-self-influence-as-a-key-to-model-reasoning",
+    "title": "Mechanistic Unveiling of Transformer Circuits: Self-Influence as a Key to Model Reasoning.",
+    "authors": "Lin Zhang , Lijie Hu , and Di Wang.",
+    "authorsHtml": "<span class=\"mentored-author\">Lin Zhang</span>, <strong>Lijie Hu</strong>, and Di Wang.",
+    "mentoredAuthors": [
+      "Lin Zhang"
+    ],
+    "venue": "Findings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL 2025 Findings).",
+    "venueShort": "NAACL",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "Transformer-based language models have achieved significant success; however, their internal mechanisms remain largely opaque due to the complexity of non-linear interactions and high-dimensional operations. While previous studies have demonstrated that these models implicitly embed reasoning trees, humans typically employ various distinct logical reasoning mechanisms to complete the same task. It is still unclear which multi-step reasoning mechanisms are used by language models to solve such tasks. In this paper, we aim to address this question by investigating the mechanistic interpretability of language models, particularly in the context of multi-step reasoning tasks. Specifically, we employ circuit analysis and self-influence functions to evaluate the changing importance of each token throughout the reasoning process, allowing us to map the reasoning paths adopted by the model. We apply this methodology to the GPT-2 model on a prediction task (IOI) and demonstrate that the underlying circuits reveal a human-interpretable reasoning process used by the model.",
+    "summary": "Transformer-based language models have achieved significant success; however, their internal mechanisms remain largely opaque due to the complexity of non-linear interactions and high-dimensional operations.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "NAACL",
+      "paper",
+      "preprint"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://aclanthology.org/2025.findings-naacl.76.pdf"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2502.09022"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint"
+    ],
+    "sourceOrder": 41,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-fair-text-to-image-diffusion-via-fair-mapping",
+    "title": "Fair Text-to-Image Diffusion via Fair Mapping.",
+    "authors": "Jia Li* , Lijie Hu* , Jingfeng Zhang, Tianhang Zheng, Hua Zhang, and Di Wang.",
+    "authorsHtml": "<span class=\"mentored-author\">Jia Li*</span>, <strong>Lijie Hu*</strong>, Jingfeng Zhang, Tianhang Zheng, Hua Zhang, and Di Wang.",
+    "mentoredAuthors": [
+      "Jia Li"
+    ],
+    "venue": "The Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI 2025).",
+    "venueShort": "AAAI",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Fair Text-to-Image Diffusion via Fair Mapping as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "AAAI",
+      "Paper",
+      "Preprint"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/34823"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2311.17695"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint"
+    ],
+    "sourceOrder": 42,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": "Selected as an Oral paper (~4.6% acceptance rate)."
+  },
+  {
+    "id": "2025-tuning-free-accountable-intervention-for-llm-deployment-a-metacognitive-approach",
+    "title": "Tuning-Free Accountable Intervention for LLM Deployment - A Metacognitive Approach.",
+    "authors": "Zhen Tan, Jie Peng, Song Wang, Lijie Hu , Tianlong Chen, Huan Liu.",
+    "authorsHtml": "Zhen Tan, Jie Peng, Song Wang, <strong>Lijie Hu</strong>, Tianlong Chen, Huan Liu.",
+    "mentoredAuthors": [],
+    "venue": "The Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI 2025).",
+    "venueShort": "AAAI",
+    "year": 2025,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Tuning-Free Accountable Intervention for LLM Deployment - A Metacognitive Approach as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Systems for XAI",
+      "AAAI",
+      "Paper"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/34710"
+      }
+    ],
+    "artifacts": [
+      "paper"
+    ],
+    "sourceOrder": 43,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": "Selected as an Oral paper (~4.6% acceptance rate)."
+  },
+  {
+    "id": "2025-faithful-interpretation-for-graph-neural-networks",
+    "title": "Faithful Interpretation for Graph Neural Networks.",
+    "authors": "Lijie Hu* , Tianhao Huang* , Lu Yu, Wanyu Lin, Tianhang Zheng, and Di Wang.",
+    "authorsHtml": "<strong>Lijie Hu*</strong>, <span class=\"mentored-author\">Tianhao Huang*</span>, Lu Yu, Wanyu Lin, Tianhang Zheng, and Di Wang.",
+    "mentoredAuthors": [
+      "Tianhao Huang"
+    ],
+    "venue": "Transactions on Machine Learning Research (TMLR).",
+    "venueShort": "TMLR",
+    "year": 2025,
+    "type": "Journal Papers",
+    "abstract": "Currently, attention mechanisms have garnered increasing attention in Graph Neural Networks (GNNs), such as Graph Attention Networks (GATs) and Graph Transformers (GTs). It is not only due to the commendable boost in performance they offer but also its capacity to provide a more lucid rationale for model behaviors, which are often viewed as inscrutable. However, Attention-based GNNs have demonstrated instability in interpretability when subjected to various sources of perturbations during both training and testing phases, including factors like additional edges or nodes. In this paper, we propose a solution to this problem by introducing a novel notion called Faithful Graph Attention-based Interpretation (FGAI). In particular, FGAI has four crucial properties regarding stability and sensitivity to interpretation and final output distribution. Built upon this notion, we propose an efficient methodology for obtaining FGAI, which can be viewed as an ad hoc modification to the canonical Attention-based GNNs. To validate our proposed solution, we introduce two novel metrics tailored for graph interpretation assessment. Experimental results demonstrate that FGAI exhibits superior stability and preserves the interpretability of attention under various forms of perturbations and randomness, which makes FGAI a more faithful and reliable explanation tool.",
+    "summary": "Currently, attention mechanisms have garnered increasing attention in Graph Neural Networks (GNNs), such as Graph Attention Networks (GATs) and Graph Transformers (GTs).",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "TMLR",
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/pdf?id=Y8EspxaksH"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2410.06950"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/Skyyyy0920/FGAI"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 44,
+    "representative": true,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2025-towards-stable-and-explainable-attention-mechanisms",
+    "title": "Towards Stable and Explainable Attention Mechanisms.",
+    "authors": "Lijie Hu* , Xinhai Wang* , Yixin Liu*, Ninghao Liu, Mengdi Huai, Lichao Sun, and Di Wang.",
+    "authorsHtml": "<strong>Lijie Hu*</strong>, <span class=\"mentored-author\">Xinhai Wang*</span>, Yixin Liu*, Ninghao Liu, Mengdi Huai, Lichao Sun, and Di Wang.",
+    "mentoredAuthors": [
+      "Xinhai Wang"
+    ],
+    "venue": "IEEE Transactions on Knowledge and Data Engineering (TKDE).",
+    "venueShort": "TKDE",
+    "year": 2025,
+    "type": "Journal Papers",
+    "abstract": "Currently, attention mechanism has become a standard fixture in most state-of-the-art natural language processing (NLP) models, not only due to the outstanding performance it could gain but also due to plausible innate explanations for the behaviors of neural architectures it provides, which is notoriously difficult to analyze. However, recent studies show that attention is unstable against randomness and perturbations during training or testing, such as random seeds and slight perturbation of embedding vectors, which impedes it from becoming a faithful explanation tool. Thus, a natural question is whether we can find some substitute for the current attention that is more stable and could keep the most important characteristics of explanation and prediction of attention. In this paper, to resolve the problem, we provide a rigorous definition of such alternate namely SEAT (<underline><bold>S</bold></underline>table and <underline><bold>E</bold></underline>xplainable <underline><bold>At</bold></underline>tention). Specifically, a SEAT should have the following three properties: (1) Its prediction distribution is enforced to be close to the distribution based on the vanilla attention; (2) Its top-<inline-formula><tex-math notation=\"LaTeX\">$k$</tex-math><alternatives><mml:math><mml:mi>k</mml:mi></mml:math><inline-graphic xlink:href=\"wang-ieq1-3538583.gif\"/></alternatives></inline-formula> indices have large overlaps with those of the vanilla attention; (3) It is robust w.r.t perturbations, i.e., any slight perturbation on SEAT will not change the prediction distribution too much, which implicitly indicates that it is stable to randomness and perturbations. To further improve the interpretability stability against perturbations, based on SEAT we provide another definition called SEAT++. Then we propose a method to get a SEAT++, which could be considered an ad hoc modification for canonical attention. Finally, through intensive experiments on various datasets, we compare our SEAT and SEAT++ with other baseline methods using RNN, BiLSTM, and BERT architectures via six different evaluation metrics for model interpretation, stability, and accuracy. Results show that SEAT and SEAT++ are more stable against different perturbations and randomness while also keeping the explainability of attention, which indicates they provide more faithful explanations. Moreover, compared with vanilla attention, there is almost no utility (accuracy) degradation for SEAT and SEAT++.",
+    "summary": "Currently, attention mechanism has become a standard fixture in most state-of-the-art natural language processing (NLP) models, not only due to the outstanding performance it could gain but",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "TKDE",
+      "paper",
+      "code"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://ieeexplore.ieee.org/document/10872805"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/kaustpradalab/SEATv2"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "code"
+    ],
+    "sourceOrder": 45,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2024-towards-multi-dimensional-explanation-alignment-for-medical-classification",
+    "title": "Towards Multi-dimensional Explanation Alignment for Medical Classification.",
+    "authors": "Lijie Hu* , Songning Lai* , Wenshuo Chen* , Hongru Xiao, Hongbin Lin, Lu Yu, Jingfeng Zhang, Di Wang.",
+    "authorsHtml": "<strong>Lijie Hu*</strong>, <span class=\"mentored-author\">Songning Lai*</span>, <span class=\"mentored-author\">Wenshuo Chen*</span>, Hongru Xiao, Hongbin Lin, Lu Yu, Jingfeng Zhang, Di Wang.",
+    "mentoredAuthors": [
+      "Songning Lai",
+      "Wenshuo Chen"
+    ],
+    "venue": "The Conference on Neural Information Processing Systems (NeurIPS 2024).",
+    "venueShort": "NeurIPS",
+    "year": 2024,
+    "type": "Conference Papers",
+    "abstract": "The lack of interpretability in the field of medical image analysis has significant ethical and legal implications. Existing interpretable methods in this domain encounter several challenges, including dependency on specific models, difficulties in understanding and visualization, as well as issues related to efficiency. To address these limitations, we propose a novel framework called Med-MICN (Medical Multi-dimensional Interpretable Concept Network). Med-MICN provides interpretability alignment for various angles, including neural symbolic reasoning, concept semantics, and saliency maps, which are superior to current interpretable methods. Its advantages include high prediction accuracy, interpretability across multiple dimensions, and automation through an end-to-end concept labeling process that reduces the need for extensive human training effort when working with new datasets. To demonstrate the effectiveness and interpretability of Med-MICN, we apply it to four benchmark datasets and compare it with baselines. The results clearly demonstrate the superior performance and interpretability of our Med-MICN.",
+    "summary": "The lack of interpretability in the field of medical image analysis has significant ethical and legal implications.",
+    "primaryTopic": "XAI for Science",
+    "secondaryTopics": [
+      "Useful XAI in Large Models",
+      "Systems for XAI"
+    ],
+    "tags": [
+      "XAI for Science",
+      "Useful XAI in Large Models",
+      "Systems for XAI",
+      "NeurIPS",
+      "paper",
+      "preprint"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/pdf?id=3A5VgiH5Pw"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2410.21494"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint"
+    ],
+    "sourceOrder": 46,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2024-private-language-models-via-truncated-laplacian-mechanism",
+    "title": "Private Language Models via Truncated Laplacian Mechanism.",
+    "authors": "Tianhao Huang* , Tao Yang* , Ivan Habernal, Lijie Hu , and Di Wang.",
+    "authorsHtml": "<span class=\"mentored-author\">Tianhao Huang*</span>, <span class=\"mentored-author\">Tao Yang*</span>, Ivan Habernal, <strong>Lijie Hu</strong>, and Di Wang.",
+    "mentoredAuthors": [
+      "Tianhao Huang",
+      "Tao Yang"
+    ],
+    "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024 Main).",
+    "venueShort": "EMNLP",
+    "year": 2024,
+    "type": "Conference Papers",
+    "abstract": "Recently it has been shown that deep learning models for NLP tasks are prone to attacks that can even reconstruct the verbatim training texts. To prevent privacy leakage, researchers have investigated word-level perturbations, relying on the formal guarantees of differential privacy (DP) in the embedding space. However, many existing approaches either achieve unsatisfactory performance in the high privacy regime when using the Laplacian or Gaussian mechanism, or resort to weaker relaxations of DP that are inferior to the canonical DP in terms of privacy strength. This raises the question of whether a new method for private word embedding can be designed to overcome these limitations. In this paper, we propose a novel private embedding method called the high dimensional truncated Laplacian mechanism. Specifically, we introduce a non-trivial extension of the truncated Laplacian mechanism, which was previously only investigated in one-dimensional space cases. Theoretically, we show that our method has a lower variance compared to the previous private word embedding methods. To further validate its effectiveness, we conduct comprehensive experiments on private embedding and downstream tasks using three datasets. Remarkably, even in the high privacy regime, our approach only incurs a slight decrease in utility compared to the non-private scenario.",
+    "summary": "Recently it has been shown that deep learning models for NLP tasks are prone to attacks that can even reconstruct the verbatim training texts.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "EMNLP",
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "Private Language Models via Truncated Laplacian Mechanism"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2410.08027"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/kaustpradalab/TrLap"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 47,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": "Selected as Oral presentation."
+  },
+  {
+    "id": "2024-dissecting-fine-tuning-unlearning-in-large-language-models",
+    "title": "Dissecting Fine-Tuning Unlearning in Large Language Models.",
+    "authors": "Yihuai Hong, Yuelin Zou, Lijie Hu , Ziqian Zeng, Di Wang, Haiqin Yang.",
+    "authorsHtml": "Yihuai Hong, Yuelin Zou, <strong>Lijie Hu</strong>, Ziqian Zeng, Di Wang, Haiqin Yang.",
+    "mentoredAuthors": [],
+    "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024 Main).",
+    "venueShort": "EMNLP",
+    "year": 2024,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Dissecting Fine-Tuning Unlearning in Large Language Models as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "EMNLP",
+      "Paper",
+      "Preprint",
+      "Code"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://aclanthology.org/2024.emnlp-main.228/"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2410.06606"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/yihuaihong/Dissecting-FT-Unlearning"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 48,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": "Selected as Oral presentation."
+  },
+  {
+    "id": "2024-unimeec-towards-unified-multimodal-emotion-recognition-and-emotion-cause",
+    "title": "UniMEEC: Towards Unified Multimodal Emotion Recognition and Emotion Cause.",
+    "authors": "Guimin Hu, Zhihong Zhu, Daniel Hershcovich, Lijie Hu , Hasti Seifi, and Jiayuan Xie.",
+    "authorsHtml": "Guimin Hu, Zhihong Zhu, Daniel Hershcovich, <strong>Lijie Hu</strong>, Hasti Seifi, and Jiayuan Xie.",
+    "mentoredAuthors": [],
+    "venue": "Findings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024 Findings).",
+    "venueShort": "EMNLP",
+    "year": 2024,
+    "type": "Conference Papers",
+    "abstract": "Multimodal emotion recognition in conversation (MERC) and multimodal emotion-cause pair extraction (MECPE) have recently garnered significant attention. Emotions are the expression of affect or feelings; responses to specific events, or situations -- known as emotion causes. Both collectively explain the causality between human emotion and intents. However, existing works treat emotion recognition and emotion cause extraction as two individual problems, ignoring their natural causality. In this paper, we propose a Unified Multimodal Emotion recognition and Emotion-Cause analysis framework (UniMEEC) to explore the causality between emotion and emotion cause. Concretely, UniMEEC reformulates the MERC and MECPE tasks as mask prediction problems and unifies them with a causal prompt template. To differentiate the modal effects, UniMEEC proposes a multimodal causal prompt to probe the pre-trained knowledge specified to modality and implements cross-task and cross-modality interactions under task-oriented settings. Experiment results on four public benchmark datasets verify the model performance on MERC and MECPE tasks and achieve consistent improvements compared with the previous state-of-the-art methods.",
+    "summary": "Multimodal emotion recognition in conversation (MERC) and multimodal emotion-cause pair extraction (MECPE) have recently garnered significant attention.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Systems for XAI",
+      "EMNLP",
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://aclanthology.org/2024.findings-emnlp.302/"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2404.00403"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/LeMei/causal-unimeec"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 49,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2024-sato-stable-text-to-motion-framework",
+    "title": "SATO: Stable Text-to-Motion Framework.",
+    "authors": "Wenshuo Chen , Hongru Xiao, Erhang Zhang, Lijie Hu , Lei Wang, Mengyuan Liu, and Chen Chen.",
+    "authorsHtml": "<span class=\"mentored-author\">Wenshuo Chen</span>, Hongru Xiao, Erhang Zhang, <strong>Lijie Hu</strong>, Lei Wang, Mengyuan Liu, and Chen Chen.",
+    "mentoredAuthors": [
+      "Wenshuo Chen"
+    ],
+    "venue": "The 32nd ACM Multimedia Conference (ACM MM 2024).",
+    "venueShort": "ACM MM",
+    "year": 2024,
+    "type": "Conference Papers",
+    "abstract": "Is the Text to Motion model robust? Recent advancements in Text to Motion models primarily stem from more accurate predictions of specific actions. However, the text modality typically relies solely on pre-trained Contrastive Language-Image Pretraining (CLIP) models. Our research has uncovered a significant issue with the text-to-motion model: its predictions often exhibit inconsistent outputs, resulting in vastly different or even incorrect poses when presented with semantically similar or identical text inputs. In this paper, we undertake an analysis to elucidate the underlying causes of this instability, establishing a clear link between the unpredictability of model outputs and the erratic attention patterns of the text encoder module. Consequently, we introduce a formal framework aimed at addressing this issue, which we term the Sta ble Text-to-Motion Framework (SATO). SATO consists of three modules, each dedicated to stable attention, stable prediction, and maintaining a balance between accuracy and robustness trade-off. We present a methodology for constructing an SATO that satisfies the stability of attention and prediction. To verify the stability of the model, we introduced a new textual synonym perturbation dataset based on HumanML3D and KIT-ML. Results show that SATO is significantly more stable against synonyms and other slight perturbations while keeping its high accuracy performance. Codes and models are released at https://github.com/sato-team/Stable-Text-to-Motion-Framework.",
+    "summary": "Is the Text to Motion model robust? Recent advancements in Text to Motion models primarily stem from more accurate predictions of specific actions.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "ACM MM",
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://dl.acm.org/doi/10.1145/3664647.3681034"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2405.01461"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/sato-team/Stable-Text-to-motion-Framework"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 50,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2024-multi-hop-question-answering-under-temporal-knowledge-editing",
+    "title": "Multi-hop Question Answering under Temporal Knowledge Editing.",
+    "authors": "Keyuan Cheng* , Gang Lin* , Haoyang Fei* , Yuxuan Zhai, Lu Yu, Muhammad Asif Ali, Lijie Hu† , and Di Wang.",
+    "authorsHtml": "<span class=\"mentored-author\">Keyuan Cheng*</span>, <span class=\"mentored-author\">Gang Lin*</span>, <span class=\"mentored-author\">Haoyang Fei*</span>, Yuxuan Zhai, Lu Yu, Muhammad Asif Ali, <strong>Lijie Hu†</strong>, and Di Wang.",
+    "mentoredAuthors": [
+      "Keyuan Cheng",
+      "Gang Lin",
+      "Haoyang Fei"
+    ],
+    "venue": "The 1st Conference on Language Modeling (COLM 2024).",
+    "venueShort": "COLM",
+    "year": 2024,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Multi-hop Question Answering under Temporal Knowledge Editing as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "COLM",
+      "Paper",
+      "Preprint"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/forum?id=Nd950RAcCW#discussion"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2404.00492"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint"
+    ],
+    "sourceOrder": 51,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2024-monal-model-autophagy-analysis-for-modeling-human-ai-interactions",
+    "title": "MONAL: Model Autophagy Analysis for Modeling Human-AI Interactions.",
+    "authors": "Shu Yang* , Muhammad Asif Ali*, Lu Yu, Lijie Hu† , and Di Wang.",
+    "authorsHtml": "<span class=\"mentored-author\">Shu Yang*</span>, Muhammad Asif Ali*, Lu Yu, <strong>Lijie Hu†</strong>, and Di Wang.",
+    "mentoredAuthors": [
+      "Shu Yang"
+    ],
+    "venue": "The 1st Conference on Language Modeling (COLM 2024).",
+    "venueShort": "COLM",
+    "year": 2024,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies MONAL: Model Autophagy Analysis for Modeling Human-AI Interactions as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Interactive XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Interactive XAI",
+      "COLM",
+      "Paper",
+      "Preprint"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/forum?id=FX4fUThO9H#discussion"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2402.11271"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint"
+    ],
+    "sourceOrder": 52,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2024-improving-interpretation-faithfulness-for-vision-transformers",
+    "title": "Improving Interpretation Faithfulness for Vision Transformers.",
+    "authors": "Lijie Hu* , Yixin Liu*, Ninghao Liu, Mengdi Huai, Lichao Sun, and Di Wang.",
+    "authorsHtml": "<strong>Lijie Hu*</strong>, Yixin Liu*, Ninghao Liu, Mengdi Huai, Lichao Sun, and Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "The 41st International Conference on Machine Learning (ICML 2024).",
+    "venueShort": "ICML",
+    "year": 2024,
+    "type": "Conference Papers",
+    "abstract": "Vision Transformers (ViTs) have achieved state-of-the-art performance for various vision tasks. One reason behind the success lies in their ability to provide plausible innate explanations for the behavior of neural architectures. However, ViTs suffer from issues with explanation faithfulness, as their focal points are fragile to adversarial attacks and can be easily changed with even slight perturbations on the input image. In this paper, we propose a rigorous approach to mitigate these issues by introducing Faithful ViTs (FViTs). Briefly speaking, an FViT should have the following two properties: (1) The top-$k$ indices of its self-attention vector should remain mostly unchanged under input perturbation, indicating stable explanations; (2) The prediction distribution should be robust to perturbations. To achieve this, we propose a new method called Denoised Diffusion Smoothing (DDS), which adopts randomized smoothing and diffusion-based denoising. We theoretically prove that processing ViTs directly with DDS can turn them into FViTs. We also show that Gaussian noise is nearly optimal for both $\\ell_2$ and $\\ell_\\infty$-norm cases. Finally, we demonstrate the effectiveness of our approach through comprehensive experiments and evaluations. Results show that FViTs are more robust against adversarial attacks while maintaining the explainability of attention, indicating higher faithfulness.",
+    "summary": "Vision Transformers (ViTs) have achieved state-of-the-art performance for various vision tasks.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "ICML",
+      "paper",
+      "preprint",
+      "code",
+      "video"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/pdf?id=YdwwWRX20q"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2311.17983"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/kaustpradalab/FViT"
+      },
+      {
+        "label": "Video",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=xn-ROyhsB6A"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "code",
+      "video"
+    ],
+    "sourceOrder": 53,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": "Selected as a Spotlight paper (~3.5% acceptance rate)."
+  },
+  {
+    "id": "2024-differentially-private-natural-language-models-recent-advances-and-future-directions",
+    "title": "Differentially Private Natural Language Models: Recent Advances and Future Directions.",
+    "authors": "Lijie Hu , Ivan Habernal, Lei Shen and Di Wang.",
+    "authorsHtml": "<strong>Lijie Hu</strong>, Ivan Habernal, Lei Shen and Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "Findings of the 2024 European Chapter of the Association for Computational Linguistics (EACL 2024 Findings).",
+    "venueShort": "EACL",
+    "year": 2024,
+    "type": "Conference Papers",
+    "abstract": "Recent developments in deep learning have led to great success in various natural language processing (NLP) tasks. However, these applications may involve data that contain sensitive information. Therefore, how to achieve good performance while also protecting the privacy of sensitive data is a crucial challenge in NLP. To preserve privacy, Differential Privacy (DP), which can prevent reconstruction attacks and protect against potential side knowledge, is becoming a de facto technique for private data analysis. In recent years, NLP in DP models (DP-NLP) has been studied from different perspectives, which deserves a comprehensive review. In this paper, we provide the first systematic review of recent advances in DP deep learning models in NLP. In particular, we first discuss some differences and additional challenges of DP-NLP compared with the standard DP deep learning. Then, we investigate some existing work on DP-NLP andpresent its recent developments from three aspects: gradient perturbation based methods, embedding vector perturbation based methods, and ensemble model based methods. We also discuss some challenges and future directions.",
+    "summary": "Recent developments in deep learning have led to great success in various natural language processing (NLP) tasks.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "EACL",
+      "paper",
+      "preprint",
+      "video"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://aclanthology.org/2024.findings-eacl.33/"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2301.09112"
+      },
+      {
+        "label": "Video",
+        "type": "video",
+        "url": "https://underline.io/lecture/95587-differentially-private-natural-language-models-recent-advances-and-future-directions"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "video"
+    ],
+    "sourceOrder": 54,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2024-faithful-vision-language-interpretation-via-concept-bottleneck-models",
+    "title": "Faithful Vision-Language Interpretation via Concept Bottleneck Models.",
+    "authors": "Songning Lai* , Lijie Hu*† , Junxiao Wang, Laure Berti-Equille, and Di Wang.",
+    "authorsHtml": "<span class=\"mentored-author\">Songning Lai*</span>, <strong>Lijie Hu*†</strong>, Junxiao Wang, Laure Berti-Equille, and Di Wang.",
+    "mentoredAuthors": [
+      "Songning Lai"
+    ],
+    "venue": "The 12th International Conference on Learning Representations (ICLR 2024).",
+    "venueShort": "ICLR",
+    "year": 2024,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Faithful Vision-Language Interpretation via Concept Bottleneck Models as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "ICLR",
+      "Paper",
+      "Code",
+      "Video"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openreview.net/pdf?id=rp0EdI8X4e"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/kaustpradalab/FVLC"
+      },
+      {
+        "label": "Video",
+        "type": "video",
+        "url": "https://iclr.cc/virtual/2024/poster/17682"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "code",
+      "video"
+    ],
+    "sourceOrder": 55,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2024-faster-rates-of-private-stochastic-convex-optimization",
+    "title": "Faster Rates of Private Stochastic Convex Optimization.",
+    "authors": "Jinyan Su, Lijie Hu , and Di Wang.",
+    "authorsHtml": "Jinyan Su, <strong>Lijie Hu</strong>, and Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "Journal of Machine Learning Research, Volume 25, 114 (2024), Pages 1−41 (JMLR).",
+    "venueShort": "JMLR",
+    "year": 2024,
+    "type": "Journal Papers",
+    "abstract": "",
+    "summary": "Studies Faster Rates of Private Stochastic Convex Optimization as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "JMLR",
+      "Paper"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://jmlr.org/papers/v25/22-0079.html"
+      }
+    ],
+    "artifacts": [
+      "paper"
+    ],
+    "sourceOrder": 56,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2023-privacy-preserving-sparse-generalized-eigenvalue-problem",
+    "title": "Privacy-preserving Sparse Generalized Eigenvalue Problem.",
+    "authors": "Lijie Hu* , Zihang Xiang*, Jiabin Liu, and Di Wang.",
+    "authorsHtml": "<strong>Lijie Hu*</strong>, Zihang Xiang*, Jiabin Liu, and Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "The 26th International Conference on Artificial Intelligence and Statistics (AISTATS 2023).",
+    "venueShort": "AISTATS",
+    "year": 2023,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Privacy-preserving Sparse Generalized Eigenvalue Problem as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "AISTATS",
+      "Paper"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://proceedings.mlr.press/v206/hu23a/hu23a.pdf"
+      }
+    ],
+    "artifacts": [
+      "paper"
+    ],
+    "sourceOrder": 57,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2023-seat-stable-and-explainable-attention",
+    "title": "SEAT: Stable and Explainable Attention.",
+    "authors": "Lijie Hu* , Yixin Liu*, Ninghao Liu, Mengdi Huai, Lichao Sun, and Di Wang.",
+    "authorsHtml": "<strong>Lijie Hu*</strong>, Yixin Liu*, Ninghao Liu, Mengdi Huai, Lichao Sun, and Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "The 37th AAAI Conference on Artificial Intelligence (AAAI 2023).",
+    "venueShort": "AAAI",
+    "year": 2023,
+    "type": "Conference Papers",
+    "abstract": "Attention mechanism has become a standard fixture in many state-of-the-art natural language processing (NLP) models, not only due to its outstanding performance, but also because it provides plausible innate explanations for neural architectures. However, recent studies show that attention is unstable against randomness and perturbations during training or testing, such as random seeds and slight perturbation of embeddings, which impedes it from being a faithful explanation tool. Thus, a natural question is whether we can find an alternative to vanilla attention, which is more stable and could keep the key characteristics of the explanation. In this paper, we provide a rigorous definition of such an attention method named SEAT (Stable and Explainable ATtention). Specifically, SEAT has the following three properties: (1) Its prediction distribution is close to the prediction of the vanilla attention; (2) Its top-k indices largely overlap with those of the vanilla attention; (3) It is robust w.r.t perturbations, i.e., any slight perturbation on SEAT will not change the attention and prediction distribution too much, which implicitly indicates that it is stable to randomness and perturbations. Furthermore, we propose an optimization method for obtaining SEAT, which could be considered as revising the vanilla attention. Finally, through intensive experiments on various datasets, we compare our SEAT with other baseline methods using RNN, BiLSTM and BERT architectures, with different evaluation metrics on model interpretation, stability and accuracy. Results show that, besides preserving the original explainability and model performance, SEAT is more stable against input perturbations and training randomness, which indicates it is a more faithful explanation.",
+    "summary": "Attention mechanism has become a standard fixture in many state-of-the-art natural language processing (NLP) models, not only due to its outstanding performance, but also because it provides",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "AAAI",
+      "paper",
+      "preprint",
+      "code",
+      "video"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/26517"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2211.13290"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://github.com/kaustpradalab/SEAT"
+      },
+      {
+        "label": "Video",
+        "type": "video",
+        "url": "https://underline.io/events/380/sessions/14306/lecture/67934-seat-stable-and-explainable-attention?tab=Video"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "code",
+      "video"
+    ],
+    "sourceOrder": 58,
+    "representative": false,
+    "classificationSource": "semantic-scholar",
+    "classificationConfidence": "high",
+    "needsReview": false,
+    "notes": "Selected as an Oral paper."
+  },
+  {
+    "id": "2023-finite-sample-guarantees-of-differentially-private-expectation-maximization-algorithm",
+    "title": "Finite Sample Guarantees of Differentially Private Expectation Maximization Algorithm.",
+    "authors": "Di Wang*, Jiahao Ding*, Lijie Hu , Zejun Xie, Miao Pan, and Jinhui Xu.",
+    "authorsHtml": "Di Wang*, Jiahao Ding*, <strong>Lijie Hu</strong>, Zejun Xie, Miao Pan, and Jinhui Xu.",
+    "mentoredAuthors": [],
+    "venue": "The 26th European Conference on Artificial Intelligence (ECAI 2023).",
+    "venueShort": "ECAI",
+    "year": 2023,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Finite Sample Guarantees of Differentially Private Expectation Maximization Algorithm as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "ECAI",
+      "Paper"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://arxiv.org/abs/2010.13520"
+      }
+    ],
+    "artifacts": [
+      "paper"
+    ],
+    "sourceOrder": 59,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2023-generalized-linear-models-in-non-interactive-local-differential-privacy-with-public-data",
+    "title": "Generalized Linear Models in Non-interactive Local Differential Privacy with Public Data.",
+    "authors": "Di Wang*, Lijie Hu* , Huanyu Zhang, Marco Gaboardi, and Jinhui Xu.",
+    "authorsHtml": "Di Wang*, <strong>Lijie Hu*</strong>, Huanyu Zhang, Marco Gaboardi, and Jinhui Xu.",
+    "mentoredAuthors": [],
+    "venue": "Journal of Machine Learning Research, Volume 24, 132 (2023), Pages 1-57 (JMLR).",
+    "venueShort": "JMLR",
+    "year": 2023,
+    "type": "Journal Papers",
+    "abstract": "",
+    "summary": "Studies Generalized Linear Models in Non-interactive Local Differential Privacy with Public Data as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [
+      "Interactive XAI"
+    ],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "Interactive XAI",
+      "JMLR",
+      "Paper"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://jmlr.org/papers/v24/21-0523.html"
+      }
+    ],
+    "artifacts": [
+      "paper"
+    ],
+    "sourceOrder": 60,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2023-nearly-optimal-rates-of-privacy-preserving-sparse-generalized-eigenvalue-problem",
+    "title": "Nearly Optimal Rates of Privacy-preserving Sparse Generalized Eigenvalue Problem.",
+    "authors": "Lijie Hu* , Zihang Xiang*, Jiabin Liu, and Di Wang.",
+    "authorsHtml": "<strong>Lijie Hu*</strong>, Zihang Xiang*, Jiabin Liu, and Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "IEEE Transactions on Knowledge and Data Engineering, 2023 (01): 1-14 (TKDE).",
+    "venueShort": "TKDE",
+    "year": 2023,
+    "type": "Journal Papers",
+    "abstract": "",
+    "summary": "Studies Nearly Optimal Rates of Privacy-preserving Sparse Generalized Eigenvalue Problem as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "TKDE",
+      "Paper"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10314000"
+      }
+    ],
+    "artifacts": [
+      "paper"
+    ],
+    "sourceOrder": 61,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2022-faster-rates-of-differentially-private-stochastic-convex-optimization",
+    "title": "Faster Rates of Differentially Private Stochastic Convex Optimization.",
+    "authors": "Jinyan Su, Lijie Hu , and Di Wang.",
+    "authorsHtml": "Jinyan Su, <strong>Lijie Hu</strong>, and Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "Proceedings of The 33rd International Conference on Algorithmic Learning Theory (ALT 2022).",
+    "venueShort": "ALT",
+    "year": 2022,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Faster Rates of Differentially Private Stochastic Convex Optimization as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "ALT",
+      "Paper"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://proceedings.mlr.press/v167/su22a/su22a.pdf"
+      }
+    ],
+    "artifacts": [
+      "paper"
+    ],
+    "sourceOrder": 62,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2022-high-dimensional-differentially-private-stochastic-optimization-with-heavy-tailed-data",
+    "title": "High Dimensional Differentially Private Stochastic Optimization with Heavy-tailed Data.",
+    "authors": "Lijie Hu , Shuo Ni, Hanshen Xiao, and Di Wang.",
+    "authorsHtml": "<strong>Lijie Hu</strong>, Shuo Ni, Hanshen Xiao, and Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "Proceedings of the 41st ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems (PODS 2022).",
+    "venueShort": "PODS",
+    "year": 2022,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies High Dimensional Differentially Private Stochastic Optimization with Heavy-tailed Data as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "Systems for XAI",
+      "PODS",
+      "Paper",
+      "Preprint",
+      "Video"
+    ],
+    "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://dl.acm.org/doi/abs/10.1145/3517804.3524144"
+      },
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2107.11136"
+      },
+      {
+        "label": "Video",
+        "type": "video",
+        "url": "https://dl.acm.org/doi/10.1145/3517804.3524144"
+      }
+    ],
+    "artifacts": [
+      "paper",
+      "preprint",
+      "video"
+    ],
+    "sourceOrder": 63,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": "Invited to The ACM Transactions on Database Systems special issue on Best of PODS 2022. CCS Workshop on Privacy Preserving Machine Learning 2021."
+  }
+]

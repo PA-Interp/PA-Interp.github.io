@@ -1,0 +1,969 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { researchAreas } from "../data/researchAreas.js";
+import { newsItems } from "../data/news.js";
+import { site, withBase } from "../data/site.js";
+import publications from "../data/publications.json";
+
+const latestPublications = publications.slice(0, 3);
+const latestNews = newsItems.slice(0, 3);
+const researchAccents = ["blue", "teal", "graphite", "amber", "green"];
+const topicShort: Record<string, string> = {
+  "Theoretical Foundations of Usable XAI": "Theory",
+  "Useful XAI in Large Models": "Large Models",
+  "Systems for XAI": "Systems",
+  "Interactive XAI": "Interactive XAI",
+  "XAI for Science": "Science"
+};
+
+const principles = [
+  {
+    number: "01",
+    title: "Provable",
+    text: "Explanations grounded in assumptions, guarantees, and visible limits."
+  },
+  {
+    number: "02",
+    title: "Actionable",
+    text: "Evidence that helps people debug, decide, intervene, and discover."
+  },
+  {
+    number: "03",
+    title: "Interpretability",
+    text: "Mechanisms, evidence, and interfaces that make model behavior legible in real workflows."
+  }
+];
+
+const selectedPaperSpecs = [
+  {
+    topic: "Theory",
+    title: "Bayesian Gated Non-Negative Contrastive Learning.",
+    text: "Builds gated Bayesian contrastive objectives for more reliable representation-level evidence."
+  },
+  {
+    topic: "Large Models",
+    title: "Beyond Scalars: Evaluating and Understanding LLM Reasoning via Geometric Progress and Stability.",
+    text: "Evaluates LLM reasoning through geometric progress and stability rather than scalar-only scores."
+  },
+  {
+    topic: "Systems",
+    title: "Towards Reasoning-Preserving Unlearning in Multimodal Large Language Models.",
+    text: "Studies unlearning systems that remove target data while preserving multimodal reasoning behavior."
+  },
+  {
+    topic: "Interactive XAI",
+    title: "Algorithmic Recourse of In-Context Learning for Tabular Data.",
+    text: "Connects in-context learning with actionable recourse for tabular decision support."
+  },
+  {
+    topic: "Science",
+    title: "Controlling Repetition in Protein Language Models.",
+    text: "Controls repetitive generation behavior in protein language models for more useful scientific design."
+  }
+];
+
+const selectedProjects = selectedPaperSpecs.map((spec) => {
+  const paper = publications.find((item) => item.title === spec.title);
+  return {
+    ...spec,
+    title: spec.title.replace(/\.$/, ""),
+    venue: paper ? `${paper.venueShort} ${paper.year}` : "",
+    href: paper?.links?.[0]?.url ?? withBase("/publications/"),
+    sourceTopic: paper?.primaryTopic ?? spec.topic
+  };
+});
+
+---
+
+<BaseLayout title="PAI Lab" description={site.mission}>
+  <div class="home-page">
+    <section
+      class="hero"
+      aria-label="PAI Lab homepage"
+      style={`--hero-photo: url("${withBase("/assets/team-research-map-whiteboard.png")}")`}
+    >
+      <div class="container hero-inner">
+        <div class="hero-copy" data-reveal>
+          <p class="hero-label">Provable. Actionable. Interpretability.</p>
+          <h1>PAI Lab</h1>
+          <p class="hero-subhead">
+            Provable methods. Actionable evidence. Interpretability tools for real AI systems.
+          </p>
+          <p class="tagline">PAI turns explanations into testable evidence and usable interventions.</p>
+          <div class="button-row">
+            <a class="button" href={withBase("/research/")}>Explore Research <span aria-hidden="true">→</span></a>
+            <a class="button secondary" href={withBase("/publications/")}>View Publications</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mission-section" aria-label="PAI mission">
+      <div class="container mission-panel">
+        <article class="mission-intro" data-reveal>
+          <span class="section-kicker">Our Mission</span>
+          <h2>Make interpretability provable enough to test and actionable enough to use.</h2>
+          <div class="mission-context">
+            <p>PAI Lab advances interpretability through three linked goals: provable foundations, actionable evidence, and tools people can use in real workflows.</p>
+            <a href={withBase("/research/")}>Learn more about PAI <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        {principles.map((principle, index) => (
+          <article class="principle" data-reveal style={`--reveal-delay: ${(index + 1) * 70}ms`}>
+            <span class="principle-number">{principle.number}</span>
+            <h3>{principle.title}</h3>
+            <p>{principle.text}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="section research-section">
+      <div class="container section-title-row" data-reveal>
+        <div>
+          <span class="section-kicker">Research</span>
+          <h2>Five pillars, one PAI agenda.</h2>
+          <p>Theory, large models, systems, interaction, and science connect provable foundations with actionable interpretability.</p>
+        </div>
+        <a href={withBase("/research/")}>View all research <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="container research-card-grid">
+        {researchAreas.map((area, index) => (
+          <a
+            class={`research-card ${researchAccents[index]}`}
+            href={withBase(`/research/#${area.id}`)}
+            data-reveal
+            style={`--reveal-delay: ${index * 70}ms`}
+          >
+            <span class="research-number">0{index + 1}</span>
+            <span class="research-pill">{area.shortTitle}</span>
+            <h3>{area.title}</h3>
+            <p>{area.question}</p>
+            <span class="research-link" aria-hidden="true">Read area →</span>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="section selected-section">
+      <div class="container section-title-row" data-reveal>
+        <div>
+          <span class="section-kicker">Selected Papers</span>
+          <h2>Recent work across provable, actionable interpretability.</h2>
+          <p>Representative papers from each part of the PAI agenda.</p>
+        </div>
+        <a href={withBase("/publications/")}>View all publications <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="container project-grid">
+        {selectedProjects.map((project, index) => (
+          <a
+            class="project-card"
+            href={project.href}
+            data-reveal
+            style={`--reveal-delay: ${index * 70}ms`}
+          >
+            <span class="paper-topic">{project.topic}</span>
+            <h3>{project.title}</h3>
+            <span class="paper-venue">{project.venue}</span>
+            <p>{project.text}</p>
+            <div class="project-footer">
+              <div class="tag-list">
+                <span class="tag">{project.topic}</span>
+                {project.venue && <span class="tag">{project.venue}</span>}
+              </div>
+              <span class="project-link" aria-hidden="true">→</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="section latest-section">
+      <div class="container home-latest-panel" data-reveal>
+        <article>
+          <span class="section-kicker">Latest Publications</span>
+          <ul>
+            {latestPublications.map((paper) => (
+              <li>
+                <strong>{paper.title}</strong>
+                <span>{paper.venueShort || paper.type} {paper.year}</span>
+                <em>{topicShort[paper.primaryTopic] ?? paper.primaryTopic}</em>
+              </li>
+            ))}
+          </ul>
+          <a href={withBase("/publications/")}>View all publications <span aria-hidden="true">→</span></a>
+        </article>
+        <article>
+          <span class="section-kicker">News &amp; Updates</span>
+          <ul class="news-mini">
+            {latestNews.map((item) => (
+              <li>
+                <span>{item.date}</span>
+                <strong>{item.title}</strong>
+              </li>
+            ))}
+          </ul>
+          <a href={withBase("/news/")}>View all news <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="join-panel">
+          <span class="section-kicker">Join Us</span>
+          <h2>Work on provable, actionable interpretability.</h2>
+          <p>We are looking for curious people who want to connect foundations, systems, and real-world use.</p>
+          <a class="button secondary" href={withBase("/join-us/")}>Open Positions <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+  </div>
+
+</BaseLayout>
+
+<style>
+  .home-page {
+    --home-ink: #1d1d1f;
+    --home-muted: #6e6e73;
+    --home-soft: #f5f5f7;
+    --home-card: #ffffff;
+    --home-line: rgba(0, 0, 0, 0.11);
+    --home-blue: #0071e3;
+    --home-teal: #0a84ff;
+    --home-green: #248a3d;
+    --home-amber: #b36200;
+    --home-graphite: #424245;
+    background: var(--home-soft);
+    color: var(--home-ink);
+    font-family: "SF Pro Text", "Avenir Next", "Helvetica Neue", sans-serif;
+  }
+
+  .hero {
+    background:
+      linear-gradient(90deg, rgba(245, 245, 247, 0.98) 0%, rgba(245, 245, 247, 0.94) 36%, rgba(245, 245, 247, 0.46) 72%, rgba(245, 245, 247, 0.18) 100%),
+      var(--hero-photo) center right / cover no-repeat;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    display: grid;
+    isolation: isolate;
+    min-height: min(720px, calc(100svh - 118px));
+    padding: clamp(58px, 8vh, 92px) 0 clamp(44px, 6vh, 70px);
+    position: relative;
+  }
+
+  .hero::after {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(245, 245, 247, 0.72));
+    bottom: 0;
+    content: "";
+    height: 32%;
+    inset-inline: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .hero-inner {
+    align-content: center;
+    display: grid;
+    gap: clamp(34px, 7vw, 72px);
+    grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.56fr);
+    max-width: 1180px;
+    min-height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-copy {
+    align-self: center;
+    display: grid;
+    gap: 20px;
+    max-width: 690px;
+  }
+
+  .hero-label,
+  .section-kicker,
+  .paper-topic,
+  .paper-venue,
+  .research-number,
+  .research-pill {
+    font-family: "SF Mono", "IBM Plex Mono", "Cascadia Code", monospace;
+    letter-spacing: 0;
+  }
+
+  .hero-label,
+  .section-kicker {
+    color: var(--home-blue);
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    color: var(--home-ink);
+    font-family: "SF Pro Display", "Avenir Next", "Helvetica Neue", sans-serif;
+    font-size: clamp(5rem, 12vw, 10.5rem);
+    font-weight: 720;
+    letter-spacing: 0;
+    line-height: 0.9;
+    max-width: none;
+  }
+
+  .hero-subhead {
+    color: var(--home-ink);
+    font-family: "SF Pro Display", "Avenir Next", "Helvetica Neue", sans-serif;
+    font-size: clamp(1.7rem, 3.2vw, 3rem);
+    font-weight: 650;
+    line-height: 1.06;
+    max-width: 760px;
+  }
+
+  .tagline {
+    color: var(--home-muted);
+    font-size: clamp(1rem, 1.45vw, 1.2rem);
+    line-height: 1.55;
+    max-width: 580px;
+  }
+
+  .button-row {
+    gap: 10px;
+    margin-top: 8px;
+  }
+
+  .button {
+    background: var(--home-blue);
+    border-color: var(--home-blue);
+    border-radius: 999px;
+    color: #fff;
+    font-size: 0.94rem;
+    font-weight: 650;
+    min-height: 44px;
+    padding: 10px 18px;
+  }
+
+  .button.secondary {
+    background: rgba(255, 255, 255, 0.68);
+    border-color: rgba(0, 0, 0, 0.12);
+    color: var(--home-blue);
+  }
+
+  .button:hover {
+    background: #0077ed;
+    border-color: #0077ed;
+    box-shadow: 0 10px 24px rgba(0, 113, 227, 0.18);
+    color: #fff;
+  }
+
+  .button.secondary:hover {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(0, 113, 227, 0.28);
+    color: var(--home-blue);
+  }
+
+  .button span[aria-hidden="true"] {
+    margin-left: 6px;
+  }
+
+  .section {
+    padding: clamp(64px, 8vw, 108px) 0;
+  }
+
+  .mission-section,
+  .latest-section {
+    background: #fff;
+    border-bottom: 1px solid var(--home-line);
+    border-top: 1px solid var(--home-line);
+  }
+
+  .mission-section {
+    padding-top: clamp(28px, 4vw, 36px);
+  }
+
+  .mission-panel {
+    display: grid;
+    column-gap: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 1180px;
+    row-gap: 34px;
+  }
+
+  .mission-panel article {
+    min-width: 0;
+  }
+
+  .mission-panel .principle {
+    padding: 0 34px 0 0;
+  }
+
+  .mission-panel .principle + .principle {
+    border-left: 1px solid var(--home-line);
+    padding-left: 34px;
+  }
+
+  .mission-intro {
+    display: grid;
+    border-bottom: 1px solid var(--home-line);
+    column-gap: clamp(34px, 6vw, 72px);
+    grid-column: 1 / -1;
+    grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.48fr);
+    padding-bottom: 34px;
+    row-gap: 18px;
+  }
+
+  .mission-intro .section-kicker,
+  .mission-intro h2 {
+    grid-column: 1;
+  }
+
+  .mission-context {
+    align-self: start;
+    display: grid;
+    gap: 22px;
+    grid-column: 2;
+    padding-top: 14px;
+  }
+
+  .mission-intro h2,
+  .section-title-row h2,
+  .join-panel h2 {
+    color: var(--home-ink);
+    font-family: "SF Pro Display", "Avenir Next", "Helvetica Neue", sans-serif;
+    font-size: clamp(2.15rem, 4.2vw, 4.5rem);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.02;
+  }
+
+  .mission-intro h2 {
+    font-size: clamp(3.3rem, 6.8vw, 6.2rem);
+    max-width: 9.8em;
+    overflow-wrap: break-word;
+  }
+
+  .mission-intro p,
+  .principle p,
+  .section-title-row p,
+  .research-card p,
+  .project-card p,
+  .join-panel p {
+    color: var(--home-muted);
+  }
+
+  .mission-intro p {
+    font-size: 1.05rem;
+    line-height: 1.58;
+    max-width: 560px;
+  }
+
+  .mission-intro a,
+  .section-title-row a,
+  .home-latest-panel a:not(.button) {
+    color: var(--home-blue);
+    display: inline-flex;
+    font-weight: 650;
+    text-decoration: none;
+    transition: color 180ms ease, transform 180ms ease;
+  }
+
+  .mission-intro a:hover,
+  .mission-intro a:focus-visible,
+  .section-title-row a:hover,
+  .section-title-row a:focus-visible,
+  .home-latest-panel a:not(.button):hover,
+  .home-latest-panel a:not(.button):focus-visible {
+    color: #005bb5;
+    transform: translateX(2px);
+  }
+
+  .principle {
+    display: grid;
+    gap: 14px;
+  }
+
+  .principle-number {
+    color: var(--home-muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .principle h3 {
+    color: var(--home-ink);
+    font-size: clamp(1.35rem, 2vw, 1.75rem);
+    line-height: 1.1;
+  }
+
+  .principle p {
+    font-size: 0.97rem;
+    line-height: 1.52;
+  }
+
+  .section-title-row {
+    align-items: end;
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    max-width: 1180px;
+  }
+
+  .section-title-row > div {
+    display: grid;
+    gap: 12px;
+    max-width: 820px;
+  }
+
+  .section-title-row h2 {
+    font-size: clamp(2.2rem, 4.6vw, 5rem);
+  }
+
+  .section-title-row p {
+    font-size: 1.05rem;
+    line-height: 1.55;
+    max-width: 650px;
+  }
+
+  .section-title-row a {
+    flex: 0 0 auto;
+  }
+
+  .research-card-grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    max-width: 1180px;
+  }
+
+  .research-card {
+    --accent: var(--home-blue);
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: var(--home-ink);
+    display: grid;
+    grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+    isolation: isolate;
+    min-height: 232px;
+    overflow: hidden;
+    padding: 16px;
+    position: relative;
+    text-decoration: none;
+    transition:
+      background 180ms ease,
+      border-color 180ms ease,
+      box-shadow 180ms ease,
+      transform 180ms ease;
+  }
+
+  .research-card::after,
+  .project-card::after {
+    background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.82) 46%, transparent 64%);
+    content: "";
+    inset: -42% auto -42% -78%;
+    pointer-events: none;
+    position: absolute;
+    transform: translateX(0) skewX(-16deg);
+    transition: transform 520ms cubic-bezier(0.16, 1, 0.3, 1);
+    width: 58%;
+    z-index: 0;
+  }
+
+  .research-card > *,
+  .project-card > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .research-card.blue {
+    --accent: var(--home-blue);
+  }
+
+  .research-card.teal {
+    --accent: var(--home-teal);
+  }
+
+  .research-card.graphite {
+    --accent: var(--home-graphite);
+  }
+
+  .research-card.amber {
+    --accent: var(--home-amber);
+  }
+
+  .research-card.green {
+    --accent: var(--home-green);
+  }
+
+  .research-card:hover,
+  .research-card:focus-visible {
+    background: #fff;
+    border-color: color-mix(in srgb, var(--accent), #fff 34%);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
+  }
+
+  .research-card:hover::after,
+  .research-card:focus-visible::after,
+  .project-card:hover::after,
+  .project-card:focus-visible::after {
+    transform: translateX(270%) skewX(-16deg);
+  }
+
+  .research-card:active,
+  .project-card:active {
+    box-shadow: none;
+    transform: translateY(-1px) scale(0.997);
+  }
+
+  .research-number,
+  .research-pill {
+    font-size: 0.72rem;
+    font-weight: 750;
+    text-transform: uppercase;
+  }
+
+  .research-number {
+    color: var(--accent);
+  }
+
+  .research-pill {
+    align-self: start;
+    background: color-mix(in srgb, var(--accent), #fff 88%);
+    border: 1px solid color-mix(in srgb, var(--accent), #fff 76%);
+    border-radius: 999px;
+    color: var(--accent);
+    justify-self: start;
+    margin-top: 10px;
+    padding: 4px 8px;
+  }
+
+  .research-card h3 {
+    color: var(--home-ink);
+    font-size: 1.02rem;
+    line-height: 1.16;
+    margin-top: 13px;
+  }
+
+  .research-card p {
+    font-size: 0.88rem;
+    line-height: 1.43;
+    margin-top: 10px;
+  }
+
+  .research-link {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 650;
+    margin-top: 14px;
+  }
+
+  .selected-section {
+    background: #f5f5f7;
+  }
+
+  .project-grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    max-width: 1180px;
+  }
+
+  .project-card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.045);
+    color: var(--home-ink);
+    display: grid;
+    gap: 10px;
+    grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+    isolation: isolate;
+    min-height: 258px;
+    overflow: hidden;
+    padding: 16px;
+    position: relative;
+    text-decoration: none;
+    transition:
+      border-color 180ms ease,
+      box-shadow 180ms ease,
+      transform 180ms ease;
+  }
+
+  .project-card:hover,
+  .project-card:focus-visible {
+    border-color: rgba(0, 113, 227, 0.24);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
+  }
+
+  .paper-topic,
+  .paper-venue {
+    font-size: 0.72rem;
+    font-weight: 750;
+  }
+
+  .paper-topic {
+    color: var(--home-blue);
+    text-transform: uppercase;
+  }
+
+  .paper-venue {
+    color: var(--home-muted);
+  }
+
+  .project-card h3 {
+    color: var(--home-ink);
+    display: -webkit-box;
+    font-size: 0.94rem;
+    line-height: 1.18;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+
+  .project-card p {
+    display: -webkit-box;
+    font-size: 0.86rem;
+    line-height: 1.42;
+    min-height: 0;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+
+  .project-footer {
+    align-items: end;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  .tag-list {
+    gap: 6px;
+  }
+
+  .tag {
+    background: #f5f5f7;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    color: var(--home-muted);
+    font-size: 0.7rem;
+    font-weight: 650;
+    padding: 3px 8px;
+  }
+
+  .project-link {
+    color: var(--home-blue);
+    display: inline-block;
+    font-size: 1.18rem;
+    font-weight: 800;
+    transition: transform 180ms ease;
+  }
+
+  .project-card:hover .project-link,
+  .project-card:focus-visible .project-link {
+    transform: translateX(3px);
+  }
+
+  .home-latest-panel {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1.15fr 1fr 1fr;
+    max-width: 1180px;
+  }
+
+  .home-latest-panel article {
+    min-width: 0;
+    padding: 4px 30px 4px 0;
+  }
+
+  .home-latest-panel article + article {
+    border-left: 1px solid var(--home-line);
+    padding-left: 30px;
+  }
+
+  .home-latest-panel ul {
+    display: grid;
+    gap: 16px;
+    list-style: none;
+    margin: 22px 0;
+    padding: 0;
+  }
+
+  .home-latest-panel li {
+    display: grid;
+    gap: 5px;
+  }
+
+  .home-latest-panel li strong {
+    color: var(--home-ink);
+    font-size: 0.98rem;
+    line-height: 1.25;
+  }
+
+  .home-latest-panel li span,
+  .home-latest-panel li em {
+    color: var(--home-muted);
+    font-family: "SF Mono", "IBM Plex Mono", "Cascadia Code", monospace;
+    font-size: 0.74rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .home-latest-panel li em {
+    color: var(--home-blue);
+  }
+
+  .join-panel {
+    align-content: start;
+    display: grid;
+    gap: 18px;
+  }
+
+  .join-panel h2 {
+    font-size: clamp(1.8rem, 2.7vw, 3rem);
+  }
+
+  .join-panel p {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .join-panel .button {
+    justify-self: start;
+  }
+
+  @media (max-width: 1180px) {
+    .hero-inner,
+    .mission-panel,
+    .home-latest-panel {
+      grid-template-columns: 1fr;
+    }
+
+    .hero {
+      background:
+        linear-gradient(180deg, rgba(245, 245, 247, 0.97) 0%, rgba(245, 245, 247, 0.88) 48%, rgba(245, 245, 247, 0.6) 100%),
+        var(--hero-photo) center right / cover no-repeat;
+    }
+
+    .mission-intro {
+      grid-template-columns: 1fr;
+      padding-bottom: 28px;
+    }
+
+    .mission-context {
+      grid-column: 1;
+      padding-top: 0;
+    }
+
+    .mission-panel article,
+    .home-latest-panel article {
+      padding: 0 0 28px;
+    }
+
+    .mission-panel article + article,
+    .home-latest-panel article + article {
+      border-left: 0;
+      border-top: 1px solid var(--home-line);
+      padding: 28px 0;
+    }
+
+    .mission-panel .principle,
+    .mission-panel .principle + .principle {
+      border-left: 0;
+      padding: 28px 0;
+    }
+
+    .mission-panel .mission-intro + article.principle {
+      border-top: 0 !important;
+    }
+
+    .research-card-grid,
+    .project-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .research-card,
+    .project-card,
+    .project-card h3 {
+      min-height: 0;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .hero {
+      min-height: 0;
+      padding: 46px 0 56px;
+    }
+
+    .hero-inner {
+      gap: 30px;
+      width: min(1180px, calc(100% - 32px));
+    }
+
+    .hero-copy {
+      gap: 17px;
+    }
+
+    .hero h1 {
+      font-size: clamp(3.25rem, 18vw, 4.7rem);
+      line-height: 1.05;
+    }
+
+    .hero-subhead {
+      font-size: clamp(1.35rem, 6.2vw, 1.85rem);
+      line-height: 1.12;
+    }
+
+    .tagline {
+      font-size: 0.98rem;
+    }
+
+    .button-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 270px;
+    }
+
+    .button-row .button {
+      width: 100%;
+    }
+
+    .section {
+      padding: 58px 0;
+    }
+
+    .mission-section {
+      padding-top: 24px;
+    }
+
+    .mission-intro h2 {
+      font-size: clamp(2.7rem, 12vw, 3.9rem);
+      line-height: 1.08;
+      max-width: 100%;
+    }
+
+    .section-title-row h2,
+    .join-panel h2 {
+      line-height: 1.08;
+    }
+
+    .section-title-row {
+      align-items: start;
+      display: grid;
+      gap: 18px;
+    }
+
+    .research-card-grid,
+    .project-grid {
+      grid-template-columns: 1fr;
+      width: min(1180px, calc(100% - 32px));
+    }
+
+    .research-card,
+    .project-card {
+      min-height: 0;
+    }
+
+    .project-card h3,
+    .project-card p {
+      min-height: 0;
+    }
+  }
+
+</style>
