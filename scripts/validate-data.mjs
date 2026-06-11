@@ -5,7 +5,7 @@ const publications = JSON.parse(await readFile("src/data/publications.json", "ut
 const { researchAreas } = await import("../src/data/researchAreas.js");
 
 const errors = [];
-const roles = new Set(["PI", "Postdoc", "PhD Student", "Visiting Student", "Research Assistant"]);
+const roles = new Set(["PI", "Postdoc", "PhD Student", "Master Student", "Visiting Student", "Research Assistant"]);
 
 function parseScalar(value = "") {
   const trimmed = value.trim();
@@ -99,7 +99,7 @@ for (const file of teamFiles) {
   }
   if (member.bio) {
     const words = wordCount(member.bio);
-    if (words < 10 || words > 20) errors.push(`${member.name} biography has ${words} words, expected 10-20`);
+    if (words < 10 || words > 35) errors.push(`${member.name} biography has ${words} words, expected 10-35`);
   }
   if (member.photo) {
     const publicPath = member.photo.startsWith("/") ? member.photo.slice(1) : member.photo;

@@ -4,11 +4,12 @@ import { withBase } from "../data/site.js";
 
 const teamEntries = await getCollection("team");
 const teamMembers = teamEntries.map((entry) => entry.data).sort((a, b) => a.order - b.order);
-const groups = ["PI", "Postdoc", "PhD Student", "Visiting Student", "Research Assistant"];
+const groups = ["PI", "Postdoc", "PhD Student", "Master Student", "Visiting Student", "Research Assistant"];
 const groupLabels: Record<string, string> = {
   PI: "PI",
   Postdoc: "Postdoc",
   "PhD Student": "PhD Students",
+  "Master Student": "Master Students",
   "Visiting Student": "Visiting Students",
   "Research Assistant": "Research Assistants"
 };

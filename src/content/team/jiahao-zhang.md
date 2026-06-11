@@ -11,8 +11,8 @@ researchTags:
   - "Science"
   - "Systems"
 representativeWork: "Controlling repetition in protein language models"
-bio: "Jiahao studies interpretable large and protein language models, controllable generation, evaluation, and reproducible systems."
+bio: "Jiahao studies interpretable AI for controllable generation, with interests in AI for biology, reasoning, and model control."
 order: 3
 ---
 
-Jiahao studies interpretable large and protein language models, controllable generation, evaluation, and reproducible systems.
+Jiahao studies interpretable AI for controllable generation, with interests in AI for biology, reasoning, and model control.

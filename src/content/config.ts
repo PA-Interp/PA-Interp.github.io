@@ -4,7 +4,7 @@ const team = defineCollection({
   type: "content",
   schema: z.object({
     name: z.string(),
-    role: z.enum(["PI", "Postdoc", "PhD Student", "Visiting Student", "Research Assistant"]),
+    role: z.enum(["PI", "Postdoc", "PhD Student", "Master Student", "Visiting Student", "Research Assistant"]),
     affiliation: z.string(),
     period: z.string().default(""),
     website: z.string().default(""),
