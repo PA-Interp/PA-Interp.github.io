@@ -11,7 +11,7 @@ researchTags:
   - "Systems"
 representativeWork: "Contrastive learning and representation analysis"
 bio: "Peng studies contrastive learning, representation analysis, and LLM methods, with recent ICML work on Bayesian gating."
-order: 10
+order: 11
 ---
 
 Peng studies contrastive learning, representation analysis, and LLM methods, with recent ICML work on Bayesian gating.

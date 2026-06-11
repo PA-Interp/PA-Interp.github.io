@@ -11,7 +11,7 @@ researchTags:
   - "Science"
 representativeWork: "Protein language models and reproducible tooling"
 bio: "Zeqing builds AI-powered applications and full-stack systems, with interests in NLP, speech, data analysis, and applied machine learning."
-order: 9
+order: 10
 ---
 
 Zeqing builds AI-powered applications and full-stack systems, with interests in NLP, speech, data analysis, and applied machine learning.
