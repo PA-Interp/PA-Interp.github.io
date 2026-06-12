@@ -10,8 +10,8 @@ researchTags:
   - "Foundations"
   - "Systems"
 representativeWork: "Explainable learning and reliable XAI infrastructure"
-bio: "Wei Tang is a Postdoctoral Researcher at MBZUAI, working with Prof. Fakhri Karray and Prof. Lijie Hu."
+bio: "Wei is a postdoctoral researcher with research interests in machine learning, explainable AI, VLMs, and LLM agents."
 order: 2
 ---
 
-Wei Tang is a Postdoctoral Researcher at MBZUAI, working with Prof. Fakhri Karray and Prof. Lijie Hu.
+Wei is a postdoctoral researcher with research interests in machine learning, explainable AI, VLMs, and LLM agents.
