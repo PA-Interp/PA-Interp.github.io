@@ -3,7 +3,7 @@ name: "Daniil Ognev"
 role: "Master Student"
 affiliation: "Master Student"
 period: ""
-website: ""
+website: "https://www.linkedin.com/in/daniilognev/"
 photo: "/assets/team/Daniil.Ognev/daniil.jpeg"
 photoPosition: "50% 40%"
 researchTags:

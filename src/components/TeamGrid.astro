@@ -19,6 +19,7 @@ const groupSlug = (group: string) => group.toLowerCase().replaceAll(" ", "-");
 const memberSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 const profileLabel = (website: string) => {
   if (!website) return "Website pending";
+  if (website.includes("linkedin.com")) return "LinkedIn";
   return website.includes("github.com") || website.includes("openreview.net") ? "Profile" : "Website";
 };
 ---
