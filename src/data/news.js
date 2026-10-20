@@ -1,5 +1,33 @@
 export const newsItems = [
   {
+    date: "2026-09",
+    type: "Paper",
+    title: "Two papers accepted at NeurIPS 2026",
+    text: "The papers study tool-calling decisions in agentic LLMs and sycophancy in audio language models.",
+    href: "/publications/?year=2026&venue=NeurIPS"
+  },
+  {
+    date: "2026-08",
+    type: "Paper",
+    title: "Seven papers accepted at EMNLP 2026",
+    text: "Four Main and three Findings papers cover fine-tuning data, model behavior, privacy, decoding, steering, and knowledge editing.",
+    href: "/publications/?year=2026&venue=EMNLP"
+  },
+  {
+    date: "2026-06",
+    type: "Paper",
+    title: "Free-T2M accepted at ACM MM 2026",
+    text: "Free-T2M studies frequency-aware coarse-to-fine text-to-motion generation.",
+    href: "/publications/?year=2026&venue=ACM%20MM"
+  },
+  {
+    date: "2026-05",
+    type: "Paper",
+    title: "MedFM-Robust early accepted at MICCAI 2026",
+    text: "MedFM-Robust benchmarks the robustness of medical foundation models.",
+    href: "/publications/?year=2026&venue=MICCAI"
+  },
+  {
     date: "2026-05",
     type: "Paper",
     title: "One paper accepted at TMLR",

@@ -1,5 +1,85 @@
 [
   {
+    "id": "2026-how-do-agentic-llms-decide-to-call-tools-a-scaffold-default-controlled-by-suppression",
+    "title": "How Do Agentic LLMs Decide to Call Tools? A Scaffold Default Controlled by Suppression.",
+    "authors": "Xijie Gong* , Tingxu Han* , Jiahao Zhang , Wei Song, Ziqi Ding, Hanqi Yan, Youcheng Sun, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Xijie Gong*</span>, <span class=\"mentored-author\">Tingxu Han*</span>, <span class=\"mentored-author\">Jiahao Zhang</span>, Wei Song, Ziqi Ding, Hanqi Yan, Youcheng Sun, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Xijie Gong",
+      "Tingxu Han",
+      "Jiahao Zhang"
+    ],
+    "venue": "The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026).",
+    "venueShort": "NeurIPS",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies How Do Agentic LLMs Decide to Call Tools? A Scaffold Default Controlled by Suppression as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Systems for XAI",
+      "NeurIPS"
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "url": "https://lijie-hu.github.io/publications/"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 1,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-hearing-is-believing-evaluating-and-analyzing-audio-language-model-sycophancy-with-syaudio",
+    "title": "Hearing is Believing? Evaluating and Analyzing Audio Language Model Sycophancy with SYAUDIO.",
+    "authors": "Junchi Yao , Lokranjan Lakshmikanthan, Annie Zhao, Danielle Zhao, Shu Yang, Zikang Ding, Di Wang, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Junchi Yao</span>, Lokranjan Lakshmikanthan, Annie Zhao, Danielle Zhao, Shu Yang, Zikang Ding, Di Wang, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Junchi Yao"
+    ],
+    "venue": "The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026).",
+    "venueShort": "NeurIPS",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Hearing is Believing? Evaluating and Analyzing Audio Language Model Sycophancy with SYAUDIO as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Systems for XAI",
+      "Interactive XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Systems for XAI",
+      "Interactive XAI",
+      "NeurIPS"
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "url": "https://lijie-hu.github.io/publications/"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 2,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
     "id": "2026-bayesian-gated-non-negative-contrastive-learning",
     "title": "Bayesian Gated Non-Negative Contrastive Learning.",
     "authors": "Peng Cui* , Jiahao Zhang* , Lijie Hu .",
@@ -28,7 +108,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 1,
+    "sourceOrder": 3,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "low",
@@ -64,7 +144,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 2,
+    "sourceOrder": 4,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "low",
@@ -102,7 +182,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 3,
+    "sourceOrder": 5,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -112,8 +192,8 @@
   {
     "id": "2026-multi-adapter-representation-interventions-via-energy-calibration",
     "title": "Multi-Adapter Representation Interventions via Energy Calibration.",
-    "authors": "Manjiang Yu* , Hongji Li* , Junwei Chen, Xue Li, PRIYANKA SINGH, Yang Cao, Lijie Hu .",
-    "authorsHtml": "<span class=\"mentored-author\">Manjiang Yu*</span>, <span class=\"mentored-author\">Hongji Li*</span>, Junwei Chen, Xue Li, PRIYANKA SINGH, Yang Cao, <strong>Lijie Hu</strong>.",
+    "authors": "Manjiang Yu , Hongji Li , Junwei Chen, Xue Li, PRIYANKA SINGH, Yang Cao, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Manjiang Yu</span>, <span class=\"mentored-author\">Hongji Li</span>, Junwei Chen, Xue Li, PRIYANKA SINGH, Yang Cao, <strong>Lijie Hu</strong>.",
     "mentoredAuthors": [
       "Manjiang Yu",
       "Hongji Li"
@@ -138,7 +218,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 4,
+    "sourceOrder": 6,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -173,7 +253,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 5,
+    "sourceOrder": 7,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "low",
@@ -183,8 +263,8 @@
   {
     "id": "2026-beyond-fixed-biases-decoding-the-role-of-reasoning-uncertainty-in-mllm-modality-conflicts",
     "title": "Beyond Fixed Biases: Decoding the Role of Reasoning Uncertainty in MLLM Modality Conflicts.",
-    "authors": "Zhuoran Zhang , Tengyue Wang , Xilin Gong, Yang Shi, Haotian Wang, Di Wang, Lijie Hu .",
-    "authorsHtml": "<span class=\"mentored-author\">Zhuoran Zhang</span>, <span class=\"mentored-author\">Tengyue Wang</span>, Xilin Gong, Yang Shi, Haotian Wang, Di Wang, <strong>Lijie Hu</strong>.",
+    "authors": "Zhuoran Zhang* , Tengyue Wang* , Xilin Gong, Yang Shi, Haotian Wang, Di Wang, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Zhuoran Zhang*</span>, <span class=\"mentored-author\">Tengyue Wang*</span>, Xilin Gong, Yang Shi, Haotian Wang, Di Wang, <strong>Lijie Hu</strong>.",
     "mentoredAuthors": [
       "Zhuoran Zhang",
       "Tengyue Wang"
@@ -212,7 +292,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 6,
+    "sourceOrder": 8,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -250,7 +330,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 7,
+    "sourceOrder": 9,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -260,8 +340,8 @@
   {
     "id": "2026-beyond-external-monitors-enhancing-transparency-of-large-language-models-for-easier-monito",
     "title": "Beyond External Monitors: Enhancing Transparency of Large Language Models for Easier Monitoring.",
-    "authors": "Guanxu Chen, Dongrui Liu, Tao Luo, Lijie Hu , Qihao Lin, Jing Shao.",
-    "authorsHtml": "Guanxu Chen, Dongrui Liu, Tao Luo, <strong>Lijie Hu</strong>, Qihao Lin, Jing Shao.",
+    "authors": "Guanxu Chen*, Jing Shao*, Tao Luo, Lijie Hu , Qihao Lin, Dongrui Liu.",
+    "authorsHtml": "Guanxu Chen*, Jing Shao*, Tao Luo, <strong>Lijie Hu</strong>, Qihao Lin, Dongrui Liu.",
     "mentoredAuthors": [],
     "venue": "The Forty-Third International Conference on Machine Learning (ICML 2026).",
     "venueShort": "ICML",
@@ -288,7 +368,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 8,
+    "sourceOrder": 10,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -346,7 +426,7 @@
       "preprint",
       "code"
     ],
-    "sourceOrder": 9,
+    "sourceOrder": 11,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -391,7 +471,7 @@
       "paper",
       "code"
     ],
-    "sourceOrder": 10,
+    "sourceOrder": 12,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -440,7 +520,7 @@
       "paper",
       "preprint"
     ],
-    "sourceOrder": 11,
+    "sourceOrder": 13,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -489,7 +569,7 @@
       "paper",
       "preprint"
     ],
-    "sourceOrder": 12,
+    "sourceOrder": 14,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -535,7 +615,7 @@
       "paper",
       "preprint"
     ],
-    "sourceOrder": 13,
+    "sourceOrder": 15,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -576,7 +656,7 @@
     "artifacts": [
       "paper"
     ],
-    "sourceOrder": 14,
+    "sourceOrder": 16,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -607,9 +687,15 @@
       "Useful XAI in Large Models",
       "Systems for XAI",
       "CVPR",
-      "preprint"
+      "preprint",
+      "paper"
     ],
     "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Li_Towards_Reasoning-Preserving_Unlearning_in_Multimodal_Large_Language_Models_CVPR_2026_paper.pdf"
+      },
       {
         "label": "Arxiv",
         "type": "preprint",
@@ -617,14 +703,61 @@
       }
     ],
     "artifacts": [
+      "paper",
       "preprint"
     ],
-    "sourceOrder": 15,
+    "sourceOrder": 17,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
     "needsReview": false,
     "notes": ""
+  },
+  {
+    "id": "2026-medfm-robust-benchmarking-robustness-of-medical-foundation-models",
+    "title": "MedFM-Robust: Benchmarking Robustness of Medical Foundation Models.",
+    "authors": "Xiangxiang Cui, Tianjin Huang, Yifang Wang, Lijie Hu , Lu Yin.",
+    "authorsHtml": "Xiangxiang Cui, Tianjin Huang, Yifang Wang, <strong>Lijie Hu</strong>, Lu Yin.",
+    "mentoredAuthors": [],
+    "venue": "The 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026).",
+    "venueShort": "MICCAI",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies MedFM-Robust: Benchmarking Robustness of Medical Foundation Models as part of PAI's work on scientific discovery.",
+    "primaryTopic": "XAI for Science",
+    "secondaryTopics": [
+      "Systems for XAI"
+    ],
+    "tags": [
+      "XAI for Science",
+      "Systems for XAI",
+      "MICCAI",
+      "Preprint",
+      "Code"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2605.19027"
+      },
+      {
+        "label": "Code",
+        "type": "code",
+        "url": "https://abnerai.github.io/MedFM-Robust/"
+      }
+    ],
+    "artifacts": [
+      "preprint",
+      "code"
+    ],
+    "sourceOrder": 18,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": "Early accepted by MICCAI 2026 (~Top 9%)."
   },
   {
     "id": "2026-flattery-in-motion-benchmarking-and-analyzing-sycophancy-in-video-llms",
@@ -660,7 +793,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 16,
+    "sourceOrder": 19,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -693,7 +826,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 17,
+    "sourceOrder": 20,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "low",
@@ -729,7 +862,250 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 18,
+    "sourceOrder": 21,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-from-instance-selection-to-fixed-pool-data-recipe-search-for-supervised-fine-tuning",
+    "title": "From Instance Selection to Fixed-Pool Data Recipe Search for Supervised Fine-Tuning.",
+    "authors": "Haodong Wu, Jiahao Zhang, Lijie Hu , Yongqi Zhang.",
+    "authorsHtml": "Haodong Wu, Jiahao Zhang, <strong>Lijie Hu</strong>, Yongqi Zhang.",
+    "mentoredAuthors": [],
+    "venue": "The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026 Main).",
+    "venueShort": "EMNLP",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies From Instance Selection to Fixed-Pool Data Recipe Search for Supervised Fine-Tuning as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "EMNLP"
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "url": "https://lijie-hu.github.io/publications/"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 22,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "low",
+    "needsReview": true,
+    "notes": ""
+  },
+  {
+    "id": "2026-llms-regret-before-they-say-it-early-detection-and-compositional-architecture-of-regret-in",
+    "title": "LLMs Regret Before They Say It: Early Detection and Compositional Architecture of Regret in Hidden States.",
+    "authors": "Xiangxiang Cui, Shu Yang, Tianjin Huang, Wanyu Lin, Lijie Hu , Di Wang.",
+    "authorsHtml": "Xiangxiang Cui, Shu Yang, Tianjin Huang, Wanyu Lin, <strong>Lijie Hu</strong>, Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026 Main).",
+    "venueShort": "EMNLP",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies LLMs Regret Before They Say It: Early Detection and Compositional Architecture of Regret in Hidden States as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [],
+    "tags": [
+      "Useful XAI in Large Models",
+      "EMNLP"
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "url": "https://lijie-hu.github.io/publications/"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 23,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-understanding-and-mitigating-cross-lingual-privacy-leakage-via-language-specific-and-unive",
+    "title": "Understanding and Mitigating Cross-lingual Privacy Leakage via Language-specific and Universal Privacy Neurons.",
+    "authors": "Wenshuo Dong, Qingsong Yang, Shu Yang, Lijie Hu , Meng Ding, Wanyu Lin, Tianhang Zheng, Di Wang.",
+    "authorsHtml": "Wenshuo Dong, Qingsong Yang, Shu Yang, <strong>Lijie Hu</strong>, Meng Ding, Wanyu Lin, Tianhang Zheng, Di Wang.",
+    "mentoredAuthors": [],
+    "venue": "The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026 Main).",
+    "venueShort": "EMNLP",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Understanding and Mitigating Cross-lingual Privacy Leakage via Language-specific and Universal Privacy Neurons as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "EMNLP"
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "url": "https://lijie-hu.github.io/publications/"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 24,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-when-the-strongest-teacher-is-not-the-best-teacher-student-centric-answer-selection",
+    "title": "When the Strongest Teacher Is Not the Best Teacher: Student-Centric Answer Selection.",
+    "authors": "Zhengyu Hu, Zheyuan Xiao, Linxin Song, Fengqing Jiang, Yuetai Li, Zhihan Xiong, Junhao Lin, Yue Liu, Yao Su, Lijie Hu , Kaize Ding, Teng Xiao, Radha Poovendran.",
+    "authorsHtml": "Zhengyu Hu, Zheyuan Xiao, Linxin Song, Fengqing Jiang, Yuetai Li, Zhihan Xiong, Junhao Lin, Yue Liu, Yao Su, <strong>Lijie Hu</strong>, Kaize Ding, Teng Xiao, Radha Poovendran.",
+    "mentoredAuthors": [],
+    "venue": "The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026 Main).",
+    "venueShort": "EMNLP",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies When the Strongest Teacher Is Not the Best Teacher: Student-Centric Answer Selection as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "EMNLP"
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "url": "https://lijie-hu.github.io/publications/"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 25,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "low",
+    "needsReview": true,
+    "notes": ""
+  },
+  {
+    "id": "2026-sfad-speculative-factuality-aware-decoding",
+    "title": "SFAD: Speculative Factuality-Aware Decoding.",
+    "authors": "Guanqiao Chen , Di Wang, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Guanqiao Chen</span>, Di Wang, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Guanqiao Chen"
+    ],
+    "venue": "The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026 Findings).",
+    "venueShort": "EMNLP",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies SFAD: Speculative Factuality-Aware Decoding as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "EMNLP"
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "url": "https://lijie-hu.github.io/publications/"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 26,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "low",
+    "needsReview": true,
+    "notes": ""
+  },
+  {
+    "id": "2026-global-evolutionary-steering-refining-activation-steering-control-via-cross-layer-consiste",
+    "title": "Global Evolutionary Steering: Refining Activation Steering Control via Cross-Layer Consistency.",
+    "authors": "Xinyan Jiang , Wenjing Yu, Di Wang, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Xinyan Jiang</span>, Wenjing Yu, Di Wang, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Xinyan Jiang"
+    ],
+    "venue": "The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026 Findings).",
+    "venueShort": "EMNLP",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Global Evolutionary Steering: Refining Activation Steering Control via Cross-Layer Consistency as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Theoretical Foundations of Usable XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Theoretical Foundations of Usable XAI",
+      "EMNLP"
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "url": "https://lijie-hu.github.io/publications/"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 27,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "medium",
+    "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-rule-edit-benchmarking-rule-level-knowledge-editing-in-large-language-models",
+    "title": "RULE-EDIT: Benchmarking Rule-Level Knowledge Editing in Large Language Models.",
+    "authors": "Jizhi Zhang , Dylan Xinming Hou, Zhaoyi Li, Qishun Yang, Mahardika Krisna Ihsani, Muhammad Asif Ali, Gus Xia, Lijie Hu .",
+    "authorsHtml": "<span class=\"mentored-author\">Jizhi Zhang</span>, Dylan Xinming Hou, Zhaoyi Li, Qishun Yang, Mahardika Krisna Ihsani, Muhammad Asif Ali, Gus Xia, <strong>Lijie Hu</strong>.",
+    "mentoredAuthors": [
+      "Jizhi Zhang"
+    ],
+    "venue": "The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026 Findings).",
+    "venueShort": "EMNLP",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies RULE-EDIT: Benchmarking Rule-Level Knowledge Editing in Large Language Models as part of PAI's work on large-model interpretability.",
+    "primaryTopic": "Useful XAI in Large Models",
+    "secondaryTopics": [
+      "Systems for XAI"
+    ],
+    "tags": [
+      "Useful XAI in Large Models",
+      "Systems for XAI",
+      "EMNLP"
+    ],
+    "links": [
+      {
+        "label": "Source",
+        "type": "source",
+        "url": "https://lijie-hu.github.io/publications/"
+      }
+    ],
+    "artifacts": [],
+    "sourceOrder": 28,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -762,9 +1138,15 @@
       "Theoretical Foundations of Usable XAI",
       "WWW",
       "preprint",
-      "code"
+      "code",
+      "paper"
     ],
     "links": [
+      {
+        "label": "Link",
+        "type": "paper",
+        "url": "https://dl.acm.org/doi/10.1145/3774904.3792273"
+      },
       {
         "label": "Arxiv",
         "type": "preprint",
@@ -777,14 +1159,51 @@
       }
     ],
     "artifacts": [
+      "paper",
       "preprint",
       "code"
     ],
-    "sourceOrder": 19,
+    "sourceOrder": 29,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
     "needsReview": false,
+    "notes": ""
+  },
+  {
+    "id": "2026-free-t2m-frequency-aware-coarse-to-fine-text-to-motion-generation",
+    "title": "Free-T2M: Frequency-Aware Coarse-to-Fine Text-to-Motion Generation.",
+    "authors": "Wenshuo Chen, Haozhe Jia, Songning Lai, Lei Wang, Pengyu Yin, Shaofeng Liang, Yuqi Lin, Hongru Xiao, Lijie Hu , Yutao Yue.",
+    "authorsHtml": "Wenshuo Chen, Haozhe Jia, Songning Lai, Lei Wang, Pengyu Yin, Shaofeng Liang, Yuqi Lin, Hongru Xiao, <strong>Lijie Hu</strong>, Yutao Yue.",
+    "mentoredAuthors": [],
+    "venue": "The ACM Multimedia (ACM MM 2026), the Brave New Topics (BNI) Track.",
+    "venueShort": "ACM MM",
+    "year": 2026,
+    "type": "Conference Papers",
+    "abstract": "",
+    "summary": "Studies Free-T2M: Frequency-Aware Coarse-to-Fine Text-to-Motion Generation as part of PAI's work on usable XAI foundations.",
+    "primaryTopic": "Theoretical Foundations of Usable XAI",
+    "secondaryTopics": [],
+    "tags": [
+      "Theoretical Foundations of Usable XAI",
+      "ACM MM",
+      "Preprint"
+    ],
+    "links": [
+      {
+        "label": "Arxiv",
+        "type": "preprint",
+        "url": "https://arxiv.org/abs/2501.18232"
+      }
+    ],
+    "artifacts": [
+      "preprint"
+    ],
+    "sourceOrder": 30,
+    "representative": false,
+    "classificationSource": "title",
+    "classificationConfidence": "low",
+    "needsReview": true,
     "notes": ""
   },
   {
@@ -816,7 +1235,7 @@
     "artifacts": [
       "paper"
     ],
-    "sourceOrder": 20,
+    "sourceOrder": 31,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -854,7 +1273,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 21,
+    "sourceOrder": 32,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -895,7 +1314,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 22,
+    "sourceOrder": 33,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -910,7 +1329,7 @@
     "mentoredAuthors": [
       "Junchi Liao"
     ],
-    "venue": "Transactions on Machine Learning Research (TMLR), Minor Revision.",
+    "venue": "Transactions on Machine Learning Research (TMLR).",
     "venueShort": "TMLR",
     "year": 2026,
     "type": "Journal Papers",
@@ -930,7 +1349,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 23,
+    "sourceOrder": 34,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -968,7 +1387,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 24,
+    "sourceOrder": 35,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -1009,7 +1428,7 @@
     "artifacts": [
       "preprint"
     ],
-    "sourceOrder": 25,
+    "sourceOrder": 36,
     "representative": true,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -1047,7 +1466,7 @@
     "artifacts": [
       "preprint"
     ],
-    "sourceOrder": 26,
+    "sourceOrder": 37,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -1088,7 +1507,7 @@
     "artifacts": [
       "preprint"
     ],
-    "sourceOrder": 27,
+    "sourceOrder": 38,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -1124,7 +1543,7 @@
     "artifacts": [
       "preprint"
     ],
-    "sourceOrder": 28,
+    "sourceOrder": 39,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "low",
@@ -1157,7 +1576,7 @@
       }
     ],
     "artifacts": [],
-    "sourceOrder": 29,
+    "sourceOrder": 40,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -1208,7 +1627,7 @@
       "preprint",
       "code"
     ],
-    "sourceOrder": 30,
+    "sourceOrder": 41,
     "representative": true,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -1252,7 +1671,7 @@
     "artifacts": [
       "preprint"
     ],
-    "sourceOrder": 31,
+    "sourceOrder": 42,
     "representative": true,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -1304,7 +1723,7 @@
       "preprint",
       "code"
     ],
-    "sourceOrder": 32,
+    "sourceOrder": 43,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -1359,7 +1778,7 @@
       "preprint",
       "code"
     ],
-    "sourceOrder": 33,
+    "sourceOrder": 44,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -1402,7 +1821,7 @@
       "paper",
       "preprint"
     ],
-    "sourceOrder": 34,
+    "sourceOrder": 45,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -1455,7 +1874,7 @@
       "preprint",
       "code"
     ],
-    "sourceOrder": 35,
+    "sourceOrder": 46,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -1500,7 +1919,7 @@
       "paper",
       "preprint"
     ],
-    "sourceOrder": 36,
+    "sourceOrder": 47,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -1553,7 +1972,7 @@
       "preprint",
       "code"
     ],
-    "sourceOrder": 37,
+    "sourceOrder": 48,
     "representative": true,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -1601,7 +2020,7 @@
       "preprint",
       "code"
     ],
-    "sourceOrder": 38,
+    "sourceOrder": 49,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -1642,7 +2061,7 @@
     "artifacts": [
       "preprint"
     ],
-    "sourceOrder": 39,
+    "sourceOrder": 50,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -1685,7 +2104,7 @@
       "paper",
       "preprint"
     ],
-    "sourceOrder": 40,
+    "sourceOrder": 51,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -1733,7 +2152,7 @@
       "paper",
       "preprint"
     ],
-    "sourceOrder": 41,
+    "sourceOrder": 52,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -1778,7 +2197,7 @@
       "paper",
       "preprint"
     ],
-    "sourceOrder": 42,
+    "sourceOrder": 53,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -1817,7 +2236,7 @@
     "artifacts": [
       "paper"
     ],
-    "sourceOrder": 43,
+    "sourceOrder": 54,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -1872,7 +2291,7 @@
       "preprint",
       "code"
     ],
-    "sourceOrder": 44,
+    "sourceOrder": 55,
     "representative": true,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -1920,7 +2339,7 @@
       "paper",
       "code"
     ],
-    "sourceOrder": 45,
+    "sourceOrder": 56,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -1971,7 +2390,7 @@
       "paper",
       "preprint"
     ],
-    "sourceOrder": 46,
+    "sourceOrder": 57,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -2029,7 +2448,7 @@
       "preprint",
       "code"
     ],
-    "sourceOrder": 47,
+    "sourceOrder": 58,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -2079,7 +2498,7 @@
       "preprint",
       "code"
     ],
-    "sourceOrder": 48,
+    "sourceOrder": 59,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -2132,7 +2551,7 @@
       "preprint",
       "code"
     ],
-    "sourceOrder": 49,
+    "sourceOrder": 60,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -2189,7 +2608,7 @@
       "preprint",
       "code"
     ],
-    "sourceOrder": 50,
+    "sourceOrder": 61,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -2236,7 +2655,7 @@
       "paper",
       "preprint"
     ],
-    "sourceOrder": 51,
+    "sourceOrder": 62,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -2284,7 +2703,7 @@
       "paper",
       "preprint"
     ],
-    "sourceOrder": 52,
+    "sourceOrder": 63,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -2344,7 +2763,7 @@
       "code",
       "video"
     ],
-    "sourceOrder": 53,
+    "sourceOrder": 64,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -2399,7 +2818,7 @@
       "preprint",
       "video"
     ],
-    "sourceOrder": 54,
+    "sourceOrder": 65,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -2451,7 +2870,7 @@
       "code",
       "video"
     ],
-    "sourceOrder": 55,
+    "sourceOrder": 66,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -2487,7 +2906,7 @@
     "artifacts": [
       "paper"
     ],
-    "sourceOrder": 56,
+    "sourceOrder": 67,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -2523,7 +2942,7 @@
     "artifacts": [
       "paper"
     ],
-    "sourceOrder": 57,
+    "sourceOrder": 68,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -2583,7 +3002,7 @@
       "code",
       "video"
     ],
-    "sourceOrder": 58,
+    "sourceOrder": 69,
     "representative": false,
     "classificationSource": "semantic-scholar",
     "classificationConfidence": "high",
@@ -2619,7 +3038,7 @@
     "artifacts": [
       "paper"
     ],
-    "sourceOrder": 59,
+    "sourceOrder": 70,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -2658,7 +3077,7 @@
     "artifacts": [
       "paper"
     ],
-    "sourceOrder": 60,
+    "sourceOrder": 71,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -2694,7 +3113,7 @@
     "artifacts": [
       "paper"
     ],
-    "sourceOrder": 61,
+    "sourceOrder": 72,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -2730,7 +3149,7 @@
     "artifacts": [
       "paper"
     ],
-    "sourceOrder": 62,
+    "sourceOrder": 73,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
@@ -2783,7 +3202,7 @@
       "preprint",
       "video"
     ],
-    "sourceOrder": 63,
+    "sourceOrder": 74,
     "representative": false,
     "classificationSource": "title",
     "classificationConfidence": "medium",
