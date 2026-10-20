@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RiboLoop · Intelligence of RNA</title>
+  <meta name="description" content="RiboLoop is a family of RNA foundation models that learned the language of RNA from more than 47 million natural sequences, the understanding layer for designing RNA medicines." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e0f12'/%3E%3Cpath d='M16 16c-3-4-9-4-9 0s6 4 9 0 9-4 9 0-6 4-9 0' fill='none' stroke='%23f2542d' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="preload" as="image" href="./img/hero-1600.avif" type="image/avif" />
+  <script type="module" crossorigin src="./assets/index-Bns5J8W9.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BiGSY6oT.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="wordmark" href="#top" aria-label="RiboLoop home">
+        <span>RiboL</span><svg class="wordmark-loop" viewBox="8 3.6 28 12.8" aria-hidden="true"><path d="M22 10c-4.2-5.6-13-5.6-13 0s8.8 5.6 13 0 13-5.6 13 0-8.8 5.6-13 0" /></svg><span>p</span>
+      </a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#why">Why RiboLoop</a>
+        <a href="#benchmarks">Benchmarks</a>
+        <a href="#applications">Applications</a>
+        <a href="#roadmap">Roadmap</a>
+      </nav>
+      <a class="btn btn-dark btn-sm" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <p class="label reveal">RNA foundation models</p>
+        <h1 class="display reveal">To design RNA,<br />first understand it.</h1>
+        <div class="hero-row reveal">
+          <p class="lede">RiboLoop is a family of foundation models that has learned the language of RNA from <span class="nowrap">more than 47 million</span> natural sequences. It is the understanding layer for the next generation of RNA medicines.</p>
+          <div class="hero-cta">
+            <a class="btn btn-dark" href="#benchmarks">See the benchmarks</a>
+            <a class="btn btn-ghost" href="#roadmap">Our roadmap</a>
+          </div>
+        </div>
+        <figure class="tile tile-hero reveal">
+          <picture>
+            <source type="image/avif" srcset="./img/hero-800.avif 800w, ./img/hero-1600.avif 1600w" sizes="(min-width: 1240px) 1200px, 100vw" />
+            <img src="./img/hero-1600.webp" srcset="./img/hero-800.webp 800w, ./img/hero-1600.webp 1600w" sizes="(min-width: 1240px) 1200px, 100vw" width="1600" height="900" alt="Illustration of a chain of nucleotides folding into a functional RNA molecule" fetchpriority="high" />
+          </picture>
+        </figure>
+        <dl class="stats" id="stats">
+          <div class="stat reveal"><dt><span data-stat="rank">#1</span></dt><dd>at predicting which mutations break an RNA, across 31 laboratory experiments</dd></div>
+          <div class="stat reveal"><dt><span data-stat="size">48×</span></dt><dd>smaller than the strongest competing model, and more accurate</dd></div>
+          <div class="stat reveal"><dt><span data-stat="families">8/8</span></dt><dd>biology task families where a RiboLoop model ranks first</dd></div>
+          <div class="stat reveal"><dt><span data-stat="speed">2.8×</span></dt><dd>faster than the next-fastest RNA model we tested</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="section" id="why">
+      <div class="wrap split">
+        <div class="split-text">
+          <p class="label reveal">The idea</p>
+          <h2 class="h2 reveal">Every RNA medicine starts as a sequence someone had to design.</h2>
+          <p class="reveal">mRNA vaccines, gene-silencing drugs and RNA-targeting small molecules all depend on one thing: knowing how a string of A, C, G and U will fold, function and fail inside a cell.</p>
+          <p class="reveal">The space of possibilities is enormous. A 50-letter RNA already has more possible sequences than there are stars in the observable universe. Labs can test thousands. Design needs a model that already understands.</p>
+        </div>
+        <figure class="tile tile-4x3 reveal">
+          <picture>
+            <source type="image/avif" srcset="./img/understand-800.avif 800w, ./img/understand-1600.avif 1600w" sizes="(min-width: 960px) 560px, 100vw" />
+            <img src="./img/understand-800.webp" srcset="./img/understand-800.webp 800w, ./img/understand-1600.webp 1600w" sizes="(min-width: 960px) 560px, 100vw" width="800" height="600" loading="lazy" alt="Illustration of a folded RNA being scanned, its base pairs lighting up" />
+          </picture>
+        </figure>
+      </div>
+
+      <div class="wrap learn">
+        <div class="learn-copy">
+          <h3 class="h3 reveal">It learns RNA the way people learn a language: by filling in the blanks.</h3>
+          <p class="reveal">We hide letters in millions of natural RNAs and train RiboLoop to restore them. To succeed, it has to learn which letters pair, what shapes they form, and which changes nature never tolerates. Nobody labels any of it.</p>
+        </div>
+        <div class="seq reveal" id="seq" aria-label="Animated example: hidden RNA letters being filled in by the model">
+          <div class="seq-row" data-seq="GCCUAACACUGCCAAUGCCGGUCCCAAGCCCGGAUAAAAGUGGAGGGGG"></div>
+          <p class="seq-caption"><span class="dot dot-accent"></span>restored by RiboLoop</p>
+        </div>
+      </div>
+
+      <div class="wrap loop-card reveal">
+        <svg class="loop-diagram" viewBox="0 0 300 124" aria-hidden="true">
+          <defs>
+            <marker id="arr" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="context-stroke" /></marker>
+          </defs>
+          <text x="150" y="16" text-anchor="middle" class="ld-small ld-accent">re-read, again and again</text>
+          <path d="M176 62 C 186 22, 114 22, 124 60" class="ld-loop" marker-end="url(#arr)" />
+          <path d="M14 86 H 92" class="ld-flow" marker-end="url(#arr)" />
+          <rect x="100" y="62" width="100" height="48" rx="10" class="ld-block" />
+          <text x="150" y="91" text-anchor="middle" class="ld-text">one block</text>
+          <path d="M208 86 H 286" class="ld-flow" marker-end="url(#arr)" />
+          <text x="14" y="76" class="ld-small">sequence</text>
+          <text x="286" y="76" text-anchor="end" class="ld-small">understanding</text>
+        </svg>
+        <div>
+          <h3 class="h3">One compact block, used again and again.</h3>
+          <p>Instead of stacking hundreds of different layers, RiboLoop re-reads each sequence with a single compact block. It reaches the understanding of models many times its size while staying small, fast and inexpensive to run.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENCHMARKS -->
+    <section class="section section-surface" id="benchmarks">
+      <div class="wrap">
+        <p class="label reveal">Benchmarks</p>
+        <h2 class="h2 reveal">How RiboLoop compares</h2>
+        <p class="lede narrow reveal">Public benchmarks, run against the leading RNA foundation models. RiboLoop models are shown in coral.</p>
+
+        <div class="board-tabs reveal" role="tablist" aria-label="Benchmark">
+          <button role="tab" aria-selected="true" data-tab="fitness">Mutation effect</button>
+          <button role="tab" aria-selected="false" data-tab="structure">Structure</button>
+          <button role="tab" aria-selected="false" data-tab="tasks">Biology tasks</button>
+          <button role="tab" aria-selected="false" data-tab="speed">Speed</button>
+        </div>
+
+        <div class="card summary reveal" id="board-summary" aria-live="polite"></div>
+
+        <div class="card chart-card reveal">
+          <div class="chart-head">
+            <div>
+              <h3 class="chart-title" id="board-title"></h3>
+              <p class="chart-sub" id="board-sub"></p>
+            </div>
+            <div class="legend" id="board-legend"></div>
+          </div>
+          <div class="board" id="board" role="tabpanel"></div>
+        </div>
+
+        <div class="scatter-grid">
+          <div class="card chart-card reveal">
+            <div class="chart-head"><div>
+              <h3 class="chart-title">Accuracy vs. model size</h3>
+              <p class="chart-sub">Mutation-effect score against parameters (log scale). Top-left is best: accurate and small.</p>
+            </div></div>
+            <div class="scatter" id="scatter-size"></div>
+          </div>
+          <div class="card chart-card reveal">
+            <div class="chart-head"><div>
+              <h3 class="chart-title">Accuracy vs. speed</h3>
+              <p class="chart-sub">Mutation-effect score against RNAs read per second (log scale). Top-right is best: accurate and fast.</p>
+            </div></div>
+            <div class="scatter" id="scatter-speed"></div>
+          </div>
+        </div>
+
+        <details class="method reveal">
+          <summary>Methodology and caveats</summary>
+          <div class="method-body">
+            <ul>
+              <li><b>Mutation effect.</b> RNAGym non-coding RNA set: 31 deep-mutational-scanning experiments (26 ribozyme, 3 tRNA, 2 aptamer), 856,628 measured variants. Zero-shot, wild-type-marginal scoring. Score is the absolute Spearman correlation averaged within each RNA type, then across types, ×100. All models scored by us with the same protocol. Evo 2 is excluded because its published score uses a different scorer.</li>
+              <li><b>Structure.</b> bpRNA test set (TS0), median per-RNA base-pair F1 ×100. ERNIE-RNA, RiNALMo, RNA-FM, RNA-MSM, RNAErnie and RNABERT use their published scores; all other models were trained and scored by us.</li>
+              <li><b>Biology tasks.</b> RNA-Scope, 8 task families (42 endpoints). Each cell is the model's mean rank across the family's endpoints (1 = best); the best of three standard prediction heads is used per endpoint. Baselines are published multi-seed means.</li>
+              <li><b>Speed.</b> Full forward pass over 1,022-nucleotide RNAs, batch 16, bfloat16, one NVIDIA RTX PRO 6000; median of five windows.</li>
+              <li><b>RiboLoop settings.</b> RiboLoop can re-read a sequence a chosen number of times. Scores use the best observed setting (RiboLoop-10M: 12 passes; RiboLoop-100M: 8 passes on mutation effect and speed, 12 on structure and tasks). The point marked "fast" is RiboLoop-10M at 8 passes. RiboLoop results are single training runs.</li>
+            </ul>
+            <p class="method-asof">Evaluation data as of October 2026.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- PROOF -->
+    <section class="section section-dark" id="proof">
+      <div class="wrap">
+        <p class="label label-dark reveal">A real molecule</p>
+        <h2 class="h2 reveal">It reads the fold from the letters alone.</h2>
+        <div class="proof">
+          <figure class="proof-fig reveal">
+            <img src="./renders/twister-pairs.webp" width="2400" height="1500" loading="lazy" alt="Crystal structure of the twister ribozyme with the base pairs RiboLoop inferred drawn as glowing rods" />
+            <figcaption>
+              <span><i class="rod rod-teal"></i>stem pairs found</span>
+              <span><i class="rod rod-coral"></i>pseudoknot pairs found</span>
+            </figcaption>
+          </figure>
+          <div class="proof-copy reveal">
+            <p class="big-num"><span>17</span><small>/19</small></p>
+            <p>base pairs of the twister ribozyme recovered from its sequence alone, including all 7 pseudoknot pairs, the hardest kind to predict. RiboLoop never saw this structure.</p>
+            <p class="fine">Shown on the experimentally solved crystal structure (PDB 4OJI). Model: RiboLoop-33M, zero-shot.</p>
+          </div>
+        </div>
+
+        <h3 class="h3 story-title reveal">It spots a fatal typo, and suggests the fix.</h3>
+        <ol class="story">
+          <li class="story-step reveal">
+            <svg class="pair" viewBox="0 0 120 64" aria-hidden="true"><text x="22" y="40" class="nt nt-c">C</text><line x1="44" y1="33" x2="76" y2="33" class="bond" /><text x="82" y="40" class="nt nt-g">G</text></svg>
+            <p class="step-k">The natural ribozyme</p>
+            <p>A self-cutting RNA. In the lab it is highly active.</p>
+            <div class="meter"><span style="--v:0.821"></span><b>0.82</b></div>
+            <p class="fine">measured activity</p>
+          </li>
+          <li class="story-step reveal">
+            <svg class="pair" viewBox="0 0 120 64" aria-hidden="true"><text x="22" y="40" class="nt nt-g">G</text><line x1="44" y1="33" x2="76" y2="33" class="bond bond-broken" /><text x="82" y="40" class="nt nt-g">G</text></svg>
+            <p class="step-k">One letter changed</p>
+            <p>RiboLoop ranks this change the 2nd most damaging of all 162 possible single-letter changes. Its predicted activity falls from 0.97 to 0.17.</p>
+            <div class="meter meter-bad"><span style="--v:0.06"></span><b>0.06</b></div>
+            <p class="fine">measured activity</p>
+          </li>
+          <li class="story-step reveal">
+            <svg class="pair" viewBox="0 0 120 64" aria-hidden="true"><text x="22" y="40" class="nt nt-g">G</text><line x1="44" y1="33" x2="76" y2="33" class="bond bond-fixed" /><text x="82" y="40" class="nt nt-c">C</text></svg>
+            <p class="step-k">The suggested fix</p>
+            <p>After the change, RiboLoop expects the partner letter to flip from G to C (probability 0.00001 → 0.71), restoring the pair. That double change brings activity back in the lab.</p>
+            <div class="meter meter-good"><span style="--v:0.62"></span><b>0.62</b></div>
+            <p class="fine">measured activity</p>
+          </li>
+        </ol>
+        <p class="fine source reveal">Laboratory measurements: Kobori &amp; Yokobayashi, <i>Angew. Chem. Int. Ed.</i> 2016. Predicted activity is a calibration of the zero-shot score fitted on the other 143 measured single changes.</p>
+      </div>
+    </section>
+
+    <!-- APPLICATIONS -->
+    <section class="section" id="applications">
+      <div class="wrap">
+        <p class="label reveal">Applications</p>
+        <h2 class="h2 reveal">What understanding unlocks</h2>
+        <p class="lede narrow reveal">With a small amount of task data, the same model leads on problems that matter for RNA medicine.</p>
+        <div class="apps">
+          <article class="app reveal">
+            <div class="tile tile-1x1"><picture><source type="image/avif" srcset="./img/app-mrna-800.avif" /><img src="./img/app-mrna-800.webp" width="800" height="800" loading="lazy" alt="Illustration of a ribosome reading an mRNA strand" /></picture></div>
+            <h3 class="h3">mRNA medicines and vaccines</h3>
+            <p>Reads the signals that decide where an mRNA goes in the cell, how it is processed, and whether it codes for protein.</p>
+            <p class="evidence"><b>#1</b> mRNA localisation · coding potential · polyadenylation</p>
+          </article>
+          <article class="app reveal">
+            <div class="tile tile-1x1"><picture><source type="image/avif" srcset="./img/app-splicing-800.avif" /><img src="./img/app-splicing-800.webp" width="800" height="800" loading="lazy" alt="Illustration of an intron being spliced out of an RNA" /></picture></div>
+            <h3 class="h3">Splicing-correcting therapies</h3>
+            <p>Predicts how cells cut and join RNA, the mechanism behind approved drugs for spinal muscular atrophy.</p>
+            <p class="evidence"><b>#1</b> splice sites · splicing events</p>
+          </article>
+          <article class="app reveal">
+            <div class="tile tile-1x1"><picture><source type="image/avif" srcset="./img/app-drugs-800.avif" /><img src="./img/app-drugs-800.webp" width="800" height="800" loading="lazy" alt="Illustration of a small-molecule drug bound in a folded RNA pocket" /></picture></div>
+            <h3 class="h3">RNA-targeting small molecules</h3>
+            <p>Maps how an RNA folds, revealing the pockets where small-molecule drugs can bind.</p>
+            <p class="evidence"><b>#1</b> secondary structure · 3D contacts</p>
+          </article>
+          <article class="app reveal">
+            <div class="tile tile-1x1"><picture><source type="image/avif" srcset="./img/app-rbp-800.avif" /><img src="./img/app-rbp-800.webp" width="800" height="800" loading="lazy" alt="Illustration of a protein cradling an RNA hairpin" /></picture></div>
+            <h3 class="h3">RNA–protein interactions</h3>
+            <p>Predicts which proteins latch onto an RNA, a key control point for RNA stability and many diseases.</p>
+            <p class="evidence"><b>#1</b> protein binding across 22 RNA-binding proteins</p>
+          </article>
+          <article class="app reveal">
+            <div class="tile tile-1x1"><picture><source type="image/avif" srcset="./img/app-sensors-800.avif" /><img src="./img/app-sensors-800.webp" width="800" height="800" loading="lazy" alt="Illustration of an RNA switch lighting up when it binds its target" /></picture></div>
+            <h3 class="h3">Ribozymes, aptamers and biosensors</h3>
+            <p>Scores every possible mutation before anyone makes it, so labs only build the designs most likely to work.</p>
+            <p class="evidence"><b>#1</b> zero-shot mutation effect (RNAGym)</p>
+          </article>
+          <article class="app reveal">
+            <div class="tile tile-1x1"><picture><source type="image/avif" srcset="./img/app-diagnostics-800.avif" /><img src="./img/app-diagnostics-800.webp" width="800" height="800" loading="lazy" alt="Illustration of many RNA molecules sorting themselves into clusters" /></picture></div>
+            <h3 class="h3">RNA diagnostics</h3>
+            <p>Recognises what an unknown RNA is and where in the cell it belongs, from sequence alone.</p>
+            <p class="evidence"><b>#1</b> RNA type · miRNA localisation</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section section-surface" id="roadmap">
+      <div class="wrap">
+        <p class="label reveal">Roadmap</p>
+        <h2 class="h2 reveal">From understanding, to design, to medicine</h2>
+        <div class="track reveal" aria-hidden="true"><span class="track-fill"></span><i class="node node-on"></i><i class="node"></i><i class="node"></i></div>
+        <ol class="stages">
+          <li class="stage reveal">
+            <div class="tile tile-4x3"><picture><source type="image/avif" srcset="./img/stage-understand-800.avif 800w, ./img/stage-understand-1600.avif 1600w" sizes="(min-width: 960px) 380px, 100vw" /><img src="./img/stage-understand-800.webp" srcset="./img/stage-understand-800.webp 800w, ./img/stage-understand-1600.webp 1600w" sizes="(min-width: 960px) 380px, 100vw" width="800" height="600" loading="lazy" alt="Illustration of an RNA chain folding into its structure" /></picture></div>
+            <p class="stage-k"><span>01</span> Now <em class="chip chip-on">Built</em></p>
+            <h3 class="h3">Understand RNA</h3>
+            <p>A family of RiboLoop foundation models, from 10 million to 160 million parameters, trained on more than 47 million natural RNAs. Leading results on mutation effect, structure and all 8 biology task families.</p>
+          </li>
+          <li class="stage reveal">
+            <div class="tile tile-4x3"><picture><source type="image/avif" srcset="./img/stage-design-800.avif 800w, ./img/stage-design-1600.avif 1600w" sizes="(min-width: 960px) 380px, 100vw" /><img src="./img/stage-design-800.webp" srcset="./img/stage-design-800.webp 800w, ./img/stage-design-1600.webp 1600w" sizes="(min-width: 960px) 380px, 100vw" width="800" height="600" loading="lazy" alt="Illustration of a new RNA being assembled with edited positions highlighted" /></picture></div>
+            <p class="stage-k"><span>02</span> Next <em class="chip">In development</em></p>
+            <h3 class="h3">Design and redesign RNA</h3>
+            <p>Generate new RNAs with a chosen function from scratch, and improve existing ones: more stable, better expressed, tighter binding. The model's understanding becomes the engine that scores and steers every design.</p>
+          </li>
+          <li class="stage reveal">
+            <div class="tile tile-4x3"><picture><source type="image/avif" srcset="./img/stage-vaccine-800.avif 800w, ./img/stage-vaccine-1600.avif 1600w" sizes="(min-width: 960px) 380px, 100vw" /><img src="./img/stage-vaccine-800.webp" srcset="./img/stage-vaccine-800.webp 800w, ./img/stage-vaccine-1600.webp 1600w" sizes="(min-width: 960px) 380px, 100vw" width="800" height="600" loading="lazy" alt="Illustration of an mRNA vaccine particle reaching an immune cell, with a T cell attacking a tumour cell behind" /></picture></div>
+            <p class="stage-k"><span>03</span> Long term <em class="chip">Vision</em></p>
+            <h3 class="h3">Design mRNA cancer vaccines</h3>
+            <p>From the mutations in a patient's tumour to a personalised mRNA vaccine: choose the right targets, then design an mRNA that is stable, highly expressed and safe.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAMILY -->
+    <section class="section" id="family">
+      <div class="wrap">
+        <p class="label reveal">The model family</p>
+        <h2 class="h2 reveal">Four sizes, one way of reading RNA</h2>
+        <div class="family">
+          <article class="model reveal">
+            <div class="tile tile-1x1 tile-render"><img src="./renders/family-trna.webp" width="1200" height="1200" loading="lazy" alt="Transfer RNA structure rendered from its crystal structure" /></div>
+            <p class="model-size">10M</p>
+            <h3 class="h3">RiboLoop-10M</h3>
+            <p>The fastest model we tested: 2.8× the speed of RNA-FM at a tenth of its size.</p>
+          </article>
+          <article class="model reveal">
+            <div class="tile tile-1x1 tile-render"><img src="./renders/family-twister.webp" width="1200" height="1200" loading="lazy" alt="Twister ribozyme rendered from its crystal structure" /></div>
+            <p class="model-size">33M</p>
+            <h3 class="h3">RiboLoop-33M</h3>
+            <p>The top zero-shot mutation-effect score, at 48× fewer parameters than the strongest competitor.</p>
+          </article>
+          <article class="model reveal">
+            <div class="tile tile-1x1 tile-render"><img src="./renders/family-riboswitch.webp" width="1200" height="1200" loading="lazy" alt="SAM riboswitch rendered from its crystal structure" /></div>
+            <p class="model-size">100M</p>
+            <h3 class="h3">RiboLoop-100M</h3>
+            <p>Leads secondary-structure prediction and the biology task suite.</p>
+          </article>
+          <article class="model reveal">
+            <div class="tile tile-1x1 tile-render"><img src="./renders/family-intron.webp" width="1200" height="1200" loading="lazy" alt="Group I intron ribozyme rendered from its cryo-EM structure" /></div>
+            <p class="model-size">160M</p>
+            <h3 class="h3">RiboLoop-160M</h3>
+            <p>Our largest model so far, and the starting point for the design stage.</p>
+          </article>
+        </div>
+        <p class="fine reveal">Tiles show real RNA structures from the Protein Data Bank (1EHZ, 4OJI, 2GIS, 7EZ0), coloured from start to end of the chain.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="cta" id="contact">
+      <div class="wrap cta-inner reveal">
+        <h2 class="h2">Building the understanding layer for RNA design.</h2>
+        <p class="lede">We are speaking with partners and investors. Ask us for the technical brief.</p>
+        <a class="btn btn-light" href="mailto:pai.interp@gmail.com">pai.interp@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="wordmark wordmark-sm"><span>RiboL</span><svg class="wordmark-loop" viewBox="8 3.6 28 12.8" aria-hidden="true"><path d="M22 10c-4.2-5.6-13-5.6-13 0s8.8 5.6 13 0 13-5.6 13 0-8.8 5.6-13 0" /></svg><span>p</span></span>
+      <p>© 2026 The RiboLoop Authors. Illustrations are artistic renderings, not data. Benchmark data as of October 2026.</p>
+    </div>
+  </footer>
+
+  <div class="tip" id="tip" role="tooltip" hidden></div>
+</body>
+</html>
