@@ -44,32 +44,41 @@ const detail = (member: (typeof teamMembers)[number]) => (member.affiliation !==
   <section class="section" id={groupSlug(group.role)}>
     <div class="section-head"><h2>{group.label}</h2></div>
     <ul class="member-grid">
-      {group.members.map((member) => (
-        <li id={`member-${memberSlug(member.name)}`}>
-          <div class="photo">
-            {member.photo ? (
-              <img
-                src={withBase(member.photo)}
-                alt={member.name}
-                loading="lazy"
-                decoding="async"
-                style={`object-position: ${member.photoPosition ?? "50% 35%"}`}
-              />
-            ) : (
-              <span aria-hidden="true">{initials(member.name)}</span>
+      {group.members.map((member) => {
+        const slug = memberSlug(member.name);
+        // The photo toggles the bio; members without a bio get a plain photo.
+        const Photo = member.bio ? "button" : "div";
+        const toggle = member.bio
+          ? ({ type: "button", "aria-expanded": "false", "aria-controls": `bio-${slug}`, "aria-label": `Show biography of ${member.name}` } as const)
+          : {};
+
+        return (
+          <li id={`member-${slug}`}>
+            <Photo class="photo" {...toggle}>
+              {member.photo ? (
+                <img
+                  src={withBase(member.photo)}
+                  alt={member.bio ? "" : member.name}
+                  loading="lazy"
+                  decoding="async"
+                  style={`object-position: ${member.photoPosition ?? "50% 35%"}`}
+                />
+              ) : (
+                <span aria-hidden="true">{initials(member.name)}</span>
+              )}
+            </Photo>
+            <h3>{member.website ? <a href={member.website}>{member.name}</a> : member.name}</h3>
+            {(detail(member) || member.period) && (
+              <p class="detail">
+                {detail(member)}
+                {detail(member) && member.period && <br />}
+                {member.period && <span class="period">{member.period}</span>}
+              </p>
             )}
-          </div>
-          <h3>{member.website ? <a href={member.website}>{member.name}</a> : member.name}</h3>
-          {(detail(member) || member.period) && (
-            <p class="detail">
-              {detail(member)}
-              {detail(member) && member.period && <br />}
-              {member.period && <span class="period">{member.period}</span>}
-            </p>
-          )}
-          {member.bio && <p class="bio">{member.bio}</p>}
-        </li>
-      ))}
+            {member.bio && <p class="bio" id={`bio-${slug}`} hidden>{member.bio}</p>}
+          </li>
+        );
+      })}
     </ul>
   </section>
 ))}
@@ -92,6 +101,34 @@ const detail = (member: (typeof teamMembers)[number]) => (member.affiliation !==
     </ul>
   </section>
 )}
+
+<noscript>
+  <style is:inline>.member-grid .bio[hidden] { display: block; }</style>
+</noscript>
+
+<script>
+  const toggles = document.querySelectorAll<HTMLButtonElement>(".member-grid button.photo");
+
+  const setOpen = (button: HTMLButtonElement, open: boolean) => {
+    const bio = document.getElementById(button.getAttribute("aria-controls") ?? "");
+    if (!bio) return;
+    button.setAttribute("aria-expanded", String(open));
+    bio.hidden = !open;
+  };
+
+  toggles.forEach((button) => {
+    button.addEventListener("click", () => setOpen(button, button.getAttribute("aria-expanded") !== "true"));
+  });
+
+  // Author links on publication lists point at #member-<slug>; open that person's bio.
+  const openFromHash = () => {
+    const target = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+    const button = target?.querySelector<HTMLButtonElement>("button.photo");
+    if (button) setOpen(button, true);
+  };
+  openFromHash();
+  window.addEventListener("hashchange", openFromHash);
+</script>
 
 <style>
   .pi {
@@ -168,6 +205,25 @@ const detail = (member: (typeof teamMembers)[number]) => (member.affiliation !==
 
   .member-grid .photo {
     margin-bottom: 0.6rem;
+  }
+
+  button.photo {
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+    font: inherit;
+    padding: 0;
+    width: 100%;
+  }
+
+  button.photo:hover img {
+    opacity: 0.9;
+  }
+
+  button.photo[aria-expanded="true"] {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
   }
 
   .member-grid h3 {

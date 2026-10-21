@@ -11,8 +11,5 @@ researchTags:
   - "Large Models"
   - "Interactive XAI"
 representativeWork: "Provable XAI, actionable systems, and interpretability evaluation"
-bio: "Lijie leads PAI Lab, connecting provable foundations, actionable systems, interaction, and evaluation for large-model interpretability."
 order: 1
 ---
-
-Lijie leads PAI Lab, connecting provable foundations, actionable systems, interaction, and evaluation for large-model interpretability.
