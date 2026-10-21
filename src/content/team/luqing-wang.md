@@ -1,7 +1,7 @@
 ---
 name: "Luqing Wang"
 role: "Visiting Student"
-affiliation: "Visiting Student"
+affiliation: "Ph.D. Student, Southeast University"
 period: ""
 website: ""
 photo: "/assets/team/luqing.wang/luqing.wang.png"
