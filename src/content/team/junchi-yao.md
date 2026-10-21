@@ -2,7 +2,7 @@
 name: "Junchi Yao"
 role: "PhD Student"
 affiliation: "B.S.@UESTC"
-period: "2026-present"
+period: "Fall 2026–present"
 website: "https://yokeyao.github.io/"
 photo: "/assets/team/junchi.yao/junchi.yao.jpg"
 photoPosition: "50% 25%"

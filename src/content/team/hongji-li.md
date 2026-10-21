@@ -2,7 +2,7 @@
 name: "Hongji Li"
 role: "PhD Student"
 affiliation: "B.S.@LZU"
-period: "2026-present"
+period: "Fall 2026–present"
 website: "https://neon-jing.github.io/"
 researchTags:
   - "Large Models"

@@ -1,8 +1,8 @@
 ---
 name: "Daniil Ognev"
 role: "Master Student"
-affiliation: "Master Student"
-period: ""
+affiliation: "B.S.@CUHK"
+period: "Fall 2025–present"
 website: "https://www.linkedin.com/in/daniilognev/"
 photo: "/assets/team/Daniil.Ognev/daniil.jpeg"
 photoPosition: "50% 40%"

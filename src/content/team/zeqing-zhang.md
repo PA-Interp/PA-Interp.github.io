@@ -1,8 +1,8 @@
 ---
 name: "Zeqing Zhang"
 role: "Master Student"
-affiliation: "Incoming M.S. Student, Fall 2026"
-period: "Fall 2026"
+affiliation: "B.S.@THU"
+period: "Fall 2026–present"
 website: "https://leeeemon87.github.io/"
 photo: "/assets/team/zeqing.zhang/zeqing.zhang.jpg"
 photoPosition: "50% 28%"

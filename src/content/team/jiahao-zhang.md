@@ -2,7 +2,7 @@
 name: "Jiahao Zhang"
 role: "PhD Student"
 affiliation: "B.S.@HUST"
-period: "2025-present"
+period: "Fall 2025–present"
 website: "https://jiahaozhang-public.github.io/"
 photo: "/assets/team/jiahao.zhang/jiahao.zhang.jpg"
 photoPosition: "50% 28%"

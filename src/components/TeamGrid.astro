@@ -60,7 +60,13 @@ const detail = (member: (typeof teamMembers)[number]) => (member.affiliation !==
             )}
           </div>
           <h3>{member.website ? <a href={member.website}>{member.name}</a> : member.name}</h3>
-          {detail(member) && <p class="detail">{detail(member)}</p>}
+          {(detail(member) || member.period) && (
+            <p class="detail">
+              {detail(member)}
+              {detail(member) && member.period && <br />}
+              {member.period && <span class="period">{member.period}</span>}
+            </p>
+          )}
           {member.bio && <p class="bio">{member.bio}</p>}
         </li>
       ))}
@@ -132,6 +138,10 @@ const detail = (member: (typeof teamMembers)[number]) => (member.affiliation !==
   .detail {
     color: var(--muted);
     font-size: 0.92rem;
+  }
+
+  .period {
+    white-space: nowrap;
   }
 
   .bio {
