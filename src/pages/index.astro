@@ -1,4 +1,6 @@
 ---
+import { Picture } from "astro:assets";
+import campusPhoto from "../assets/home/mbzuai-campus.jpg";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import NewsList from "../components/NewsList.astro";
 import PublicationEntry from "../components/PublicationEntry.astro";
@@ -60,12 +62,60 @@ const selectedPublications = publications
       </div>
       <NewsList limit={6} />
     </section>
+
+    <figure class="campus">
+      <Picture
+        src={campusPhoto}
+        formats={["avif", "webp"]}
+        widths={[880, 1320, 1760]}
+        sizes="(max-width: 912px) calc(100vw - 32px), 880px"
+        alt="MBZUAI campus buildings around Central Park in Masdar City, Abu Dhabi"
+        loading="lazy"
+      />
+      <figcaption>
+        MBZUAI campus, Masdar City. Photo:
+        <a href="https://commons.wikimedia.org/wiki/File:Masdar_City_Image.jpg">NNegm</a>,
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, cropped.
+      </figcaption>
+    </figure>
   </div>
 </BaseLayout>
 
 <style>
+  .campus {
+    margin: 3rem 0 0;
+  }
+
+  .campus :global(img) {
+    aspect-ratio: 3 / 1;
+    border-radius: 4px;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  figcaption {
+    color: var(--muted);
+    font-size: 0.78rem;
+    margin-top: 0.35rem;
+    text-align: right;
+  }
+
+  figcaption a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--rule);
+  }
+
   .intro {
     padding-top: 2.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .campus :global(img) {
+      aspect-ratio: 2.2 / 1;
+    }
   }
 
   .affiliation {
