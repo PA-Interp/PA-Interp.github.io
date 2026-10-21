@@ -1,0 +1,103 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PageHero from "../components/PageHero.astro";
+import { projects } from "../data/projects.js";
+import { researchAreas } from "../data/researchAreas.js";
+import { withBase } from "../data/site.js";
+
+const areaTitle = (id: string) => researchAreas.find((area) => area.id === id)?.title;
+---
+
+<BaseLayout title="Projects" description="Research projects from PAI Lab at MBZUAI that have their own project pages.">
+  <PageHero title="Projects" lead="Larger research efforts from the lab, each with its own project page." />
+
+  <div class="container">
+    <ul class="projects">
+      {projects.map((project) => (
+        <li id={project.id}>
+          <a class="thumb" href={withBase(project.href)} tabindex="-1" aria-hidden="true">
+            <img src={withBase(project.image)} alt="" loading="lazy" decoding="async" />
+          </a>
+          <div>
+            <h2><a href={withBase(project.href)}>{project.title}</a></h2>
+            <p class="subtitle">{project.subtitle}</p>
+            <p class="description">{project.description}</p>
+            <p class="links">
+              <a href={withBase(project.href)}>[Project page]</a>
+              {areaTitle(project.area) && (
+                <span>
+                  · Research area: <a href={withBase(`/research/#${project.area}`)}>{areaTitle(project.area)}</a>
+                </span>
+              )}
+            </p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .projects {
+    list-style: none;
+    margin-top: 2rem;
+    padding: 0;
+  }
+
+  .projects > li {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 11rem 1fr;
+  }
+
+  .projects > li + li {
+    border-top: 1px solid var(--rule-soft);
+    margin-top: 1.75rem;
+    padding-top: 1.75rem;
+  }
+
+  .thumb {
+    aspect-ratio: 1;
+    background: #0e0f12;
+    border-radius: 4px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .thumb img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  h2 a {
+    color: var(--text);
+  }
+
+  h2 a:hover {
+    color: var(--accent);
+  }
+
+  .subtitle {
+    color: var(--muted);
+  }
+
+  .description {
+    margin-top: 0.6rem;
+    max-width: 68ch;
+  }
+
+  .links {
+    color: var(--muted);
+    font-size: 0.94rem;
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 640px) {
+    .projects > li {
+      gap: 1rem;
+      grid-template-columns: 6.5rem 1fr;
+    }
+  }
+</style>

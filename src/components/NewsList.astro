@@ -2,67 +2,56 @@
 import { newsItems } from "../data/news.js";
 import { withBase } from "../data/site.js";
 
-const resolveHref = (href: string) => href?.startsWith("/") ? withBase(href) : href;
+interface Props {
+  limit?: number;
+  /** Show the one-line description under each title. */
+  details?: boolean;
+}
+
+const { limit, details = false } = Astro.props;
+const items = limit ? newsItems.slice(0, limit) : newsItems;
+const resolveHref = (href: string) => (href?.startsWith("/") ? withBase(href) : href);
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const formatDate = (date: string) => {
+  const [year, month] = date.split("-");
+  return month ? `${months[Number(month) - 1]} ${year}` : year;
+};
 ---
 
-<div class="news-list">
-  {newsItems.map((item) => (
-    <article class="news-item surface">
-      <div class="date">{item.date}</div>
+<ul class="news-list">
+  {items.map((item) => (
+    <li>
+      <time datetime={item.date}>{formatDate(item.date)}</time>
       <div>
-        <span class="type">{item.type}</span>
-        <h3>{item.title}</h3>
-        <p>{item.text}</p>
-        {item.href && <a href={resolveHref(item.href)}>View related record</a>}
+        {item.href ? <a href={resolveHref(item.href)}>{item.title}</a> : <span>{item.title}</span>}
+        {details && item.text && <p>{item.text}</p>}
       </div>
-    </article>
+    </li>
   ))}
-</div>
+</ul>
 
 <style>
   .news-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
     display: grid;
-    gap: 14px;
+    gap: 1rem;
+    grid-template-columns: 5.5rem 1fr;
+    padding: 0.45rem 0;
   }
 
-  .news-item {
-    display: grid;
-    gap: 18px;
-    grid-template-columns: 110px 1fr;
-    padding: 20px;
-  }
-
-  .date,
-  .type {
-    font-family: var(--font-mono);
-    font-weight: 800;
-  }
-
-  .date {
-    color: var(--theorem);
-  }
-
-  .type {
+  time {
     color: var(--muted);
-    font-size: 0.78rem;
-    text-transform: uppercase;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
   }
 
-  .news-item p {
+  p {
     color: var(--muted);
-    margin-top: 8px;
-  }
-
-  .news-item a {
-    display: inline-flex;
-    font-weight: 650;
-    margin-top: 10px;
-    text-decoration: none;
-  }
-
-  @media (max-width: 620px) {
-    .news-item {
-      grid-template-columns: 1fr;
-    }
+    font-size: 0.94rem;
+    margin-top: 0.1rem;
   }
 </style>

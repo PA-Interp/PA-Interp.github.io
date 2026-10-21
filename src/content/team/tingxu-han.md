@@ -12,6 +12,9 @@ researchTags:
 representativeWork: "Actionable decision support and explanation interfaces"
 bio: "Tingxu is a visiting researcher from Nanjing University. His research interests include Responsible AI, LLM Reasoning, and AI4SE."
 order: 7
+alumni: true
+nowAt: "Institute of Foundation Models (IFM)"
+nowAtUrl: "https://ifm.ai/"
 ---
 
 Tingxu is a visiting researcher from Nanjing University. His research interests include Responsible AI, LLM Reasoning, and AI4SE.

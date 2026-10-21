@@ -1,0 +1,85 @@
+---
+import { formatAuthors, paperLinks, type Publication } from "../lib/publications";
+
+interface Props {
+  paper: Publication;
+  [attribute: string]: unknown;
+}
+
+const { paper, ...attributes } = Astro.props;
+const authors = await formatAuthors(paper);
+const links = paperLinks(paper);
+const venue = [paper.venueShort, paper.year].filter(Boolean).join(" ");
+---
+
+<li class="pub" {...attributes}>
+  <p class="pub-title">{paper.title}</p>
+  <p class="pub-authors" set:html={authors} />
+  <p class="pub-meta">
+    <em title={paper.venue}>{venue}</em>
+    {links.map((link) => (
+      <>
+        {" "}<a href={link.url}>[{link.label}]</a>
+      </>
+    ))}
+  </p>
+  {paper.abstract && (
+    <details class="pub-abstract">
+      <summary>Abstract</summary>
+      <p>{paper.abstract}</p>
+    </details>
+  )}
+</li>
+
+<style>
+  .pub {
+    padding: 0.85rem 0;
+  }
+
+  .pub + .pub {
+    border-top: 1px solid var(--rule-soft);
+  }
+
+  .pub[hidden] {
+    display: none;
+  }
+
+  .pub-title {
+    font-family: var(--font-serif);
+    font-size: 1.06rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .pub-authors {
+    font-size: 0.94rem;
+    margin-top: 0.2rem;
+  }
+
+  .pub-meta {
+    color: var(--muted);
+    font-size: 0.94rem;
+    margin-top: 0.1rem;
+  }
+
+  .pub-meta em {
+    color: var(--text);
+  }
+
+  .pub-abstract {
+    font-size: 0.94rem;
+    margin-top: 0.25rem;
+  }
+
+  .pub-abstract summary {
+    color: var(--accent);
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  .pub-abstract p {
+    color: var(--muted);
+    margin-top: 0.4rem;
+    max-width: 68ch;
+  }
+</style>

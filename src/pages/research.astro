@@ -1,58 +1,92 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/PageHero.astro";
-import ResearchMap from "../components/ResearchMap.astro";
-import ResearchPillar from "../components/ResearchPillar.astro";
+import PublicationEntry from "../components/PublicationEntry.astro";
+import { projects } from "../data/projects.js";
 import { researchAreas } from "../data/researchAreas.js";
+import { withBase } from "../data/site.js";
+import { papersForTopic } from "../lib/publications";
 import publications from "../data/publications.json";
+
+const areas = researchAreas.map((area) => {
+  const papers = papersForTopic(publications, area.title);
+  return {
+    ...area,
+    papers: papers.slice(0, 4),
+    paperCount: papers.length,
+    projects: projects.filter((project) => project.area === area.id),
+    archiveHref: `${withBase("/publications/")}?topic=${encodeURIComponent(area.title)}`
+  };
+});
 ---
 
-<BaseLayout title="Research" description="The PAI research map across provable foundations, actionable methods, and interpretability systems.">
+<BaseLayout title="Research" description="Research areas of PAI Lab at MBZUAI, with representative papers for each.">
   <PageHero
-    eyebrow="Research"
-    title="Research shaped by PAI."
-    lead="We connect provable foundations, actionable methods, and interpretability systems across large models, human workflows, and scientific discovery."
-    variant="research"
-    principles={[
-      {
-        label: "Provable",
-        detail: "Assumptions, guarantees, and limits made explicit."
-      },
-      {
-        label: "Actionable",
-        detail: "Evidence that supports debugging, decisions, and intervention."
-      },
-      {
-        label: "Interpretability",
-        detail: "Tools that make model behavior visible and usable."
-      }
-    ]}
+    title="Research"
+    lead="Our work is organized into five areas, from theoretical foundations to applications in science. Each section below states the question we study, our approach, and representative papers."
   />
 
-  <section class="section research-overview">
-    <div class="container">
-      <ResearchMap />
-    </div>
-  </section>
+  <div class="container">
+    <ul class="toc">
+      {areas.map((area) => <li><a href={`#${area.id}`}>{area.title}</a></li>)}
+    </ul>
 
-  <section class="section band research-pillars-section">
-    <div class="container pillars">
-      {researchAreas.map((area) => <ResearchPillar area={area} publications={publications} />)}
-    </div>
-  </section>
+    {areas.map((area) => (
+      <section class="section area" id={area.id}>
+        <div class="section-head"><h2>{area.title}</h2></div>
+        <p class="question">{area.question}</p>
+        <div class="prose">
+          <p>{area.why}</p>
+          <p>{area.approach}</p>
+        </div>
+        {area.projects.map((project) => (
+          <p class="project">
+            Project: <a href={withBase(project.href)}>{project.title}</a> ({project.subtitle})
+          </p>
+        ))}
+        <h3>Representative papers</h3>
+        <ol class="pub-list">
+          {area.papers.map((paper) => <PublicationEntry paper={paper} />)}
+        </ol>
+        <p class="more"><a href={area.archiveHref}>All {area.paperCount} papers in this area →</a></p>
+      </section>
+    ))}
+  </div>
 </BaseLayout>
 
 <style>
-  .research-overview {
-    padding: clamp(28px, 4vw, 44px) 0 clamp(46px, 6vw, 70px);
+  .toc {
+    border-left: 2px solid var(--rule);
+    list-style: none;
+    margin-top: 1.5rem;
+    padding: 0.1rem 0 0.1rem 1rem;
   }
 
-  .research-pillars-section {
-    padding: clamp(34px, 5vw, 64px) 0 clamp(58px, 7vw, 92px);
+  .toc li + li {
+    margin-top: 0.15rem;
   }
 
-  .pillars {
-    display: grid;
-    gap: 4px;
+  .question {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-style: italic;
+    margin-bottom: 0.75rem;
+  }
+
+  .prose {
+    max-width: 70ch;
+  }
+
+  .project {
+    margin-top: 0.9rem;
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+  }
+
+  .more {
+    font-size: 0.94rem;
+    margin-top: 0.4rem;
   }
 </style>

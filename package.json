@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
+    "@fontsource-variable/source-serif-4": "^5.3.1",
     "astro": "^5.0.0",
     "typescript": "^5.6.3"
-  },
-  "devDependencies": {}
+  }
 }

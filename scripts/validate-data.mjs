@@ -70,6 +70,7 @@ for (const publication of publications) {
   }
   for (const link of publication.links ?? []) {
     if (!link.label || !link.url) errors.push(`Publication ${publication.id} has an incomplete link`);
+    else if (!/^(https?:\/\/|\/)/.test(link.url)) errors.push(`Publication ${publication.id} link "${link.label}" is not a URL: ${link.url}`);
   }
   if (publication.authorsHtml && /<(?!\/?(?:span|strong)\b)[^>]+>/i.test(publication.authorsHtml)) {
     errors.push(`Publication ${publication.id} authorsHtml contains unsupported tags`);
@@ -100,6 +101,9 @@ for (const file of teamFiles) {
   if (member.bio) {
     const words = wordCount(member.bio);
     if (words < 10 || words > 35) errors.push(`${member.name} biography has ${words} words, expected 10-35`);
+  }
+  if (member.nowAtUrl && !/^https?:\/\//.test(member.nowAtUrl)) {
+    errors.push(`${member.name} nowAtUrl is not a URL: ${member.nowAtUrl}`);
   }
   if (member.photo) {
     const publicPath = member.photo.startsWith("/") ? member.photo.slice(1) : member.photo;

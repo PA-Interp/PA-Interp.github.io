@@ -2,19 +2,25 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "../components/PageHero.astro";
 import PublicationArchive from "../components/PublicationArchive.astro";
+import { site } from "../data/site.js";
 import publications from "../data/publications.json";
 ---
 
-<BaseLayout title="Publications" description="Searchable publication archive for PAI Lab.">
-  <PageHero
-    eyebrow="Publications"
-    title="The PAI publication archive."
-    lead="Browse work through the PAI lens: provable foundations, actionable methods, and interpretability systems, ordered by year, area, venue, artifact, and topic."
-  />
+<BaseLayout title="Publications" description="Publications from PAI Lab at MBZUAI, searchable by year, topic, and venue.">
+  <PageHero title="Publications">
+    <p class="lead">
+      Papers by members of PAI Lab, newest first. The list is also maintained on
+      <a href={site.piHomepage}>{site.piName}'s homepage</a>.
+    </p>
+  </PageHero>
 
-  <section class="section compact">
-    <div class="container">
-      <PublicationArchive publications={publications} />
-    </div>
-  </section>
+  <div class="container">
+    <PublicationArchive publications={publications} />
+  </div>
 </BaseLayout>
+
+<style>
+  .lead {
+    margin-top: 0.6rem;
+  }
+</style>

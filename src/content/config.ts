@@ -13,7 +13,11 @@ const team = defineCollection({
     researchTags: z.array(z.string()).default([]),
     representativeWork: z.string().default(""),
     bio: z.string().default(""),
-    order: z.number()
+    order: z.number(),
+    // Former members keep their original role and are listed under Alumni.
+    alumni: z.boolean().default(false),
+    nowAt: z.string().default(""),
+    nowAtUrl: z.string().default("")
   })
 });
 

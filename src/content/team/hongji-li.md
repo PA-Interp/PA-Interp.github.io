@@ -4,7 +4,6 @@ role: "PhD Student"
 affiliation: "B.S.@LZU"
 period: "2026-present"
 website: "https://neon-jing.github.io/"
-photo: "/assets/team/hongji.li/hongji.li.svg"
 researchTags:
   - "Large Models"
   - "Interactive XAI"

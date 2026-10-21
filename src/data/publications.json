@@ -2428,11 +2428,6 @@
     ],
     "links": [
       {
-        "label": "Link",
-        "type": "paper",
-        "url": "Private Language Models via Truncated Laplacian Mechanism"
-      },
-      {
         "label": "Arxiv",
         "type": "preprint",
         "url": "https://arxiv.org/abs/2410.08027"
