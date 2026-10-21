@@ -13,6 +13,9 @@ researchTags:
 representativeWork: "LLM-agent security, adversarial manipulation, and privacy leakage"
 bio: "Zikang studies LLM-agent security, adversarial manipulation, privacy leakage, and behavioral risks in multi-step decision-making."
 order: 6
+alumni: true
+nowAt: "University of Electronic Science and Technology of China (UESTC)"
+nowAtUrl: "https://en.uestc.edu.cn/"
 ---
 
 Zikang studies LLM-agent security, adversarial manipulation, privacy leakage, and behavioral risks in multi-step decision-making.
