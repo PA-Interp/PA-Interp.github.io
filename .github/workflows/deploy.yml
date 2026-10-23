@@ -20,6 +20,7 @@ jobs:
     env:
       BASE_PATH: /
       SITE_URL: https://pa-interp.github.io
+      GOATCOUNTER_ENDPOINT: ${{ vars.GOATCOUNTER_ENDPOINT }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

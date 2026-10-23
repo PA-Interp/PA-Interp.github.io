@@ -41,3 +41,22 @@ After pushing to `main`, enable GitHub Pages in the repository settings:
 1. Go to `Settings -> Pages`.
 2. Set `Source` to `GitHub Actions`.
 3. Run the `Deploy to GitHub Pages` workflow or push to `main`.
+
+## Visitor analytics
+
+GoatCounter tracks the lab pages and static project pages, including `/riboloop/`,
+in the same dashboard at https://pai.goatcounter.com/. Use the page paths to
+distinguish their traffic.
+
+The GitHub repository Actions variable `GOATCOUNTER_ENDPOINT` is set to
+`https://pai.goatcounter.com/count`. This is a public URL, not an API key.
+Run the deployment workflow after changing the variable.
+
+The build adds GoatCounter's asynchronous script to every HTML page, including
+project pages copied from `public/`. Replacing a project's static files therefore
+does not remove tracking from the next deployment. Leave the variable unset to
+build without analytics; `astro dev` does not add it. GoatCounter also ignores
+localhost visits by default.
+
+To exclude your own browser's visits, open
+`https://pa-interp.github.io/#toggle-goatcounter` and follow the prompt.
