@@ -2,7 +2,7 @@
 name: "Ziyue Liu"
 role: "Visiting Student"
 affiliation: "Ph.D. Student, Politecnico di Torino"
-period: "Until October 2026"
+period: ""
 website: "https://karinvk.github.io/personal-page"
 photo: "/assets/team/ziyue.liu/ziyue.liu.jpg"
 photoPosition: "50% 45%"
