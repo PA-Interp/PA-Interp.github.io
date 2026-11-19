@@ -7,6 +7,7 @@ const team = defineCollection({
     role: z.enum(["PI", "Postdoc", "PhD Student", "Master Student", "Visiting Student", "Research Assistant"]),
     affiliation: z.string(),
     period: z.string().default(""),
+    coSupervisor: z.string().default(""),
     website: z.string().default(""),
     photo: z.string().optional(),
     photoPosition: z.string().optional(),

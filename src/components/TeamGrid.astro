@@ -20,6 +20,9 @@ const initials = (name: string) => name.split(" ").map((part) => part[0]).join("
 const groupSlug = (role: string) => role.toLowerCase().replaceAll(" ", "-");
 // Some entries repeat the role as their affiliation; only show it when it adds something.
 const detail = (member: (typeof teamMembers)[number]) => (member.affiliation !== member.role ? member.affiliation : "");
+const coSupervision = (member: (typeof teamMembers)[number]) =>
+  member.coSupervisor ? `Co-supervised with ${member.coSupervisor}` : "";
+const detailLines = (member: (typeof teamMembers)[number]) => [detail(member), coSupervision(member)].filter(Boolean);
 ---
 
 {pis.map((member) => (
@@ -68,10 +71,15 @@ const detail = (member: (typeof teamMembers)[number]) => (member.affiliation !==
               )}
             </Photo>
             <h3>{member.website ? <a href={member.website}>{member.name}</a> : member.name}</h3>
-            {(detail(member) || member.period) && (
+            {(detailLines(member).length > 0 || member.period) && (
               <p class="detail">
-                {detail(member)}
-                {detail(member) && member.period && <br />}
+                {detailLines(member).map((line, index) => (
+                  <>
+                    {index > 0 && <br />}
+                    {line}
+                  </>
+                ))}
+                {detailLines(member).length > 0 && member.period && <br />}
                 {member.period && <span class="period">{member.period}</span>}
               </p>
             )}
@@ -91,7 +99,7 @@ const detail = (member: (typeof teamMembers)[number]) => (member.affiliation !==
         <li id={`member-${memberSlug(member.name)}`}>
           {member.website ? <a class="alumni-name" href={member.website}>{member.name}</a> : <span class="alumni-name">{member.name}</span>}
           <span class="detail">
-            {[member.role, member.period, detail(member)].filter(Boolean).join(" · ")}
+            {[member.role, member.period, detail(member), coSupervision(member)].filter(Boolean).join(" · ")}
           </span>
           {member.nowAt && (
             <span>Now at {member.nowAtUrl ? <a href={member.nowAtUrl}>{member.nowAt}</a> : member.nowAt}</span>
